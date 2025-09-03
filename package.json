@@ -16,7 +16,10 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:go": "npx projen package:go",
+    "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
+    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
@@ -60,6 +63,9 @@
   "peerDependencies": {
     "aws-cdk-lib": "^2.1.0",
     "constructs": "^10.0.5"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   },
   "keywords": [
     "cdk"
@@ -119,7 +125,22 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "java": {
+        "package": "com.mockholm.zap.cdk",
+        "maven": {
+          "groupId": "com.mockholm.zap",
+          "artifactId": "zap-cdk"
+        }
+      },
+      "python": {
+        "distName": "zap-cdk",
+        "module": "zap_cdk"
+      },
+      "go": {
+        "moduleName": "github.com/kesi03/zap-cdk-go"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"

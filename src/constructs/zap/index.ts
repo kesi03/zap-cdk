@@ -1,6 +1,6 @@
 import { Construct } from "constructs";
 import * as yaml from 'js-yaml';
-import { IZap } from "./models/zap";
+import { IZap } from "../../models/zap";
 
 
 class Zap extends Construct {

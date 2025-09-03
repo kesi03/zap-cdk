@@ -8,6 +8,25 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'zap-cdk',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/kesi03/zap-cdk',
+  deps: [
+    'js-yaml', // Add js-yaml as a dependency
+  ],
+  publishToMaven: {
+    javaPackage: 'com.mockholm.zap.cdk',
+    mavenArtifactId: 'zap-cdk',
+    mavenGroupId: 'com.mockholm.zap',
+  },
+  publishToPypi: {
+    distName: 'zap-cdk',
+    module: 'zap_cdk',
+  },
+  // publishToNuget: {
+  //   dotNetNamespace: 'com.mockholm.zap.cdk',
+  //   packageId: 'com.mockholm.zap.cdk',
+  // },
+  publishToGo: {
+    moduleName: 'github.com/kesi03/zap-cdk-go',
+  },
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */

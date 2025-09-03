@@ -1,0 +1,7 @@
+export interface IOpenAPI {
+  apiFile?: string; // Local file containing the OpenAPI definition, default: null
+  apiUrl?: string; // URL containing the OpenAPI definition, default: null
+  context?: string; // Context to use when importing the OpenAPI definition, default: first context
+  user?: string; // Optional user for authentication, must be defined in the env
+  targetUrl?: string; // URL which overrides the target defined in the definition, default: null
+}
