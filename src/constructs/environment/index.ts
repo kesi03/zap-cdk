@@ -1,10 +1,16 @@
 import { Construct } from 'constructs';
-import { IEnvironment } from "../../models/environment"; // Adjust the import path as necessary
+import { IEnvironment } from '../../models/environment'; // Adjust the import path as necessary
 
 interface EnvironmentProps {
   environment: IEnvironment; // Ensure that the environment property matches the IEnvironment interface
 }
 
+/**
+ * Class representing the environment configuration.
+ *
+ * @class EnvironmentConfig
+ * @extends {Construct}
+ */
 class EnvironmentConfig extends Construct {
   config: IEnvironment;
 
@@ -13,7 +19,7 @@ class EnvironmentConfig extends Construct {
 
     // Validate that props.environment is provided
     if (!props.environment) {
-      throw new Error("The environment property is required.");
+      throw new Error('The environment property is required.');
     }
 
     this.config = props.environment;

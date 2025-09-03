@@ -1,10 +1,16 @@
 import { Construct } from 'constructs';
-import { IActiveScanConfig } from "../../models/activeScanConfig";
+import { IActiveScanConfig } from '../../models/activeScanConfig';
 
 interface ActiveScanConfigProps {
   activeScanConfig: IActiveScanConfig; // Ensure that the activeScanConfig property matches the IActiveScanConfig interface
 }
 
+/**
+ * Class representing the active scan configuration.
+ *
+ * @class ActiveScanConfig
+ * @extends {Construct}
+ */
 class ActiveScanConfig extends Construct {
   config: IActiveScanConfig;
 
@@ -13,7 +19,7 @@ class ActiveScanConfig extends Construct {
 
     // Validate that props.activeScanConfig is provided
     if (!props.activeScanConfig) {
-      throw new Error("The activeScanConfig property is required.");
+      throw new Error('The activeScanConfig property is required.');
     }
 
     this.config = props.activeScanConfig;

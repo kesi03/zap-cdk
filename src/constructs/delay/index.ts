@@ -5,6 +5,12 @@ interface DelayProps {
   delay: IDelay; // Ensure that the delay property matches the IDelay interface
 }
 
+/**
+ * Class representing the delay configuration.
+ *
+ * @class DelayConfig
+ * @extends {Construct}
+ */
 class DelayConfig extends Construct {
   config: IDelay;
 
@@ -13,7 +19,7 @@ class DelayConfig extends Construct {
 
     // Validate that props.delay is provided
     if (!props.delay) {
-      throw new Error("The delay property is required.");
+      throw new Error('The delay property is required.');
     }
 
     this.config = props.delay;

@@ -65,8 +65,13 @@
     "constructs": "^10.0.5"
   },
   "dependencies": {
+    "@types/js-yaml": "^4.0.9",
     "js-yaml": "^4.1.0"
   },
+  "bundledDependencies": [
+    "@types/js-yaml",
+    "js-yaml"
+  ],
   "keywords": [
     "cdk"
   ],

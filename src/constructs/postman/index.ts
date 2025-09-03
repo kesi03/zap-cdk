@@ -1,10 +1,15 @@
 import { Construct } from 'constructs';
-import { IPostman } from "../../models/postman"; // Adjust the import path as necessary
+import { IPostman } from '../../models/postman'; // Adjust the import path as necessary
 
 interface PostmanProps {
   postman: IPostman; // Ensure that the postman property matches the IPostmanParameters interface
 }
 
+/**
+ * Class representing the Postman configuration.
+ * @class PostmanConfig
+ * @extends {Construct}
+ */
 class PostmanConfig extends Construct {
   config: IPostman;
 
@@ -13,7 +18,7 @@ class PostmanConfig extends Construct {
 
     // Validate that props.postman is provided
     if (!props.postman) {
-      throw new Error("The postman property is required.");
+      throw new Error('The postman property is required.');
     }
 
     this.config = props.postman;

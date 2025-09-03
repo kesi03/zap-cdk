@@ -1,10 +1,16 @@
 import { Construct } from 'constructs';
-import { IExitStatus } from "../../models/exitStatus"; // Adjust the import path as necessary
+import { IExitStatus } from '../../models/exitStatus'; // Adjust the import path as necessary
 
 interface ExitStatusProps {
   exitStatus: IExitStatus; // Ensure that the exitStatus property matches the IExitStatus interface
 }
 
+/**
+ * Class representing the exit status configuration.
+ *
+ * @class ExitStatusConfig
+ * @extends {Construct}
+ */
 class ExitStatusConfig extends Construct {
   config: IExitStatus;
 
@@ -13,7 +19,7 @@ class ExitStatusConfig extends Construct {
 
     // Validate that props.exitStatus is provided
     if (!props.exitStatus) {
-      throw new Error("The exitStatus property is required.");
+      throw new Error('The exitStatus property is required.');
     }
 
     this.config = props.exitStatus;

@@ -1,10 +1,15 @@
 import { Construct } from 'constructs';
-import { IGraphQL } from "../../models/graphql"; // Adjust the import path as necessary
+import { IGraphQL } from '../../models/graphql'; // Adjust the import path as necessary
 
 interface GraphQLProps {
   graphql: IGraphQL; // Ensure that the graphql property matches the IGraphQLParameters interface
 }
 
+/**
+ * Class representing the GraphQL configuration.
+ * @class GraphQLConfig
+ * @extends {Construct}
+ */
 class GraphQLConfig extends Construct {
   config: IGraphQL;
 
@@ -13,7 +18,7 @@ class GraphQLConfig extends Construct {
 
     // Validate that props.graphql is provided
     if (!props.graphql) {
-      throw new Error("The graphql property is required.");
+      throw new Error('The graphql property is required.');
     }
 
     this.config = props.graphql;

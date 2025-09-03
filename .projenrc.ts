@@ -8,8 +8,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'zap-cdk',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/kesi03/zap-cdk',
-  deps: [
+  bundledDeps: [
     'js-yaml', // Add js-yaml as a dependency
+    '@types/js-yaml',
   ],
   publishToMaven: {
     javaPackage: 'com.mockholm.zap.cdk',

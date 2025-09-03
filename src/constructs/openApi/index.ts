@@ -1,10 +1,16 @@
 import { Construct } from 'constructs';
-import { IOpenAPI } from "../../models/openApi"; // Adjust the import path as necessary
+import { IOpenAPI } from '../../models/openApi'; // Adjust the import path as necessary
 
 interface OpenAPIProps {
   openapi: IOpenAPI; // Ensure that the openapi property matches the IOpenAPIParameters interface
 }
 
+/**
+ * Class representing the OpenAPI configuration.
+ *
+ * @class OpenAPIConfig
+ * @extends {Construct}
+ */
 class OpenAPIConfig extends Construct {
   config: IOpenAPI;
 
@@ -13,7 +19,7 @@ class OpenAPIConfig extends Construct {
 
     // Validate that props.openapi is provided
     if (!props.openapi) {
-      throw new Error("The openapi property is required.");
+      throw new Error('The openapi property is required.');
     }
 
     this.config = props.openapi;

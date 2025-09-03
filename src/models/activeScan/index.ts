@@ -1,4 +1,4 @@
-import { ITest } from "../test";
+import { ITest } from '../test';
 
 /**
  * @interface IActiveScanParameters
@@ -95,6 +95,5 @@ export interface IActiveScan {
 export interface IActiveScanJob {
   activeScan: IActiveScan;
 }
-
 
 

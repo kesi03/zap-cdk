@@ -1,10 +1,16 @@
 import { Construct } from 'constructs';
-import { IActiveScanPolicy } from "../../models/activeScanPolicy"; // Adjust the import path as necessary
+import { IActiveScanPolicy } from '../../models/activeScanPolicy'; // Adjust the import path as necessary
 
 interface ActiveScanPolicyProps {
   activeScanPolicy: IActiveScanPolicy; // Ensure that the activeScanPolicy property matches the IActiveScanPolicy interface
 }
 
+/**
+ * Class representing the active scan policy configuration.
+ *
+ * @class ActiveScanPolicyConfig
+ * @extends {Construct}
+ */
 class ActiveScanPolicyConfig extends Construct {
   config: IActiveScanPolicy;
 
@@ -13,7 +19,7 @@ class ActiveScanPolicyConfig extends Construct {
 
     // Validate that props.activeScanPolicy is provided
     if (!props.activeScanPolicy) {
-      throw new Error("The activeScanPolicy property is required.");
+      throw new Error('The activeScanPolicy property is required.');
     }
 
     this.config = props.activeScanPolicy;

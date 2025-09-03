@@ -1,10 +1,16 @@
 import { Construct } from 'constructs';
-import { ISpiderAjax } from "../../models/spiderAjax"; // Adjust the import path as necessary
+import { ISpiderAjax } from '../../models/spiderAjax'; // Adjust the import path as necessary
 
 interface SpiderAjaxProps {
   spiderAjax: ISpiderAjax; // Ensure that the spiderAjax property matches the ISpiderAjaxParameters interface
 }
 
+/**
+ * Class representing the SpiderAjax configuration.
+ *
+ * @class SpiderAjaxConfig
+ * @extends {Construct}
+ */
 class SpiderAjaxConfig extends Construct {
   config: ISpiderAjax;
 
@@ -13,7 +19,7 @@ class SpiderAjaxConfig extends Construct {
 
     // Validate that props.spiderAjax is provided
     if (!props.spiderAjax) {
-      throw new Error("The spiderAjax property is required.");
+      throw new Error('The spiderAjax property is required.');
     }
 
     this.config = props.spiderAjax;

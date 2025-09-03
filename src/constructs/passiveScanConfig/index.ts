@@ -5,6 +5,12 @@ interface PassiveScanConfigProps {
   passiveScanConfig: IPassiveScanConfig; // Ensure that the passiveScanConfig property matches the IPassiveScanConfig interface
 }
 
+/**
+ * Class representing the passive scan configuration.
+ *
+ * @class PassiveScanConfig
+ * @extends {Construct}
+ */
 class PassiveScanConfig extends Construct {
   config: IPassiveScanConfig;
 
@@ -13,7 +19,7 @@ class PassiveScanConfig extends Construct {
 
     // Validate that props.passiveScanConfig is provided
     if (!props.passiveScanConfig) {
-      throw new Error("The passiveScanConfig property is required.");
+      throw new Error('The passiveScanConfig property is required.');
     }
 
     this.config = props.passiveScanConfig;

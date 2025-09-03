@@ -1,10 +1,16 @@
 import { Construct } from 'constructs';
-import { IExport } from "../../models/export"; // Adjust the import path as necessary
+import { IExport } from '../../models/export'; // Adjust the import path as necessary
 
 interface ExportProps {
   export: IExport; // Ensure that the export property matches the IExportParameters interface
 }
 
+/**
+ * Class representing the export configuration.
+ *
+ * @class ExportConfig
+ * @extends {Construct}
+ */
 class ExportConfig extends Construct {
   config: IExport;
 
@@ -13,7 +19,7 @@ class ExportConfig extends Construct {
 
     // Validate that props.export is provided
     if (!props.export) {
-      throw new Error("The export property is required.");
+      throw new Error('The export property is required.');
     }
 
     this.config = props.export;
