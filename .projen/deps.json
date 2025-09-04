@@ -10,6 +10,10 @@
       "type": "build"
     },
     {
+      "name": "@types/js-yaml",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
       "type": "build"
     },
@@ -88,10 +92,6 @@
     {
       "name": "typescript",
       "type": "build"
-    },
-    {
-      "name": "@types/js-yaml",
-      "type": "bundled"
     },
     {
       "name": "js-yaml",

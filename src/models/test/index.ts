@@ -31,7 +31,7 @@ export type OnFailType = 'warn' | 'error' | 'info'; // Allowed onFail values
 
 /**
  * Interface for alert tests.
- * 
+ *
  * Example YAML representation:
  * ```yaml
  * - name: 'test one'                       # Name of the test, optional
@@ -49,7 +49,7 @@ export type OnFailType = 'warn' | 'error' | 'info'; // Allowed onFail values
  *   otherInfo: 'Additional context here'   # String: Additional information corresponding to the alert, optional
  *   onFail: 'info'                        # String: One of 'warn', 'error', 'info', mandatory
  * ```
- * 
+ *
  * @interface IAlertTest
  * @property {string} [name] - Name of the test, optional.
  * @property {'alert'} type - Specifies that the test is of type 'alert'.
