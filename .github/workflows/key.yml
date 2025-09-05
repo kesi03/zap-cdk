@@ -27,6 +27,12 @@ jobs:
           gpg --batch --passphrase "${{ github.event.inputs.passphrase }}" --quick-generate-key "$NAME <$EMAIL>" default default 0
           echo "PGP key generated."
 
+      - name: List Generated Keys
+        run: |
+          echo "Listing generated keys..."
+          gpg --list-keys
+          echo "Keys listed."
+
       - name: Send Public Key to Ubuntu Keyserver
         run: |
           echo "Sending public key to Ubuntu keyserver..."
@@ -37,8 +43,13 @@ jobs:
         id: export_private_key
         run: |
           echo "Exporting private key..."
-          gpg --armor --export-secret-keys --passphrase "${{ github.event.inputs.passphrase }}" "$NAME <$EMAIL>" > private_key.asc
-          echo "Private key exported."
+          gpg --armor --export-secret-keys --passphrase "${{ github.event.inputs.passphrase }}" "$NAME <$EMAIL>" > private_key.asc || echo "Failed to export private key."
+          if [ -s private_key.asc ]; then
+            echo "Private key exported."
+          else
+            echo "No private key found to export."
+            exit 1
+          fi
 
       - name: Save Private Key as Secret
         run: |
