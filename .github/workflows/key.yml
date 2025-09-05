@@ -8,9 +8,6 @@ on:
         required: true
         default: ''
 
-permissions:
-  contents: write  # Required to read and write repository contents
-
 jobs:
   generate_key:
     runs-on: ubuntu-latest
