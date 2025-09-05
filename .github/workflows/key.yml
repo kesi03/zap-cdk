@@ -8,6 +8,10 @@ on:
         required: true
         default: ''
 
+permissions:
+  contents: write  # Required to read and write repository contents
+  secrets: write    # Required to manage repository secrets
+
 jobs:
   generate_key:
     runs-on: ubuntu-latest
