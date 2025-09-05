@@ -1,0 +1,53 @@
+name: Generate PGP Key
+
+on:
+  workflow_dispatch:
+    inputs:
+      passphrase:
+        description: 'Passphrase for the PGP key'
+        required: true
+        default: ''
+
+jobs:
+  generate_key:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install GnuPG
+        run: sudo apt-get install -y gnupg2
+
+      - name: Generate PGP Key
+        id: generate_key
+        run: |
+          echo "Generating PGP key..."
+          NAME="${{ github.actor }}"
+          EMAIL="${{ github.actor }}@users.noreply.github.com"  # Correct format for GitHub users
+          gpg --batch --passphrase "${{ github.event.inputs.passphrase }}" --quick-generate-key "$NAME <$EMAIL>" default default 0
+          echo "PGP key generated."
+
+      - name: Send Public Key to Ubuntu Keyserver
+        run: |
+          echo "Sending public key to Ubuntu keyserver..."
+          gpg --keyserver hkp://keyserver.ubuntu.com --send-keys $(gpg --list-keys --with-colons | grep '^pub' | awk -F':' '{print $5}' | head -n 1)
+          echo "Public key sent."
+
+      - name: Export Private Key
+        id: export_private_key
+        run: |
+          echo "Exporting private key..."
+          gpg --armor --export-secret-keys --passphrase "${{ github.event.inputs.passphrase }}" "$NAME <$EMAIL>" > private_key.asc
+          echo "Private key exported."
+
+      - name: Save Private Key as Secret
+        run: |
+          echo "Saving private key as a repository secret..."
+          gh secret set PGP_PRIVATE_KEY < private_key.asc
+          echo "Private key saved."
+
+      - name: Save Passphrase as Secret
+        run: |
+          echo "Saving passphrase as a repository secret..."
+          gh secret set PGP_PASSPHRASE "${{ github.event.inputs.passphrase }}"
+          echo "Passphrase saved."
