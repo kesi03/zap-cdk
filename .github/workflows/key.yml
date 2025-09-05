@@ -52,6 +52,8 @@ jobs:
       - name: Export Private Key
         id: export_private_key
         run: |
+          echo "Setting GPG_TTY..."
+          export GPG_TTY=$(tty || echo /dev/null)
           echo "Exporting private key..."
           gpg --batch --passphrase-file gpg.conf --armor --export-secret-keys ${{ env.fingerprint }} > private_key.asc || echo "Failed to export private key."
           if [ -s private_key.asc ]; then
