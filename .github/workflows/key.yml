@@ -27,23 +27,25 @@ jobs:
           gpg --batch --passphrase "${{ github.event.inputs.passphrase }}" --quick-generate-key "$NAME <$EMAIL>" default default 0
           echo "PGP key generated."
 
-      - name: List Generated Keys
+      - name: Get Key Fingerprint
+        id: get_fingerprint
         run: |
-          echo "Listing generated keys..."
-          gpg --list-keys
-          echo "Keys listed."
+          echo "Retrieving key fingerprint..."
+          FINGERPRINT=$(gpg --list-keys --with-colons | grep '^pub' | awk -F':' '{print $5}' | head -n 1)
+          echo "Key fingerprint: $FINGERPRINT"
+          echo "fingerprint=$FINGERPRINT" >> $GITHUB_ENV
 
       - name: Send Public Key to Ubuntu Keyserver
         run: |
           echo "Sending public key to Ubuntu keyserver..."
-          gpg --keyserver hkp://keyserver.ubuntu.com --send-keys $(gpg --list-keys --with-colons | grep '^pub' | awk -F':' '{print $5}' | head -n 1)
+          gpg --keyserver hkp://keyserver.ubuntu.com --send-keys ${{ env.fingerprint }}
           echo "Public key sent."
 
       - name: Export Private Key
         id: export_private_key
         run: |
           echo "Exporting private key..."
-          gpg --armor --export-secret-keys --passphrase "${{ github.event.inputs.passphrase }}" "$NAME <$EMAIL>" > private_key.asc || echo "Failed to export private key."
+          gpg --armor --export-secret-keys --passphrase "${{ github.event.inputs.passphrase }}" ${{ env.fingerprint }} > private_key.asc || echo "Failed to export private key."
           if [ -s private_key.asc ]; then
             echo "Private key exported."
           else
