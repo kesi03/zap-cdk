@@ -69,6 +69,9 @@ jobs:
           cat private_key.asc
           echo "Contents displayed."
 
+      - name: Check gh CLI Auth
+        run: gh auth status
+
       - name: Save Private Key as Secret
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Set the GH_TOKEN environment variable
