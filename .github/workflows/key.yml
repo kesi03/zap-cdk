@@ -69,6 +69,11 @@ jobs:
           cat private_key.asc
           echo "Contents displayed."
 
+      - name: Check gh Login
+        env:
+         GH_TOKEN: ${{ secrets.GH_PAT }}  # Set the GH_TOKEN environment variable
+        run: gh auth login
+
       - name: Check gh CLI Auth
         env:
          GH_TOKEN: ${{ secrets.GH_PAT }}  # Set the GH_TOKEN environment variable
