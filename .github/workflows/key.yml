@@ -74,7 +74,7 @@ jobs:
 
       - name: Save Private Key as Secret
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Set the GH_TOKEN environment variable
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Set the GH_TOKEN environment variable
         run: |
           echo "Saving private key as a repository secret..."
           gh secret set MAVEN_GPG_PRIVATE_KEY < private_key.asc
@@ -82,7 +82,7 @@ jobs:
 
       - name: Save Passphrase as Secret
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Set the GH_TOKEN environment variable
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Set the GH_TOKEN environment variable
         run: |
           echo "Saving passphrase as a repository secret..."
           gh secret set MAVEN_GPG_PRIVATE_KEY_PASSPHRASE "${{ github.event.inputs.passphrase }}"
