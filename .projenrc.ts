@@ -16,6 +16,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     javaPackage: 'com.mockholm.zap.cdk',
     mavenArtifactId: 'zap-cdk',
     mavenGroupId: 'com.mockholm.zap',
+    mavenStagingProfileId: 'com.mockholm.zap', // Replace with your actual profile ID
   },
   publishToPypi: {
     distName: 'zap-cdk',
