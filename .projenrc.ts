@@ -20,6 +20,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   publishToPypi: {
     distName: 'zap-cdk',
     module: 'zap_cdk',
+    trustedPublishing: true,
   },
   publishToNuget: {
     dotNetNamespace: 'com.mockholm.zap.cdk',
