@@ -132,9 +132,9 @@
     "outdir": "dist",
     "targets": {
       "java": {
-        "package": "com.mockholm.zap.cdk",
+        "package": "io.github.kesi03.zap.cdk",
         "maven": {
-          "groupId": "com.mockholm.zap",
+          "groupId": "io.github.kesi03",
           "artifactId": "zap-cdk"
         }
       },
