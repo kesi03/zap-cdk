@@ -147,7 +147,8 @@
         "packageId": "com.mockholm.zap.cdk"
       },
       "go": {
-        "moduleName": "github.com/kesi03/zap-cdk-go"
+        "moduleName": "github.com/kesi03/zap-cdk-go",
+        "packageName": "zapcdk"
       }
     },
     "tsc": {
