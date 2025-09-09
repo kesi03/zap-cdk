@@ -5,4 +5,4 @@ Create zap automation yaml using the awscdk constructs
 This is in {{draft}} mode as there is plenty things to fix but i wanted to get the ball rolling.
 
 # WATCH-THIS-SPACE
-More to come
+Now added nuget
