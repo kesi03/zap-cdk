@@ -1,6 +1,9 @@
 import { Construct } from 'constructs';
 import { ISOAP } from '../../models/soap'; // Adjust the import path as necessary
 
+/**
+ * Properties for the SOAPConfig construct.
+ */
 interface SOAPProps {
   soap: ISOAP; // Ensure that the soap property matches the ISOAPParameters interface
 }
@@ -25,6 +28,10 @@ class SOAPConfig extends Construct {
     this.config = props.soap;
   }
 
+  /** Converts the SOAP configuration to YAML format.
+   *
+   * @returns {any} The SOAP configuration in YAML format.
+   */
   toYaml() {
     return this.config;
   }

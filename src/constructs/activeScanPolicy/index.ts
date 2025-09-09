@@ -1,6 +1,9 @@
 import { Construct } from 'constructs';
 import { IActiveScanPolicy } from '../../models/activeScanPolicy'; // Adjust the import path as necessary
 
+/**
+ * Properties for the ActiveScanPolicyConfig construct.
+ */
 interface ActiveScanPolicyProps {
   activeScanPolicy: IActiveScanPolicy; // Ensure that the activeScanPolicy property matches the IActiveScanPolicy interface
 }

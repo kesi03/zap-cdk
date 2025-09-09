@@ -8,6 +8,7 @@ import { IActiveScanJob } from '../../models/activeScan';
  * @extends {Construct}
  */
 class ActiveScanJob extends Construct {
+  /** The active scan job properties. */
   job: IActiveScanJob;
 
   /**

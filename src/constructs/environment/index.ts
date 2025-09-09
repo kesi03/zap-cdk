@@ -1,6 +1,9 @@
 import { Construct } from 'constructs';
 import { IEnvironment } from '../../models/environment'; // Adjust the import path as necessary
 
+/**
+ * Properties for the EnvironmentConfig construct.
+ */
 interface EnvironmentProps {
   environment: IEnvironment; // Ensure that the environment property matches the IEnvironment interface
 }

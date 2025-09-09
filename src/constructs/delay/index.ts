@@ -1,6 +1,9 @@
 import { Construct } from 'constructs';
 import { IDelay } from '../../models/delay';
 
+/**
+ * Properties for the DelayConfig construct.
+ */
 interface DelayProps {
   delay: IDelay; // Ensure that the delay property matches the IDelay interface
 }

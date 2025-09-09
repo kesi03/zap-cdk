@@ -1,6 +1,9 @@
 import { Construct } from 'constructs';
 import { IRequestorParameters } from '../../models/requestor'; // Adjust the import path as necessary
 
+/**
+ * Properties for the RequestorConfig construct.
+ */
 interface RequestorProps {
   requestor: IRequestorParameters; // Ensure that the requestor property matches the IRequestorParameters interface
 }
@@ -14,6 +17,12 @@ interface RequestorProps {
 class RequestorConfig extends Construct {
   config: IRequestorParameters;
 
+  /** Creates an instance of RequestorConfig.
+   *
+   * @param {Construct} scope - The scope in which this construct is defined.
+   * @param {string} id - The ID of the construct.
+   * @param {RequestorProps} props - The properties of the requestor configuration.
+   */
   constructor(scope: Construct, id: string, props: RequestorProps) {
     super(scope, id);
 
@@ -25,6 +34,10 @@ class RequestorConfig extends Construct {
     this.config = props.requestor;
   }
 
+  /** Converts the requestor configuration to YAML format.
+   *
+   * @returns {any} The requestor configuration in YAML format.
+   */
   toYaml() {
     return this.config;
   }

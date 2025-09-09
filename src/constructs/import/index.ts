@@ -1,6 +1,9 @@
 import { Construct } from 'constructs';
 import { IImport } from '../../models/import'; // Adjust the import path as necessary
 
+/**
+ * Properties for the ImportConfig construct.
+ */
 interface ImportProps {
   import: IImport; // Ensure that the import property matches the IImportParameters interface
 }
@@ -14,6 +17,12 @@ interface ImportProps {
 class ImportConfig extends Construct {
   config: IImport;
 
+  /** Creates an instance of ImportConfig.
+   *
+   * @param {Construct} scope - The scope in which this construct is defined.
+   * @param {string} id - The ID of the construct.
+   * @param {ImportProps} props - The properties of the import configuration.
+   */
   constructor(scope: Construct, id: string, props: ImportProps) {
     super(scope, id);
 
@@ -25,6 +34,11 @@ class ImportConfig extends Construct {
     this.config = props.import;
   }
 
+  /**
+   * Converts the import configuration to YAML format.
+   *
+   * @returns {any} The import configuration in YAML format.
+   */
   toYaml() {
     return this.config;
   }

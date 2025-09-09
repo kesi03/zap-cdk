@@ -1,6 +1,9 @@
 import { Construct } from 'constructs';
 import { IExitStatus } from '../../models/exitStatus'; // Adjust the import path as necessary
 
+/**
+ * Properties for the ExitStatusConfig construct.
+ */
 interface ExitStatusProps {
   exitStatus: IExitStatus; // Ensure that the exitStatus property matches the IExitStatus interface
 }

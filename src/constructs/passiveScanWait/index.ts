@@ -14,6 +14,12 @@ interface PassiveScanWaitProps {
 class PassiveScanWaitConfig extends Construct {
   config: IPassiveScanWait;
 
+  /** Creates an instance of PassiveScanWaitConfig.
+   *
+   * @param {Construct} scope - The scope in which this construct is defined.
+   * @param {string} id - The ID of the construct.
+   * @param {PassiveScanWaitProps} props - The properties of the passive scan wait configuration.
+   */
   constructor(scope: Construct, id: string, props: PassiveScanWaitProps) {
     super(scope, id);
 
@@ -25,6 +31,10 @@ class PassiveScanWaitConfig extends Construct {
     this.config = props.passiveScanWait;
   }
 
+  /** Converts the passive scan wait configuration to YAML format.
+   *
+   * @returns {any} The passive scan wait configuration in YAML format.
+   */
   toYaml() {
     return this.config;
   }

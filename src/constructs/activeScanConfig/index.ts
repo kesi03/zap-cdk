@@ -12,6 +12,8 @@ interface ActiveScanConfigProps {
  * @extends {Construct}
  */
 class ActiveScanConfig extends Construct {
+
+  /** The active scan configuration properties. */
   config: IActiveScanConfig;
 
   /**
