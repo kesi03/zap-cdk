@@ -180,7 +180,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write
     if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
     steps:
       - uses: actions/setup-node@v4
@@ -213,7 +212,8 @@ jobs:
         run: mv .repo/dist dist
       - name: Release
         env:
-          PYPI_TRUSTED_PUBLISHER: "true"
+          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
         run: npx -p publib@latest publib-pypi
   release_nuget:
     name: Publish to NuGet Gallery
