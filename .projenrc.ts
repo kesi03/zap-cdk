@@ -30,6 +30,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     moduleName: 'github.com/kesi03/zap-cdk-go',
     packageName: 'zapcdk',
     githubUseSsh: false,
+    githubTokenSecret: 'GITHUB_TOKEN'
   },
 });
 project.synth();
