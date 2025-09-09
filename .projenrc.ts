@@ -29,6 +29,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   publishToGo: {
     moduleName: 'github.com/kesi03/zap-cdk-go',
     packageName: 'zapcdk',
+    githubTokenSecret: 'GH_PAT', // optional, defaults to 'GITHUB_TOKEN'
   },
 });
 project.synth();
