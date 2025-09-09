@@ -14,6 +14,13 @@ interface EnvironmentProps {
 class EnvironmentConfig extends Construct {
   config: IEnvironment;
 
+  /**
+   * Creates an instance of EnvironmentConfig.
+   *
+   * @param {Construct} scope - The scope in which this construct is defined.
+   * @param {string} id - The ID of the construct.
+   * @param {EnvironmentProps} props - The properties of the environment configuration.
+   */
   constructor(scope: Construct, id: string, props: EnvironmentProps) {
     super(scope, id);
 
@@ -25,6 +32,11 @@ class EnvironmentConfig extends Construct {
     this.config = props.environment;
   }
 
+  /**
+   * Converts the environment configuration to YAML format.
+   *
+   * @returns {any} The environment configuration in YAML format.
+   */
   toYaml() {
     return this.config;
   }

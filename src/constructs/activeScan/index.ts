@@ -10,6 +10,13 @@ import { IActiveScanJob } from '../../models/activeScan';
 class ActiveScanJob extends Construct {
   job: IActiveScanJob;
 
+  /**
+   * Creates an instance of ActiveScanJob.
+   *
+   * @param {Construct} scope - The scope in which this construct is defined.
+   * @param {string} id - The ID of the construct.
+   * @param {IActiveScanJob} props - The properties of the active scan job.
+   */
   constructor(scope: Construct, id: string, props: IActiveScanJob) {
     super(scope, id);
 
@@ -22,6 +29,11 @@ class ActiveScanJob extends Construct {
     };
   }
 
+  /**
+   * Converts the active scan job to YAML format.
+   *
+   * @returns {any} The active scan job in YAML format.
+   */
   toYaml() {
     return this.job;
   }

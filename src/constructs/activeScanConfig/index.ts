@@ -14,6 +14,13 @@ interface ActiveScanConfigProps {
 class ActiveScanConfig extends Construct {
   config: IActiveScanConfig;
 
+  /**
+   * Creates an instance of ActiveScanConfig.
+   *
+   * @param {Construct} scope - The scope in which this construct is defined.
+   * @param {string} id - The ID of the construct.
+   * @param {ActiveScanConfigProps} props - The properties of the active scan configuration.
+   */
   constructor(scope: Construct, id: string, props: ActiveScanConfigProps) {
     super(scope, id);
 
@@ -25,6 +32,11 @@ class ActiveScanConfig extends Construct {
     this.config = props.activeScanConfig;
   }
 
+  /**
+   * Converts the active scan configuration to YAML format.
+   *
+   * @returns {any} The active scan configuration in YAML format.
+   */
   toYaml() {
     return this.config;
   }
