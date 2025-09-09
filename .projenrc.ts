@@ -16,6 +16,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     javaPackage: 'io.github.kesi03.zap.cdk',
     mavenArtifactId: 'zap-cdk',
     mavenGroupId: 'io.github.kesi03', // Replace with your actual profile ID
+    mavenServerId: 'central-ossrh', // Replace with your actual server ID
   },
   publishToPypi: {
     distName: 'zap-cdk',
