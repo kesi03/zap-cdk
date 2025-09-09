@@ -13,13 +13,14 @@ const project = new awscdk.AwsCdkConstructLibrary({
   ],
   devDeps: ['@types/js-yaml'],
   publishToMaven: {
-    javaPackage: 'com.mockholm.zap.cdk',
+    javaPackage: 'io.github.kesi03.zap.cdk',
     mavenArtifactId: 'zap-cdk',
-    mavenGroupId: 'com.mockholm.zap', // Replace with your actual profile ID
+    mavenGroupId: 'io.github.kesi03', // Replace with your actual profile ID
   },
   publishToPypi: {
     distName: 'zap-cdk',
     module: 'zap_cdk',
+    
   },
   publishToNuget: {
     dotNetNamespace: 'com.mockholm.zap.cdk',
