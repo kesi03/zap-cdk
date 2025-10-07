@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import * as yaml from 'js-yaml';
 import { Construct } from 'constructs';
+import * as yaml from 'js-yaml';
 
 /**
  * The main application construct that aggregates all child constructs
@@ -27,8 +27,8 @@ export class App extends Construct {
     const aggregated: Record<string, any> = {};
 
     for (const child of this.node.children) {
-      if ('synth' in child && typeof child['synth'] === 'function') {
-        const yamlContent = child['synth']();
+      if ('synth' in child && typeof child.synth === 'function') {
+        const yamlContent = child.synth();
         aggregated[child.node.id] = yaml.load(yamlContent);
       }
     }

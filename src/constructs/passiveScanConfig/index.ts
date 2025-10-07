@@ -19,7 +19,7 @@ class PassiveScanConfig extends Construct {
 
   /** Creates an instance of PassiveScanConfig.
    *
-   * @param {Construct} scope - The scope in which this construct is defined.   
+   * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
    * @param {PassiveScanConfigProps} props - The properties of the passive scan configuration.
    */

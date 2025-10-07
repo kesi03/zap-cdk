@@ -17,7 +17,7 @@ class GraphQLConfig extends Construct {
   config: IGraphQL;
 
   /** Creates an instance of GraphQLConfig.
-   * 
+   *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
    * @param {GraphQLProps} props - The properties of the GraphQL configuration.

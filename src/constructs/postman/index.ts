@@ -17,7 +17,7 @@ class PostmanConfig extends Construct {
   config: IPostman;
 
   /** Creates an instance of PostmanConfig.
-   * 
+   *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
    * @param {PostmanProps} props - The properties of the Postman configuration.
@@ -34,7 +34,7 @@ class PostmanConfig extends Construct {
   }
 
   /** Converts the Postman configuration to YAML format.
-   * 
+   *
    * @returns {any} The Postman configuration in YAML format.
    */
   toYaml() {

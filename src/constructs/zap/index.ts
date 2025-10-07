@@ -10,7 +10,7 @@ import { IZap } from '../../models/zap';
  */
 class Zap extends Construct {
   config: IZap;
-  /** 
+  /**
    * Creates an instance of Zap.
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
