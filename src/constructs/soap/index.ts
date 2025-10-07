@@ -3,6 +3,7 @@ import { ISOAP } from '../../models/soap'; // Adjust the import path as necessar
 
 /**
  * Properties for the SOAPConfig construct.
+ * @interface SOAPProps
  */
 interface SOAPProps {
   soap: ISOAP; // Ensure that the soap property matches the ISOAPParameters interface

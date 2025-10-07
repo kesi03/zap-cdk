@@ -1,47 +1,34 @@
-import { Construct } from 'constructs';
+import * as fs from 'fs';
+import * as path from 'path';
 import * as yaml from 'js-yaml';
-import { IZap } from './models/zap';
+import { Construct } from 'constructs';
 
-/**
- * Class representing the ZAP (Zed Attack Proxy) construct.
- *
- * @class Zap
- * @extends {Construct}
- */
-class Zap extends Construct {
-  config: IZap;
-  
-  /**
-   * Creates an instance of Zap.
-   *
-   * @param {Construct} scope - The scope in which this construct is defined.
-   * @param {string} id - The ID of the construct.
-   * @param {IZap} props - The properties of the ZAP construct.
-   */
-  constructor(scope: Construct, id: string, props: IZap) {
-    super(scope, id);
-    this.config = props;
+export class App extends Construct {
+  constructor() {
+    super(undefined as any, 'App');
   }
 
   /**
-   * Converts the ZAP configuration to YAML format.
-   *
-   * @returns {any} The ZAP configuration in YAML format.
+   * Synthesizes all child constructs into a single YAML file.
+   * Each construct must implement a `synth()` method.
    */
-  toYaml() {
-    return this.config;
-  }
+  synth(outputDir: string = './zap-out', fileName: string = 'zap.yaml'): void {
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
-  /**
-   * Synthesizes the ZAP construct into a YAML representation.
-   *
-   * @returns {string} The YAML representation of the ZAP construct.
-   */
-  synth(): string {
-    // Convert the configuration to YAML
-    const yamlOutput = this.toYaml();
-    return yaml.dump(yamlOutput);
+    const aggregated: Record<string, any> = {};
+
+    for (const child of this.node.children) {
+      if ('synth' in child && typeof child['synth'] === 'function') {
+        const yamlContent = child['synth']();
+        aggregated[child.node.id] = yaml.load(yamlContent);
+      }
+    }
+
+    const finalYaml = yaml.dump(aggregated);
+    const filePath = path.join(outputDir, fileName);
+    fs.writeFileSync(filePath, finalYaml, 'utf8');
+    console.log(`✅ Synthesized ${filePath}`);
   }
 }
-
-export { Zap };
