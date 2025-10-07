@@ -3,7 +3,14 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { Construct } from 'constructs';
 
+/**
+ * The main application construct that aggregates all child constructs
+ * and synthesizes them into a single YAML file.
+ */
 export class App extends Construct {
+  /**
+   * Initializes the App construct.
+   */
   constructor() {
     super(undefined as any, 'App');
   }
