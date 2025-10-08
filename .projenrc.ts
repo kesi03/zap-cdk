@@ -7,6 +7,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   jsiiVersion: '~5.8.0',
   name: 'zap-cdk',
   projenrcTs: true,
+  release: true,
+  releaseToNpm: true,
   repositoryUrl: 'https://github.com/kesi03/zap-cdk',
   bundledDeps: [
     'js-yaml', // Add js-yaml as a dependency
