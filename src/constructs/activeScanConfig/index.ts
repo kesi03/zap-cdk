@@ -1,7 +1,13 @@
 import { Construct } from 'constructs';
 import { IActiveScanConfig } from '../../models/activeScanConfig';
 
-interface ActiveScanConfigProps {
+/**
+ * Properties for the ActiveScanConfig construct.
+ * @interface IActiveScanConfigProps
+ * @property {IActiveScanConfig} activeScanConfig - The active scan configuration.
+ *
+ */
+export interface IActiveScanConfigProps {
   activeScanConfig: IActiveScanConfig; // Ensure that the activeScanConfig property matches the IActiveScanConfig interface
 }
 
@@ -11,7 +17,7 @@ interface ActiveScanConfigProps {
  * @class ActiveScanConfig
  * @extends {Construct}
  */
-class ActiveScanConfig extends Construct {
+export class ActiveScanConfig extends Construct {
 
   /** The active scan configuration properties. */
   config: IActiveScanConfig;
@@ -21,9 +27,9 @@ class ActiveScanConfig extends Construct {
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {ActiveScanConfigProps} props - The properties of the active scan configuration.
+   * @param {IActiveScanConfigProps} props - The properties of the active scan configuration.
    */
-  constructor(scope: Construct, id: string, props: ActiveScanConfigProps) {
+  constructor(scope: Construct, id: string, props: IActiveScanConfigProps) {
     super(scope, id);
 
     // Validate that props.activeScanConfig is provided
@@ -43,5 +49,3 @@ class ActiveScanConfig extends Construct {
     return this.config;
   }
 }
-
-export { ActiveScanConfig };

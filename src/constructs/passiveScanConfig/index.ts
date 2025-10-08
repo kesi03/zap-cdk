@@ -3,8 +3,10 @@ import { IPassiveScanConfig } from '../../models/passiveScanConfig';
 
 /**
  * Properties for the PassiveScanConfig construct.
+ * @interface IPassiveScanConfigProps
+ * @property {IPassiveScanConfig} passiveScanConfig - The passive scan configuration.
  */
-interface PassiveScanConfigProps {
+export interface IPassiveScanConfigProps {
   passiveScanConfig: IPassiveScanConfig; // Ensure that the passiveScanConfig property matches the IPassiveScanConfig interface
 }
 
@@ -14,16 +16,16 @@ interface PassiveScanConfigProps {
  * @class PassiveScanConfig
  * @extends {Construct}
  */
-class PassiveScanConfig extends Construct {
+export class PassiveScanConfig extends Construct {
   config: IPassiveScanConfig;
 
   /** Creates an instance of PassiveScanConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {PassiveScanConfigProps} props - The properties of the passive scan configuration.
+   * @param {IPassiveScanConfigProps} props - The properties of the passive scan configuration.
    */
-  constructor(scope: Construct, id: string, props: PassiveScanConfigProps) {
+  constructor(scope: Construct, id: string, props: IPassiveScanConfigProps) {
     super(scope, id);
 
     // Validate that props.passiveScanConfig is provided
@@ -42,4 +44,3 @@ class PassiveScanConfig extends Construct {
     return this.config;
   }
 }
-export { PassiveScanConfig };

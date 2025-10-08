@@ -8,7 +8,7 @@ import { IZap } from '../../models/zap';
  * @class ZapConfig
  * @extends {Construct}
  */
-class Zap extends Construct {
+export class ZapConfig extends Construct {
   config: IZap;
   /**
    * Creates an instance of Zap.
@@ -39,5 +39,3 @@ class Zap extends Construct {
     return yaml.dump(yamlOutput);
   }
 }
-
-export { Zap };

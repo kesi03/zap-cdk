@@ -3,8 +3,10 @@ import { IReport } from '../../models/report'; // Adjust the import path as nece
 
 /**
  * Properties for the ReportConfig construct.
+ * @interface IReportProps
+ * @property {IReport} report - The report configuration.
  */
-interface ReportProps {
+export interface IReportProps {
   report: IReport; // Ensure that the report property matches the IReportParameters interface
 }
 
@@ -14,16 +16,16 @@ interface ReportProps {
  * @class ReportConfig
  * @extends {Construct}
  */
-class ReportConfig extends Construct {
+export class ReportConfig extends Construct {
   config: IReport;
 
   /** Creates an instance of ReportConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {ReportProps} props - The properties of the report configuration.
+   * @param {IReportProps} props - The properties of the report configuration.
    */
-  constructor(scope: Construct, id: string, props: ReportProps) {
+  constructor(scope: Construct, id: string, props: IReportProps) {
     super(scope, id);
 
     // Validate that props.report is provided
@@ -43,4 +45,3 @@ class ReportConfig extends Construct {
   }
 }
 
-export { ReportConfig };

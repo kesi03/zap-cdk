@@ -3,8 +3,10 @@ import { IExitStatus } from '../../models/exitStatus'; // Adjust the import path
 
 /**
  * Properties for the ExitStatusConfig construct.
+ * @interface IExitStatusProps
+ * @property {IExitStatus} exitStatus - The exit status configuration.
  */
-interface ExitStatusProps {
+export interface IExitStatusProps {
   exitStatus: IExitStatus; // Ensure that the exitStatus property matches the IExitStatus interface
 }
 
@@ -14,7 +16,7 @@ interface ExitStatusProps {
  * @class ExitStatusConfig
  * @extends {Construct}
  */
-class ExitStatusConfig extends Construct {
+export class ExitStatusConfig extends Construct {
   config: IExitStatus;
 
   /**
@@ -22,9 +24,9 @@ class ExitStatusConfig extends Construct {
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {ExitStatusProps} props - The properties of the exit status configuration.
+   * @param {IExitStatusProps} props - The properties of the exit status configuration.
    */
-  constructor(scope: Construct, id: string, props: ExitStatusProps) {
+  constructor(scope: Construct, id: string, props: IExitStatusProps) {
     super(scope, id);
 
     // Validate that props.exitStatus is provided
@@ -44,4 +46,3 @@ class ExitStatusConfig extends Construct {
     return this.config;
   }
 }
-export { ExitStatusConfig };

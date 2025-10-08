@@ -3,9 +3,10 @@ import { ISoap } from '../../models/soap'; // Adjust the import path as necessar
 
 /**
  * Properties for the SOAPConfig construct.
- * @interface SOAPProps
+ * @interface ISoapProps
+ * @property {ISoap} soap - The SOAP configuration.
  */
-interface SOAPProps {
+export interface ISoapProps {
   soap: ISoap; // Ensure that the soap property matches the ISOAPParameters interface
 }
 
@@ -15,10 +16,15 @@ interface SOAPProps {
  * @class SOAPConfig
  * @extends {Construct}
  */
-class SOAPConfig extends Construct {
+export class SOAPConfig extends Construct {
   config: ISoap;
 
-  constructor(scope: Construct, id: string, props: SOAPProps) {
+  /** Creates an instance of SOAPConfig.
+   * @param {Construct} scope - The scope in which this construct is defined.
+   * @param {string} id - The ID of the construct.
+   * @param {ISoapProps} props - The properties of the SOAP configuration.
+   */
+  constructor(scope: Construct, id: string, props: ISoapProps) {
     super(scope, id);
 
     // Validate that props.soap is provided
@@ -38,4 +44,3 @@ class SOAPConfig extends Construct {
   }
 }
 
-export { SOAPConfig };

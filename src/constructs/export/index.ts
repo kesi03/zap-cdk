@@ -3,8 +3,10 @@ import { IExport } from '../../models/export'; // Adjust the import path as nece
 
 /**
  * Properties for the ExportConfig construct.
+ * @interface IExportProps
+ * @property {IExport} export - The export configuration.
  */
-interface ExportProps {
+export interface IExportProps {
   export: IExport; // Ensure that the export property matches the IExportParameters interface
 }
 
@@ -14,16 +16,16 @@ interface ExportProps {
  * @class ExportConfig
  * @extends {Construct}
  */
-class ExportConfig extends Construct {
+export class ExportConfig extends Construct {
   config: IExport;
 
   /** Creates an instance of ExportConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {ExportProps} props - The properties of the export configuration.
+   * @param {IExportProps} props - The properties of the export configuration.
    */
-  constructor(scope: Construct, id: string, props: ExportProps) {
+  constructor(scope: Construct, id: string, props: IExportProps) {
     super(scope, id);
 
     // Validate that props.export is provided
@@ -44,4 +46,3 @@ class ExportConfig extends Construct {
   }
 }
 
-export { ExportConfig };

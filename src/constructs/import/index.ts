@@ -3,8 +3,10 @@ import { IImport } from '../../models/import'; // Adjust the import path as nece
 
 /**
  * Properties for the ImportConfig construct.
+ * @interface IImportProps
+ * @property {IImport} import - The import configuration.
  */
-interface ImportProps {
+export interface IImportProps {
   import: IImport; // Ensure that the import property matches the IImportParameters interface
 }
 
@@ -14,16 +16,16 @@ interface ImportProps {
  * @class ImportConfig
  * @extends {Construct}
  */
-class ImportConfig extends Construct {
+export class ImportConfig extends Construct {
   config: IImport;
 
   /** Creates an instance of ImportConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {ImportProps} props - The properties of the import configuration.
+   * @param {IImportProps} props - The properties of the import configuration.
    */
-  constructor(scope: Construct, id: string, props: ImportProps) {
+  constructor(scope: Construct, id: string, props: IImportProps) {
     super(scope, id);
 
     // Validate that props.import is provided
@@ -44,4 +46,3 @@ class ImportConfig extends Construct {
   }
 }
 
-export { ImportConfig };

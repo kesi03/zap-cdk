@@ -7,7 +7,7 @@ import { IActiveScanJob } from '../../models/activeScan';
  * @class ActiveScanJob
  * @extends {Construct}
  */
-class ActiveScanJob extends Construct {
+export class ActiveScanJob extends Construct {
   /** The active scan job properties. */
   job: IActiveScanJob;
 
@@ -39,5 +39,3 @@ class ActiveScanJob extends Construct {
     return this.job;
   }
 }
-
-export { ActiveScanJob };

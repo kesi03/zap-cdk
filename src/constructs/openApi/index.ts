@@ -3,8 +3,11 @@ import { IOpenAPI } from '../../models/openApi'; // Adjust the import path as ne
 
 /**
  * Properties for the OpenAPIConfig construct.
+ *
+ * @interface IOpenAPIProps
+ * @property {IOpenAPI} openapi - The OpenAPI configuration.
  */
-interface OpenAPIProps {
+export interface IOpenAPIProps {
   openapi: IOpenAPI; // Ensure that the openapi property matches the IOpenAPIParameters interface
 }
 
@@ -14,16 +17,16 @@ interface OpenAPIProps {
  * @class OpenAPIConfig
  * @extends {Construct}
  */
-class OpenAPIConfig extends Construct {
+export class OpenAPIConfig extends Construct {
   config: IOpenAPI;
 
   /** Creates an instance of OpenAPIConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {OpenAPIProps} props - The properties of the OpenAPI configuration.
+   * @param {IOpenAPIProps} props - The properties of the OpenAPI configuration.
    */
-  constructor(scope: Construct, id: string, props: OpenAPIProps) {
+  constructor(scope: Construct, id: string, props: IOpenAPIProps) {
     super(scope, id);
 
     // Validate that props.openapi is provided
@@ -39,4 +42,3 @@ class OpenAPIConfig extends Construct {
   }
 }
 
-export { OpenAPIConfig };

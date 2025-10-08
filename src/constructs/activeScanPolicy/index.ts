@@ -3,8 +3,10 @@ import { IActiveScanPolicy } from '../../models/activeScanPolicy'; // Adjust the
 
 /**
  * Properties for the ActiveScanPolicyConfig construct.
+ * @interface IActiveScanPolicyProps
+ * @property {IActiveScanPolicy} activeScanPolicy - The active scan policy configuration.
  */
-interface ActiveScanPolicyProps {
+export interface IActiveScanPolicyProps {
   activeScanPolicy: IActiveScanPolicy; // Ensure that the activeScanPolicy property matches the IActiveScanPolicy interface
 }
 
@@ -14,7 +16,7 @@ interface ActiveScanPolicyProps {
  * @class ActiveScanPolicyConfig
  * @extends {Construct}
  */
-class ActiveScanPolicyConfig extends Construct {
+export class ActiveScanPolicyConfig extends Construct {
   config: IActiveScanPolicy;
 
   /**
@@ -22,9 +24,9 @@ class ActiveScanPolicyConfig extends Construct {
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {ActiveScanPolicyProps} props - The properties of the active scan policy configuration.
+   * @param {IActiveScanPolicyProps} props - The properties of the active scan policy configuration.
    */
-  constructor(scope: Construct, id: string, props: ActiveScanPolicyProps) {
+  constructor(scope: Construct, id: string, props: IActiveScanPolicyProps) {
     super(scope, id);
 
     // Validate that props.activeScanPolicy is provided
@@ -44,4 +46,3 @@ class ActiveScanPolicyConfig extends Construct {
     return this.config;
   }
 }
-export { ActiveScanPolicyConfig };

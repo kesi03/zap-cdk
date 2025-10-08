@@ -3,8 +3,10 @@ import { IDelay } from '../../models/delay';
 
 /**
  * Properties for the DelayConfig construct.
+ * @interface IDelayProps
+ * @property {IDelay} delay - The delay configuration.
  */
-interface DelayProps {
+export interface IDelayProps {
   delay: IDelay; // Ensure that the delay property matches the IDelay interface
 }
 
@@ -14,7 +16,7 @@ interface DelayProps {
  * @class DelayConfig
  * @extends {Construct}
  */
-class DelayConfig extends Construct {
+export class DelayConfig extends Construct {
   config: IDelay;
 
   /**
@@ -22,9 +24,9 @@ class DelayConfig extends Construct {
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {DelayProps} props - The properties of the delay configuration.
+   * @param {IDelayProps} props - The properties of the delay configuration.
    */
-  constructor(scope: Construct, id: string, props: DelayProps) {
+  constructor(scope: Construct, id: string, props: IDelayProps) {
     super(scope, id);
 
     // Validate that props.delay is provided
@@ -44,4 +46,3 @@ class DelayConfig extends Construct {
     return this.config;
   }
 }
-export { DelayConfig };

@@ -15,7 +15,7 @@ export interface SpiderProps {
  * @class SpiderConfig
  * @extends {Construct}
  */
-class SpiderConfig extends Construct {
+export class SpiderConfig extends Construct {
   config: ISpider;
 
   /** Creates an instance of SpiderConfig.
@@ -43,4 +43,3 @@ class SpiderConfig extends Construct {
     return this.config;
   }
 }
-export { SpiderConfig };

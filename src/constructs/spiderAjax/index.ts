@@ -3,8 +3,10 @@ import { ISpiderAjax } from '../../models/spiderAjax'; // Adjust the import path
 
 /**
  * Properties for the SpiderAjaxConfig construct.
+ * @interface ISpiderAjaxProps
+ * @property {ISpiderAjax} spiderAjax - The SpiderAjax configuration.
  */
-interface SpiderAjaxProps {
+export interface ISpiderAjaxProps {
   spiderAjax: ISpiderAjax; // Ensure that the spiderAjax property matches the ISpiderAjaxParameters interface
 }
 
@@ -13,17 +15,18 @@ interface SpiderAjaxProps {
  *
  * @class SpiderAjaxConfig
  * @extends {Construct}
+ *
  */
-class SpiderAjaxConfig extends Construct {
+export class SpiderAjaxConfig extends Construct {
   config: ISpiderAjax;
 
   /** Creates an instance of SpiderAjaxConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {SpiderAjaxProps} props - The properties of the SpiderAjax configuration.
+   * @param {ISpiderAjaxProps} props - The properties of the SpiderAjax configuration.
    */
-  constructor(scope: Construct, id: string, props: SpiderAjaxProps) {
+  constructor(scope: Construct, id: string, props: ISpiderAjaxProps) {
     super(scope, id);
 
     // Validate that props.spiderAjax is provided
@@ -42,5 +45,3 @@ class SpiderAjaxConfig extends Construct {
     return this.config;
   }
 }
-
-export { SpiderAjaxConfig };

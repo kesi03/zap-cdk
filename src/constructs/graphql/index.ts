@@ -3,8 +3,10 @@ import { IGraphQL } from '../../models/graphql'; // Adjust the import path as ne
 
 /**
  * Properties for the GraphQLConfig construct.
+ * @interface IGraphQLProps
+ * @property {IGraphQL} graphql - The GraphQL configuration.
  */
-interface GraphQLProps {
+export interface IGraphQLProps {
   graphql: IGraphQL; // Ensure that the graphql property matches the IGraphQLParameters interface
 }
 
@@ -13,16 +15,16 @@ interface GraphQLProps {
  * @class GraphQLConfig
  * @extends {Construct}
  */
-class GraphQLConfig extends Construct {
+export class GraphQLConfig extends Construct {
   config: IGraphQL;
 
   /** Creates an instance of GraphQLConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {GraphQLProps} props - The properties of the GraphQL configuration.
+   * @param {IGraphQLProps} props - The properties of the GraphQL configuration.
    */
-  constructor(scope: Construct, id: string, props: GraphQLProps) {
+  constructor(scope: Construct, id: string, props: IGraphQLProps) {
     super(scope, id);
 
     // Validate that props.graphql is provided
@@ -37,5 +39,3 @@ class GraphQLConfig extends Construct {
     return this.config;
   }
 }
-
-export { GraphQLConfig };

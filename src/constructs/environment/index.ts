@@ -3,8 +3,10 @@ import { IEnvironment } from '../../models/environment'; // Adjust the import pa
 
 /**
  * Properties for the EnvironmentConfig construct.
+ * @interface IEnvironmentProps
+ * @property {IEnvironment} environment - The environment configuration.
  */
-interface EnvironmentProps {
+export interface IEnvironmentProps {
   environment: IEnvironment; // Ensure that the environment property matches the IEnvironment interface
 }
 
@@ -14,7 +16,7 @@ interface EnvironmentProps {
  * @class EnvironmentConfig
  * @extends {Construct}
  */
-class EnvironmentConfig extends Construct {
+export class EnvironmentConfig extends Construct {
   config: IEnvironment;
 
   /**
@@ -22,9 +24,9 @@ class EnvironmentConfig extends Construct {
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {EnvironmentProps} props - The properties of the environment configuration.
+   * @param {IEnvironmentProps} props - The properties of the environment configuration.
    */
-  constructor(scope: Construct, id: string, props: EnvironmentProps) {
+  constructor(scope: Construct, id: string, props: IEnvironmentProps) {
     super(scope, id);
 
     // Validate that props.environment is provided
@@ -44,4 +46,3 @@ class EnvironmentConfig extends Construct {
     return this.config;
   }
 }
-export { EnvironmentConfig };

@@ -3,8 +3,10 @@ import { IPostman } from '../../models/postman'; // Adjust the import path as ne
 
 /**
  * Properties for the PostmanConfig construct.
+ * @interface IPostmanProps
+ * @property {IPostman} postman - The Postman configuration.
  */
-interface PostmanProps {
+export interface IPostmanProps {
   postman: IPostman; // Ensure that the postman property matches the IPostmanParameters interface
 }
 
@@ -13,16 +15,16 @@ interface PostmanProps {
  * @class PostmanConfig
  * @extends {Construct}
  */
-class PostmanConfig extends Construct {
+export class PostmanConfig extends Construct {
   config: IPostman;
 
   /** Creates an instance of PostmanConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {PostmanProps} props - The properties of the Postman configuration.
+   * @param {IPostmanProps} props - The properties of the Postman configuration.
    */
-  constructor(scope: Construct, id: string, props: PostmanProps) {
+  constructor(scope: Construct, id: string, props: IPostmanProps) {
     super(scope, id);
 
     // Validate that props.postman is provided
@@ -42,4 +44,3 @@ class PostmanConfig extends Construct {
   }
 }
 
-export { PostmanConfig };

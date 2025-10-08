@@ -2,6 +2,391 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
+### ActiveScanConfig <a name="ActiveScanConfig" id="zap-cdk.ActiveScanConfig"></a>
+
+Class representing the active scan configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanConfig.Initializer"></a>
+
+```typescript
+import { ActiveScanConfig } from 'zap-cdk'
+
+new ActiveScanConfig(scope: Construct, id: string, props: IActiveScanConfigProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ActiveScanConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ActiveScanConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IActiveScanConfigProps">IActiveScanConfigProps</a></code> | - The properties of the active scan configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ActiveScanConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ActiveScanConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ActiveScanConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanConfigProps">IActiveScanConfigProps</a>
+
+The properties of the active scan configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ActiveScanConfig.toYaml">toYaml</a></code> | Converts the active scan configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ActiveScanConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ActiveScanConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IActiveScanConfig
+```
+
+Converts the active scan configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ActiveScanConfig.isConstruct"></a>
+
+```typescript
+import { ActiveScanConfig } from 'zap-cdk'
+
+ActiveScanConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ActiveScanConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ActiveScanConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a></code> | The active scan configuration properties. |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ActiveScanConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ActiveScanConfig.property.config"></a>
+
+```typescript
+public readonly config: IActiveScanConfig;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a>
+
+The active scan configuration properties.
+
+---
+
+
+### ActiveScanJob <a name="ActiveScanJob" id="zap-cdk.ActiveScanJob"></a>
+
+Class representing an active scan job.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanJob.Initializer"></a>
+
+```typescript
+import { ActiveScanJob } from 'zap-cdk'
+
+new ActiveScanJob(scope: Construct, id: string, props: IActiveScanJob)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanJob.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ActiveScanJob.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ActiveScanJob.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IActiveScanJob">IActiveScanJob</a></code> | - The properties of the active scan job. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ActiveScanJob.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ActiveScanJob.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ActiveScanJob.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanJob">IActiveScanJob</a>
+
+The properties of the active scan job.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ActiveScanJob.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ActiveScanJob.toYaml">toYaml</a></code> | Converts the active scan job to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ActiveScanJob.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ActiveScanJob.toYaml"></a>
+
+```typescript
+public toYaml(): IActiveScanJob
+```
+
+Converts the active scan job to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ActiveScanJob.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ActiveScanJob.isConstruct"></a>
+
+```typescript
+import { ActiveScanJob } from 'zap-cdk'
+
+ActiveScanJob.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ActiveScanJob.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanJob.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ActiveScanJob.property.job">job</a></code> | <code><a href="#zap-cdk.IActiveScanJob">IActiveScanJob</a></code> | The active scan job properties. |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ActiveScanJob.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `job`<sup>Required</sup> <a name="job" id="zap-cdk.ActiveScanJob.property.job"></a>
+
+```typescript
+public readonly job: IActiveScanJob;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanJob">IActiveScanJob</a>
+
+The active scan job properties.
+
+---
+
+
+### ActiveScanPolicyConfig <a name="ActiveScanPolicyConfig" id="zap-cdk.ActiveScanPolicyConfig"></a>
+
+Class representing the active scan policy configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanPolicyConfig.Initializer"></a>
+
+```typescript
+import { ActiveScanPolicyConfig } from 'zap-cdk'
+
+new ActiveScanPolicyConfig(scope: Construct, id: string, props: IActiveScanPolicyProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IActiveScanPolicyProps">IActiveScanPolicyProps</a></code> | - The properties of the active scan policy configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ActiveScanPolicyConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ActiveScanPolicyConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ActiveScanPolicyConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicyProps">IActiveScanPolicyProps</a>
+
+The properties of the active scan policy configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.toYaml">toYaml</a></code> | Converts the active scan policy configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ActiveScanPolicyConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ActiveScanPolicyConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IActiveScanPolicy
+```
+
+Converts the active scan policy configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ActiveScanPolicyConfig.isConstruct"></a>
+
+```typescript
+import { ActiveScanPolicyConfig } from 'zap-cdk'
+
+ActiveScanPolicyConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ActiveScanPolicyConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ActiveScanPolicyConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ActiveScanPolicyConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ActiveScanPolicyConfig.property.config"></a>
+
+```typescript
+public readonly config: IActiveScanPolicy;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a>
+
+---
+
+
 ### App <a name="App" id="zap-cdk.App"></a>
 
 The main application construct that aggregates all child constructs and synthesizes them into a single YAML file.
@@ -101,6 +486,2170 @@ public readonly node: Node;
 - *Type:* constructs.Node
 
 The tree node.
+
+---
+
+
+### DelayConfig <a name="DelayConfig" id="zap-cdk.DelayConfig"></a>
+
+Class representing the delay configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.DelayConfig.Initializer"></a>
+
+```typescript
+import { DelayConfig } from 'zap-cdk'
+
+new DelayConfig(scope: Construct, id: string, props: IDelayProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.DelayConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.DelayConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.DelayConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IDelayProps">IDelayProps</a></code> | - The properties of the delay configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.DelayConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.DelayConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.DelayConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IDelayProps">IDelayProps</a>
+
+The properties of the delay configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.DelayConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.DelayConfig.toYaml">toYaml</a></code> | Converts the delay configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.DelayConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.DelayConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IDelay
+```
+
+Converts the delay configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.DelayConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.DelayConfig.isConstruct"></a>
+
+```typescript
+import { DelayConfig } from 'zap-cdk'
+
+DelayConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.DelayConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.DelayConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.DelayConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IDelay">IDelay</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.DelayConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.DelayConfig.property.config"></a>
+
+```typescript
+public readonly config: IDelay;
+```
+
+- *Type:* <a href="#zap-cdk.IDelay">IDelay</a>
+
+---
+
+
+### EnvironmentConfig <a name="EnvironmentConfig" id="zap-cdk.EnvironmentConfig"></a>
+
+Class representing the environment configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.EnvironmentConfig.Initializer"></a>
+
+```typescript
+import { EnvironmentConfig } from 'zap-cdk'
+
+new EnvironmentConfig(scope: Construct, id: string, props: IEnvironmentProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.EnvironmentConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.EnvironmentConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.EnvironmentConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IEnvironmentProps">IEnvironmentProps</a></code> | - The properties of the environment configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.EnvironmentConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.EnvironmentConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.EnvironmentConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IEnvironmentProps">IEnvironmentProps</a>
+
+The properties of the environment configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.EnvironmentConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.EnvironmentConfig.toYaml">toYaml</a></code> | Converts the environment configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.EnvironmentConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.EnvironmentConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IEnvironment
+```
+
+Converts the environment configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.EnvironmentConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.EnvironmentConfig.isConstruct"></a>
+
+```typescript
+import { EnvironmentConfig } from 'zap-cdk'
+
+EnvironmentConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.EnvironmentConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.EnvironmentConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.EnvironmentConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IEnvironment">IEnvironment</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.EnvironmentConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.EnvironmentConfig.property.config"></a>
+
+```typescript
+public readonly config: IEnvironment;
+```
+
+- *Type:* <a href="#zap-cdk.IEnvironment">IEnvironment</a>
+
+---
+
+
+### ExitStatusConfig <a name="ExitStatusConfig" id="zap-cdk.ExitStatusConfig"></a>
+
+Class representing the exit status configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ExitStatusConfig.Initializer"></a>
+
+```typescript
+import { ExitStatusConfig } from 'zap-cdk'
+
+new ExitStatusConfig(scope: Construct, id: string, props: IExitStatusProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExitStatusConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ExitStatusConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ExitStatusConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IExitStatusProps">IExitStatusProps</a></code> | - The properties of the exit status configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ExitStatusConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ExitStatusConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ExitStatusConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IExitStatusProps">IExitStatusProps</a>
+
+The properties of the exit status configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ExitStatusConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ExitStatusConfig.toYaml">toYaml</a></code> | Converts the exit status configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ExitStatusConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ExitStatusConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IExitStatus
+```
+
+Converts the exit status configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ExitStatusConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ExitStatusConfig.isConstruct"></a>
+
+```typescript
+import { ExitStatusConfig } from 'zap-cdk'
+
+ExitStatusConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ExitStatusConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExitStatusConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ExitStatusConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IExitStatus">IExitStatus</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ExitStatusConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ExitStatusConfig.property.config"></a>
+
+```typescript
+public readonly config: IExitStatus;
+```
+
+- *Type:* <a href="#zap-cdk.IExitStatus">IExitStatus</a>
+
+---
+
+
+### ExportConfig <a name="ExportConfig" id="zap-cdk.ExportConfig"></a>
+
+Class representing the export configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ExportConfig.Initializer"></a>
+
+```typescript
+import { ExportConfig } from 'zap-cdk'
+
+new ExportConfig(scope: Construct, id: string, props: IExportProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExportConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ExportConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ExportConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IExportProps">IExportProps</a></code> | - The properties of the export configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ExportConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ExportConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ExportConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IExportProps">IExportProps</a>
+
+The properties of the export configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ExportConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ExportConfig.toYaml">toYaml</a></code> | Converts the export configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ExportConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ExportConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IExport
+```
+
+Converts the export configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ExportConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ExportConfig.isConstruct"></a>
+
+```typescript
+import { ExportConfig } from 'zap-cdk'
+
+ExportConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ExportConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExportConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ExportConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IExport">IExport</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ExportConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ExportConfig.property.config"></a>
+
+```typescript
+public readonly config: IExport;
+```
+
+- *Type:* <a href="#zap-cdk.IExport">IExport</a>
+
+---
+
+
+### GraphQLConfig <a name="GraphQLConfig" id="zap-cdk.GraphQLConfig"></a>
+
+Class representing the GraphQL configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.GraphQLConfig.Initializer"></a>
+
+```typescript
+import { GraphQLConfig } from 'zap-cdk'
+
+new GraphQLConfig(scope: Construct, id: string, props: IGraphQLProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.GraphQLConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.GraphQLConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.GraphQLConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IGraphQLProps">IGraphQLProps</a></code> | - The properties of the GraphQL configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.GraphQLConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.GraphQLConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.GraphQLConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IGraphQLProps">IGraphQLProps</a>
+
+The properties of the GraphQL configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.GraphQLConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.GraphQLConfig.toYaml">toYaml</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.GraphQLConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.GraphQLConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IGraphQL
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.GraphQLConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.GraphQLConfig.isConstruct"></a>
+
+```typescript
+import { GraphQLConfig } from 'zap-cdk'
+
+GraphQLConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.GraphQLConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.GraphQLConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.GraphQLConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IGraphQL">IGraphQL</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.GraphQLConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.GraphQLConfig.property.config"></a>
+
+```typescript
+public readonly config: IGraphQL;
+```
+
+- *Type:* <a href="#zap-cdk.IGraphQL">IGraphQL</a>
+
+---
+
+
+### ImportConfig <a name="ImportConfig" id="zap-cdk.ImportConfig"></a>
+
+Class representing the import configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ImportConfig.Initializer"></a>
+
+```typescript
+import { ImportConfig } from 'zap-cdk'
+
+new ImportConfig(scope: Construct, id: string, props: IImportProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ImportConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ImportConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ImportConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IImportProps">IImportProps</a></code> | - The properties of the import configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ImportConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ImportConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ImportConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IImportProps">IImportProps</a>
+
+The properties of the import configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ImportConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ImportConfig.toYaml">toYaml</a></code> | Converts the import configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ImportConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ImportConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IImport
+```
+
+Converts the import configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ImportConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ImportConfig.isConstruct"></a>
+
+```typescript
+import { ImportConfig } from 'zap-cdk'
+
+ImportConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ImportConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ImportConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ImportConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IImport">IImport</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ImportConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ImportConfig.property.config"></a>
+
+```typescript
+public readonly config: IImport;
+```
+
+- *Type:* <a href="#zap-cdk.IImport">IImport</a>
+
+---
+
+
+### OpenAPIConfig <a name="OpenAPIConfig" id="zap-cdk.OpenAPIConfig"></a>
+
+Class representing the OpenAPI configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.OpenAPIConfig.Initializer"></a>
+
+```typescript
+import { OpenAPIConfig } from 'zap-cdk'
+
+new OpenAPIConfig(scope: Construct, id: string, props: IOpenAPIProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.OpenAPIConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.OpenAPIConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.OpenAPIConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IOpenAPIProps">IOpenAPIProps</a></code> | - The properties of the OpenAPI configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.OpenAPIConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.OpenAPIConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.OpenAPIConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IOpenAPIProps">IOpenAPIProps</a>
+
+The properties of the OpenAPI configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.OpenAPIConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.OpenAPIConfig.toYaml">toYaml</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.OpenAPIConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.OpenAPIConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IOpenAPI
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.OpenAPIConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.OpenAPIConfig.isConstruct"></a>
+
+```typescript
+import { OpenAPIConfig } from 'zap-cdk'
+
+OpenAPIConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.OpenAPIConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.OpenAPIConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.OpenAPIConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IOpenAPI">IOpenAPI</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.OpenAPIConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.OpenAPIConfig.property.config"></a>
+
+```typescript
+public readonly config: IOpenAPI;
+```
+
+- *Type:* <a href="#zap-cdk.IOpenAPI">IOpenAPI</a>
+
+---
+
+
+### PassiveScanConfig <a name="PassiveScanConfig" id="zap-cdk.PassiveScanConfig"></a>
+
+Class representing the passive scan configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanConfig.Initializer"></a>
+
+```typescript
+import { PassiveScanConfig } from 'zap-cdk'
+
+new PassiveScanConfig(scope: Construct, id: string, props: IPassiveScanConfigProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.PassiveScanConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.PassiveScanConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IPassiveScanConfigProps">IPassiveScanConfigProps</a></code> | - The properties of the passive scan configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.PassiveScanConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.PassiveScanConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.PassiveScanConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IPassiveScanConfigProps">IPassiveScanConfigProps</a>
+
+The properties of the passive scan configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.PassiveScanConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.PassiveScanConfig.toYaml">toYaml</a></code> | Converts the passive scan configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.PassiveScanConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.PassiveScanConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IPassiveScanConfig
+```
+
+Converts the passive scan configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.PassiveScanConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.PassiveScanConfig.isConstruct"></a>
+
+```typescript
+import { PassiveScanConfig } from 'zap-cdk'
+
+PassiveScanConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.PassiveScanConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.PassiveScanConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.PassiveScanConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.PassiveScanConfig.property.config"></a>
+
+```typescript
+public readonly config: IPassiveScanConfig;
+```
+
+- *Type:* <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a>
+
+---
+
+
+### PassiveScanWaitConfig <a name="PassiveScanWaitConfig" id="zap-cdk.PassiveScanWaitConfig"></a>
+
+Class representing the passive scan wait configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanWaitConfig.Initializer"></a>
+
+```typescript
+import { PassiveScanWaitConfig } from 'zap-cdk'
+
+new PassiveScanWaitConfig(scope: Construct, id: string, props: IPassiveScanWaitProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IPassiveScanWaitProps">IPassiveScanWaitProps</a></code> | - The properties of the passive scan wait configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.PassiveScanWaitConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.PassiveScanWaitConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.PassiveScanWaitConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IPassiveScanWaitProps">IPassiveScanWaitProps</a>
+
+The properties of the passive scan wait configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.toYaml">toYaml</a></code> | Converts the passive scan wait configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.PassiveScanWaitConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.PassiveScanWaitConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IPassiveScanWait
+```
+
+Converts the passive scan wait configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.PassiveScanWaitConfig.isConstruct"></a>
+
+```typescript
+import { PassiveScanWaitConfig } from 'zap-cdk'
+
+PassiveScanWaitConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.PassiveScanWaitConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.PassiveScanWaitConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.PassiveScanWaitConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.PassiveScanWaitConfig.property.config"></a>
+
+```typescript
+public readonly config: IPassiveScanWait;
+```
+
+- *Type:* <a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a>
+
+---
+
+
+### PostmanConfig <a name="PostmanConfig" id="zap-cdk.PostmanConfig"></a>
+
+Class representing the Postman configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.PostmanConfig.Initializer"></a>
+
+```typescript
+import { PostmanConfig } from 'zap-cdk'
+
+new PostmanConfig(scope: Construct, id: string, props: IPostmanProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PostmanConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.PostmanConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.PostmanConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IPostmanProps">IPostmanProps</a></code> | - The properties of the Postman configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.PostmanConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.PostmanConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.PostmanConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IPostmanProps">IPostmanProps</a>
+
+The properties of the Postman configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.PostmanConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.PostmanConfig.toYaml">toYaml</a></code> | Converts the Postman configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.PostmanConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.PostmanConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IPostman
+```
+
+Converts the Postman configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.PostmanConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.PostmanConfig.isConstruct"></a>
+
+```typescript
+import { PostmanConfig } from 'zap-cdk'
+
+PostmanConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.PostmanConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PostmanConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.PostmanConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IPostman">IPostman</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.PostmanConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.PostmanConfig.property.config"></a>
+
+```typescript
+public readonly config: IPostman;
+```
+
+- *Type:* <a href="#zap-cdk.IPostman">IPostman</a>
+
+---
+
+
+### ReplacerConfig <a name="ReplacerConfig" id="zap-cdk.ReplacerConfig"></a>
+
+Class representing the replacer configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ReplacerConfig.Initializer"></a>
+
+```typescript
+import { ReplacerConfig } from 'zap-cdk'
+
+new ReplacerConfig(scope: Construct, id: string, props: IReplacerProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ReplacerConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ReplacerConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ReplacerConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IReplacerProps">IReplacerProps</a></code> | - The properties of the replacer configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ReplacerConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ReplacerConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ReplacerConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IReplacerProps">IReplacerProps</a>
+
+The properties of the replacer configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ReplacerConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ReplacerConfig.toYaml">toYaml</a></code> | Converts the replacer configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ReplacerConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ReplacerConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IReplacer
+```
+
+Converts the replacer configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ReplacerConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ReplacerConfig.isConstruct"></a>
+
+```typescript
+import { ReplacerConfig } from 'zap-cdk'
+
+ReplacerConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ReplacerConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ReplacerConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ReplacerConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IReplacer">IReplacer</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ReplacerConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ReplacerConfig.property.config"></a>
+
+```typescript
+public readonly config: IReplacer;
+```
+
+- *Type:* <a href="#zap-cdk.IReplacer">IReplacer</a>
+
+---
+
+
+### ReportConfig <a name="ReportConfig" id="zap-cdk.ReportConfig"></a>
+
+Class representing the report configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ReportConfig.Initializer"></a>
+
+```typescript
+import { ReportConfig } from 'zap-cdk'
+
+new ReportConfig(scope: Construct, id: string, props: IReportProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ReportConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ReportConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ReportConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IReportProps">IReportProps</a></code> | - The properties of the report configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ReportConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ReportConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ReportConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IReportProps">IReportProps</a>
+
+The properties of the report configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ReportConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ReportConfig.toYaml">toYaml</a></code> | Converts the report configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ReportConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ReportConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IReport
+```
+
+Converts the report configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ReportConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ReportConfig.isConstruct"></a>
+
+```typescript
+import { ReportConfig } from 'zap-cdk'
+
+ReportConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ReportConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ReportConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ReportConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IReport">IReport</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ReportConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ReportConfig.property.config"></a>
+
+```typescript
+public readonly config: IReport;
+```
+
+- *Type:* <a href="#zap-cdk.IReport">IReport</a>
+
+---
+
+
+### RequestorConfig <a name="RequestorConfig" id="zap-cdk.RequestorConfig"></a>
+
+Class representing the requestor configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.RequestorConfig.Initializer"></a>
+
+```typescript
+import { RequestorConfig } from 'zap-cdk'
+
+new RequestorConfig(scope: Construct, id: string, props: IRequestorProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.RequestorConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.RequestorConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.RequestorConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IRequestorProps">IRequestorProps</a></code> | - The properties of the requestor configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.RequestorConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.RequestorConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.RequestorConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IRequestorProps">IRequestorProps</a>
+
+The properties of the requestor configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.RequestorConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.RequestorConfig.toYaml">toYaml</a></code> | Converts the requestor configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.RequestorConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.RequestorConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IRequestorParameters
+```
+
+Converts the requestor configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.RequestorConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.RequestorConfig.isConstruct"></a>
+
+```typescript
+import { RequestorConfig } from 'zap-cdk'
+
+RequestorConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.RequestorConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.RequestorConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.RequestorConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.RequestorConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.RequestorConfig.property.config"></a>
+
+```typescript
+public readonly config: IRequestorParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a>
+
+---
+
+
+### SOAPConfig <a name="SOAPConfig" id="zap-cdk.SOAPConfig"></a>
+
+Class representing the SOAP configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.SOAPConfig.Initializer"></a>
+
+```typescript
+import { SOAPConfig } from 'zap-cdk'
+
+new SOAPConfig(scope: Construct, id: string, props: ISoapProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SOAPConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.SOAPConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.SOAPConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.ISoapProps">ISoapProps</a></code> | - The properties of the SOAP configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.SOAPConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.SOAPConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.SOAPConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.ISoapProps">ISoapProps</a>
+
+The properties of the SOAP configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.SOAPConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.SOAPConfig.toYaml">toYaml</a></code> | Converts the SOAP configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.SOAPConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.SOAPConfig.toYaml"></a>
+
+```typescript
+public toYaml(): ISoap
+```
+
+Converts the SOAP configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.SOAPConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.SOAPConfig.isConstruct"></a>
+
+```typescript
+import { SOAPConfig } from 'zap-cdk'
+
+SOAPConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.SOAPConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SOAPConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.SOAPConfig.property.config">config</a></code> | <code><a href="#zap-cdk.ISoap">ISoap</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.SOAPConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.SOAPConfig.property.config"></a>
+
+```typescript
+public readonly config: ISoap;
+```
+
+- *Type:* <a href="#zap-cdk.ISoap">ISoap</a>
+
+---
+
+
+### SpiderAjaxConfig <a name="SpiderAjaxConfig" id="zap-cdk.SpiderAjaxConfig"></a>
+
+Class representing the SpiderAjax configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.SpiderAjaxConfig.Initializer"></a>
+
+```typescript
+import { SpiderAjaxConfig } from 'zap-cdk'
+
+new SpiderAjaxConfig(scope: Construct, id: string, props: ISpiderAjaxProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.ISpiderAjaxProps">ISpiderAjaxProps</a></code> | - The properties of the SpiderAjax configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.SpiderAjaxConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.SpiderAjaxConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.SpiderAjaxConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.ISpiderAjaxProps">ISpiderAjaxProps</a>
+
+The properties of the SpiderAjax configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.toYaml">toYaml</a></code> | Converts the SpiderAjax configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.SpiderAjaxConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.SpiderAjaxConfig.toYaml"></a>
+
+```typescript
+public toYaml(): ISpiderAjax
+```
+
+Converts the SpiderAjax configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.SpiderAjaxConfig.isConstruct"></a>
+
+```typescript
+import { SpiderAjaxConfig } from 'zap-cdk'
+
+SpiderAjaxConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.SpiderAjaxConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.SpiderAjaxConfig.property.config">config</a></code> | <code><a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.SpiderAjaxConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.SpiderAjaxConfig.property.config"></a>
+
+```typescript
+public readonly config: ISpiderAjax;
+```
+
+- *Type:* <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a>
+
+---
+
+
+### SpiderConfig <a name="SpiderConfig" id="zap-cdk.SpiderConfig"></a>
+
+Class representing the Spider configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.SpiderConfig.Initializer"></a>
+
+```typescript
+import { SpiderConfig } from 'zap-cdk'
+
+new SpiderConfig(scope: Construct, id: string, props: SpiderProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.SpiderConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.SpiderConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.SpiderProps">SpiderProps</a></code> | - The properties of the spider configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.SpiderConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.SpiderConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.SpiderConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.SpiderProps">SpiderProps</a>
+
+The properties of the spider configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.SpiderConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.SpiderConfig.toYaml">toYaml</a></code> | Converts the spider configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.SpiderConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.SpiderConfig.toYaml"></a>
+
+```typescript
+public toYaml(): ISpider
+```
+
+Converts the spider configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.SpiderConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.SpiderConfig.isConstruct"></a>
+
+```typescript
+import { SpiderConfig } from 'zap-cdk'
+
+SpiderConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.SpiderConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.SpiderConfig.property.config">config</a></code> | <code><a href="#zap-cdk.ISpider">ISpider</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.SpiderConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.SpiderConfig.property.config"></a>
+
+```typescript
+public readonly config: ISpider;
+```
+
+- *Type:* <a href="#zap-cdk.ISpider">ISpider</a>
+
+---
+
+
+### ZapConfig <a name="ZapConfig" id="zap-cdk.ZapConfig"></a>
+
+Class representing the Zap configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ZapConfig.Initializer"></a>
+
+```typescript
+import { ZapConfig } from 'zap-cdk'
+
+new ZapConfig(scope: Construct, id: string, props: IZap)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ZapConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ZapConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ZapConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IZap">IZap</a></code> | - The properties of the Zap configuration. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ZapConfig.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which this construct is defined.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ZapConfig.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The ID of the construct.
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ZapConfig.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#zap-cdk.IZap">IZap</a>
+
+The properties of the Zap configuration.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ZapConfig.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ZapConfig.synth">synth</a></code> | Synthesizes the Zap configuration to a YAML string. |
+| <code><a href="#zap-cdk.ZapConfig.toYaml">toYaml</a></code> | Converts the Zap configuration to YAML format. |
+
+---
+
+##### `toString` <a name="toString" id="zap-cdk.ZapConfig.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `synth` <a name="synth" id="zap-cdk.ZapConfig.synth"></a>
+
+```typescript
+public synth(): string
+```
+
+Synthesizes the Zap configuration to a YAML string.
+
+##### `toYaml` <a name="toYaml" id="zap-cdk.ZapConfig.toYaml"></a>
+
+```typescript
+public toYaml(): IZap
+```
+
+Converts the Zap configuration to YAML format.
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#zap-cdk.ZapConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ZapConfig.isConstruct"></a>
+
+```typescript
+import { ZapConfig } from 'zap-cdk'
+
+ZapConfig.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ZapConfig.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ZapConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ZapConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IZap">IZap</a></code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ZapConfig.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ZapConfig.property.config"></a>
+
+```typescript
+public readonly config: IZap;
+```
+
+- *Type:* <a href="#zap-cdk.IZap">IZap</a>
 
 ---
 
@@ -371,6 +2920,31 @@ public readonly threadPerHost: number;
 ```
 
 - *Type:* number
+
+---
+
+### IActiveScanConfigProps <a name="IActiveScanConfigProps" id="zap-cdk.IActiveScanConfigProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IActiveScanConfigProps">IActiveScanConfigProps</a>
+
+Properties for the ActiveScanConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IActiveScanConfigProps.property.activeScanConfig">activeScanConfig</a></code> | <code><a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a></code> | *No description.* |
+
+---
+
+##### `activeScanConfig`<sup>Required</sup> <a name="activeScanConfig" id="zap-cdk.IActiveScanConfigProps.property.activeScanConfig"></a>
+
+```typescript
+public readonly activeScanConfig: IActiveScanConfig;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a>
 
 ---
 
@@ -728,6 +3302,31 @@ public readonly policyDefinition: IActiveScanPolicyDefinition;
 ```
 
 - *Type:* <a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a>
+
+---
+
+### IActiveScanPolicyProps <a name="IActiveScanPolicyProps" id="zap-cdk.IActiveScanPolicyProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IActiveScanPolicyProps">IActiveScanPolicyProps</a>
+
+Properties for the ActiveScanPolicyConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IActiveScanPolicyProps.property.activeScanPolicy">activeScanPolicy</a></code> | <code><a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a></code> | *No description.* |
+
+---
+
+##### `activeScanPolicy`<sup>Required</sup> <a name="activeScanPolicy" id="zap-cdk.IActiveScanPolicyProps.property.activeScanPolicy"></a>
+
+```typescript
+public readonly activeScanPolicy: IActiveScanPolicy;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a>
 
 ---
 
@@ -1868,6 +4467,31 @@ public readonly time: string;
 
 ---
 
+### IDelayProps <a name="IDelayProps" id="zap-cdk.IDelayProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IDelayProps">IDelayProps</a>
+
+Properties for the DelayConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IDelayProps.property.delay">delay</a></code> | <code><a href="#zap-cdk.IDelay">IDelay</a></code> | *No description.* |
+
+---
+
+##### `delay`<sup>Required</sup> <a name="delay" id="zap-cdk.IDelayProps.property.delay"></a>
+
+```typescript
+public readonly delay: IDelay;
+```
+
+- *Type:* <a href="#zap-cdk.IDelay">IDelay</a>
+
+---
+
 ### IEnvironment <a name="IEnvironment" id="zap-cdk.IEnvironment"></a>
 
 - *Implemented By:* <a href="#zap-cdk.IEnvironment">IEnvironment</a>
@@ -1977,6 +4601,31 @@ public readonly progressToStdout: boolean;
 ```
 
 - *Type:* boolean
+
+---
+
+### IEnvironmentProps <a name="IEnvironmentProps" id="zap-cdk.IEnvironmentProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IEnvironmentProps">IEnvironmentProps</a>
+
+Properties for the EnvironmentConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IEnvironmentProps.property.environment">environment</a></code> | <code><a href="#zap-cdk.IEnvironment">IEnvironment</a></code> | *No description.* |
+
+---
+
+##### `environment`<sup>Required</sup> <a name="environment" id="zap-cdk.IEnvironmentProps.property.environment"></a>
+
+```typescript
+public readonly environment: IEnvironment;
+```
+
+- *Type:* <a href="#zap-cdk.IEnvironment">IEnvironment</a>
 
 ---
 
@@ -2250,6 +4899,31 @@ public readonly warnLevel: string;
 
 ---
 
+### IExitStatusProps <a name="IExitStatusProps" id="zap-cdk.IExitStatusProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IExitStatusProps">IExitStatusProps</a>
+
+Properties for the ExitStatusConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IExitStatusProps.property.exitStatus">exitStatus</a></code> | <code><a href="#zap-cdk.IExitStatus">IExitStatus</a></code> | *No description.* |
+
+---
+
+##### `exitStatus`<sup>Required</sup> <a name="exitStatus" id="zap-cdk.IExitStatusProps.property.exitStatus"></a>
+
+```typescript
+public readonly exitStatus: IExitStatus;
+```
+
+- *Type:* <a href="#zap-cdk.IExitStatus">IExitStatus</a>
+
+---
+
 ### IExport <a name="IExport" id="zap-cdk.IExport"></a>
 
 - *Implemented By:* <a href="#zap-cdk.IExport">IExport</a>
@@ -2303,6 +4977,31 @@ public readonly type: string;
 ```
 
 - *Type:* string
+
+---
+
+### IExportProps <a name="IExportProps" id="zap-cdk.IExportProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IExportProps">IExportProps</a>
+
+Properties for the ExportConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IExportProps.property.export">export</a></code> | <code><a href="#zap-cdk.IExport">IExport</a></code> | *No description.* |
+
+---
+
+##### `export`<sup>Required</sup> <a name="export" id="zap-cdk.IExportProps.property.export"></a>
+
+```typescript
+public readonly export: IExport;
+```
+
+- *Type:* <a href="#zap-cdk.IExport">IExport</a>
 
 ---
 
@@ -2450,6 +5149,31 @@ public readonly schemaUrl: string;
 
 ---
 
+### IGraphQLProps <a name="IGraphQLProps" id="zap-cdk.IGraphQLProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IGraphQLProps">IGraphQLProps</a>
+
+Properties for the GraphQLConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IGraphQLProps.property.graphql">graphql</a></code> | <code><a href="#zap-cdk.IGraphQL">IGraphQL</a></code> | *No description.* |
+
+---
+
+##### `graphql`<sup>Required</sup> <a name="graphql" id="zap-cdk.IGraphQLProps.property.graphql"></a>
+
+```typescript
+public readonly graphql: IGraphQL;
+```
+
+- *Type:* <a href="#zap-cdk.IGraphQL">IGraphQL</a>
+
+---
+
 ### IHttpHeaders <a name="IHttpHeaders" id="zap-cdk.IHttpHeaders"></a>
 
 - *Implemented By:* <a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a>
@@ -2525,6 +5249,31 @@ public readonly type: string;
 ```
 
 - *Type:* string
+
+---
+
+### IImportProps <a name="IImportProps" id="zap-cdk.IImportProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IImportProps">IImportProps</a>
+
+Properties for the ImportConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IImportProps.property.import">import</a></code> | <code><a href="#zap-cdk.IImport">IImport</a></code> | *No description.* |
+
+---
+
+##### `import`<sup>Required</sup> <a name="import" id="zap-cdk.IImportProps.property.import"></a>
+
+```typescript
+public readonly import: IImport;
+```
+
+- *Type:* <a href="#zap-cdk.IImport">IImport</a>
 
 ---
 
@@ -2848,6 +5597,31 @@ public readonly user: string;
 
 ---
 
+### IOpenAPIProps <a name="IOpenAPIProps" id="zap-cdk.IOpenAPIProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IOpenAPIProps">IOpenAPIProps</a>
+
+Properties for the OpenAPIConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IOpenAPIProps.property.openapi">openapi</a></code> | <code><a href="#zap-cdk.IOpenAPI">IOpenAPI</a></code> | *No description.* |
+
+---
+
+##### `openapi`<sup>Required</sup> <a name="openapi" id="zap-cdk.IOpenAPIProps.property.openapi"></a>
+
+```typescript
+public readonly openapi: IOpenAPI;
+```
+
+- *Type:* <a href="#zap-cdk.IOpenAPI">IOpenAPI</a>
+
+---
+
 ### IPassiveScanConfig <a name="IPassiveScanConfig" id="zap-cdk.IPassiveScanConfig"></a>
 
 - *Implemented By:* <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a>
@@ -2912,6 +5686,31 @@ public readonly rules: IPassiveScanRule[];
 ```
 
 - *Type:* <a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a>[]
+
+---
+
+### IPassiveScanConfigProps <a name="IPassiveScanConfigProps" id="zap-cdk.IPassiveScanConfigProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IPassiveScanConfigProps">IPassiveScanConfigProps</a>
+
+Properties for the PassiveScanConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IPassiveScanConfigProps.property.passiveScanConfig">passiveScanConfig</a></code> | <code><a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a></code> | *No description.* |
+
+---
+
+##### `passiveScanConfig`<sup>Required</sup> <a name="passiveScanConfig" id="zap-cdk.IPassiveScanConfigProps.property.passiveScanConfig"></a>
+
+```typescript
+public readonly passiveScanConfig: IPassiveScanConfig;
+```
+
+- *Type:* <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a>
 
 ---
 
@@ -3047,6 +5846,31 @@ public readonly maxDuration: number;
 ```
 
 - *Type:* number
+
+---
+
+### IPassiveScanWaitProps <a name="IPassiveScanWaitProps" id="zap-cdk.IPassiveScanWaitProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IPassiveScanWaitProps">IPassiveScanWaitProps</a>
+
+Properties for the PassiveScanWaitConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IPassiveScanWaitProps.property.passiveScanWait">passiveScanWait</a></code> | <code><a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a></code> | *No description.* |
+
+---
+
+##### `passiveScanWait`<sup>Required</sup> <a name="passiveScanWait" id="zap-cdk.IPassiveScanWaitProps.property.passiveScanWait"></a>
+
+```typescript
+public readonly passiveScanWait: IPassiveScanWait;
+```
+
+- *Type:* <a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a>
 
 ---
 
@@ -3287,6 +6111,31 @@ public readonly variables: string;
 
 ---
 
+### IPostmanProps <a name="IPostmanProps" id="zap-cdk.IPostmanProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IPostmanProps">IPostmanProps</a>
+
+Properties for the PostmanConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IPostmanProps.property.postman">postman</a></code> | <code><a href="#zap-cdk.IPostman">IPostman</a></code> | *No description.* |
+
+---
+
+##### `postman`<sup>Required</sup> <a name="postman" id="zap-cdk.IPostmanProps.property.postman"></a>
+
+```typescript
+public readonly postman: IPostman;
+```
+
+- *Type:* <a href="#zap-cdk.IPostman">IPostman</a>
+
+---
+
 ### IReplacer <a name="IReplacer" id="zap-cdk.IReplacer"></a>
 
 - *Implemented By:* <a href="#zap-cdk.IReplacer">IReplacer</a>
@@ -3318,6 +6167,31 @@ public readonly deleteAllRules: boolean;
 ```
 
 - *Type:* boolean
+
+---
+
+### IReplacerProps <a name="IReplacerProps" id="zap-cdk.IReplacerProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IReplacerProps">IReplacerProps</a>
+
+Properties for the ReplacerConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IReplacerProps.property.replacer">replacer</a></code> | <code><a href="#zap-cdk.IReplacer">IReplacer</a></code> | *No description.* |
+
+---
+
+##### `replacer`<sup>Required</sup> <a name="replacer" id="zap-cdk.IReplacerProps.property.replacer"></a>
+
+```typescript
+public readonly replacer: IReplacer;
+```
+
+- *Type:* <a href="#zap-cdk.IReplacer">IReplacer</a>
 
 ---
 
@@ -3556,6 +6430,31 @@ public readonly theme: string;
 
 ---
 
+### IReportProps <a name="IReportProps" id="zap-cdk.IReportProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IReportProps">IReportProps</a>
+
+Properties for the ReportConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IReportProps.property.report">report</a></code> | <code><a href="#zap-cdk.IReport">IReport</a></code> | *No description.* |
+
+---
+
+##### `report`<sup>Required</sup> <a name="report" id="zap-cdk.IReportProps.property.report"></a>
+
+```typescript
+public readonly report: IReport;
+```
+
+- *Type:* <a href="#zap-cdk.IReport">IReport</a>
+
+---
+
 ### IRequest <a name="IRequest" id="zap-cdk.IRequest"></a>
 
 - *Implemented By:* <a href="#zap-cdk.IRequest">IRequest</a>
@@ -3702,6 +6601,31 @@ public readonly user: string;
 ```
 
 - *Type:* string
+
+---
+
+### IRequestorProps <a name="IRequestorProps" id="zap-cdk.IRequestorProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.IRequestorProps">IRequestorProps</a>
+
+Properties for the RequestorConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.IRequestorProps.property.requestor">requestor</a></code> | <code><a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a></code> | *No description.* |
+
+---
+
+##### `requestor`<sup>Required</sup> <a name="requestor" id="zap-cdk.IRequestorProps.property.requestor"></a>
+
+```typescript
+public readonly requestor: IRequestorParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a>
 
 ---
 
@@ -3918,6 +6842,31 @@ public readonly wsdlUrl: string;
 ```
 
 - *Type:* string
+
+---
+
+### ISoapProps <a name="ISoapProps" id="zap-cdk.ISoapProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.ISoapProps">ISoapProps</a>
+
+Properties for the SOAPConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ISoapProps.property.soap">soap</a></code> | <code><a href="#zap-cdk.ISoap">ISoap</a></code> | *No description.* |
+
+---
+
+##### `soap`<sup>Required</sup> <a name="soap" id="zap-cdk.ISoapProps.property.soap"></a>
+
+```typescript
+public readonly soap: ISoap;
+```
+
+- *Type:* <a href="#zap-cdk.ISoap">ISoap</a>
 
 ---
 
@@ -4210,6 +7159,31 @@ public readonly user: string;
 ```
 
 - *Type:* string
+
+---
+
+### ISpiderAjaxProps <a name="ISpiderAjaxProps" id="zap-cdk.ISpiderAjaxProps"></a>
+
+- *Implemented By:* <a href="#zap-cdk.ISpiderAjaxProps">ISpiderAjaxProps</a>
+
+Properties for the SpiderAjaxConfig construct.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ISpiderAjaxProps.property.spiderAjax">spiderAjax</a></code> | <code><a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a></code> | *No description.* |
+
+---
+
+##### `spiderAjax`<sup>Required</sup> <a name="spiderAjax" id="zap-cdk.ISpiderAjaxProps.property.spiderAjax"></a>
+
+```typescript
+public readonly spiderAjax: ISpiderAjax;
+```
+
+- *Type:* <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a>
 
 ---
 

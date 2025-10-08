@@ -3,8 +3,10 @@ import { IReplacer } from '../../models/replacer'; // Adjust the import path as 
 
 /**
  * Properties for the ReplacerConfig construct.
+ * @interface IReplacerProps
+ * @property {IReplacer} replacer - The replacer configuration.
  */
-interface ReplacerProps {
+export interface IReplacerProps {
   replacer: IReplacer; // Ensure that the replacer property matches the IReplacerParameters interface
 }
 
@@ -14,7 +16,7 @@ interface ReplacerProps {
  * @class ReplacerConfig
  * @extends {Construct}
  */
-class ReplacerConfig extends Construct {
+export class ReplacerConfig extends Construct {
   config: IReplacer;
 
   /** Creates an instance of ReplacerConfig.
@@ -22,7 +24,7 @@ class ReplacerConfig extends Construct {
    * @param {string} id - The ID of the construct.
    * @param {ReplacerProps} props - The properties of the replacer configuration.
    */
-  constructor(scope: Construct, id: string, props: ReplacerProps) {
+  constructor(scope: Construct, id: string, props: IReplacerProps) {
     super(scope, id);
 
     // Validate that props.replacer is provided
@@ -42,4 +44,3 @@ class ReplacerConfig extends Construct {
   }
 }
 
-export { ReplacerConfig };

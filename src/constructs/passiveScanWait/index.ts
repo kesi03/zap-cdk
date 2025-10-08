@@ -1,7 +1,12 @@
 import { Construct } from 'constructs';
 import { IPassiveScanWait } from '../../models/passiveScanWait'; // Adjust the import path as necessary
 
-interface PassiveScanWaitProps {
+/**
+ * Properties for the PassiveScanWaitConfig construct.
+ * @interface IPassiveScanWaitProps
+ * @property {IPassiveScanWait} passiveScanWait - The passive scan wait configuration.
+ */
+export interface IPassiveScanWaitProps {
   passiveScanWait: IPassiveScanWait; // Ensure that the passiveScanWait property matches the IPassiveScanWaitParameters interface
 }
 
@@ -11,16 +16,16 @@ interface PassiveScanWaitProps {
  * @class PassiveScanWaitConfig
  * @extends {Construct}
  */
-class PassiveScanWaitConfig extends Construct {
+export class PassiveScanWaitConfig extends Construct {
   config: IPassiveScanWait;
 
   /** Creates an instance of PassiveScanWaitConfig.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.
-   * @param {PassiveScanWaitProps} props - The properties of the passive scan wait configuration.
+   * @param {IPassiveScanWaitProps} props - The properties of the passive scan wait configuration.
    */
-  constructor(scope: Construct, id: string, props: PassiveScanWaitProps) {
+  constructor(scope: Construct, id: string, props: IPassiveScanWaitProps) {
     super(scope, id);
 
     // Validate that props.passiveScanWait is provided
@@ -40,4 +45,3 @@ class PassiveScanWaitConfig extends Construct {
   }
 }
 
-export { PassiveScanWaitConfig };

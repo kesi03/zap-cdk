@@ -3,8 +3,10 @@ import { IRequestorParameters } from '../../models/requestor'; // Adjust the imp
 
 /**
  * Properties for the RequestorConfig construct.
+ * @interface IRequestorProps
+ * @property {IRequestorParameters} requestor - The requestor configuration.
  */
-interface RequestorProps {
+export interface IRequestorProps {
   requestor: IRequestorParameters; // Ensure that the requestor property matches the IRequestorParameters interface
 }
 
@@ -14,7 +16,7 @@ interface RequestorProps {
  * @class RequestorConfig
  * @extends {Construct}
  */
-class RequestorConfig extends Construct {
+export class RequestorConfig extends Construct {
   config: IRequestorParameters;
 
   /** Creates an instance of RequestorConfig.
@@ -23,7 +25,7 @@ class RequestorConfig extends Construct {
    * @param {string} id - The ID of the construct.
    * @param {RequestorProps} props - The properties of the requestor configuration.
    */
-  constructor(scope: Construct, id: string, props: RequestorProps) {
+  constructor(scope: Construct, id: string, props: IRequestorProps) {
     super(scope, id);
 
     // Validate that props.requestor is provided
@@ -43,4 +45,3 @@ class RequestorConfig extends Construct {
   }
 }
 
-export { RequestorConfig };
