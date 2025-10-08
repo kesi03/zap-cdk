@@ -19,7 +19,7 @@ export class App extends Construct {
    * Synthesizes all child constructs into a single YAML file.
    * Each construct must implement a `synth()` method.
    */
-  synth(outputDir: string = './zap-automation', fileName: string = 'zap.yaml'): void {
+  synth(outputDir: string = './.zap-automation', fileName: string = 'zap.yaml'): void {
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
@@ -30,7 +30,7 @@ export class App extends Construct {
       if ('synth' in child && typeof child.synth === 'function') {
         const yamlContent = child.synth();
         const parsed = yaml.load(yamlContent);
-        Object.assign(aggregated, parsed); // Merge directly into root
+        Object.assign(aggregated, parsed); 
       }
     }
 
