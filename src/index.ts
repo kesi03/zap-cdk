@@ -33,7 +33,9 @@ export class App extends Construct {
       }
     }
 
-    const finalYaml = yaml.dump(aggregated);
+    const firstKey = Object.keys(aggregated)[0];
+    const firstRecord = firstKey ? { [firstKey]: aggregated[firstKey] } : {};
+    const finalYaml = yaml.dump(firstRecord);
     const filePath = path.join(outputDir, fileName);
     fs.writeFileSync(filePath, finalYaml, 'utf8');
     console.log(`✅ Synthesized ${filePath}`);
