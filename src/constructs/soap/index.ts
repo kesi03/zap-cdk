@@ -1,12 +1,12 @@
 import { Construct } from 'constructs';
-import { ISOAP } from '../../models/soap'; // Adjust the import path as necessary
+import { ISoap } from '../../models/soap'; // Adjust the import path as necessary
 
 /**
  * Properties for the SOAPConfig construct.
  * @interface SOAPProps
  */
 interface SOAPProps {
-  soap: ISOAP; // Ensure that the soap property matches the ISOAPParameters interface
+  soap: ISoap; // Ensure that the soap property matches the ISOAPParameters interface
 }
 
 /**
@@ -16,7 +16,7 @@ interface SOAPProps {
  * @extends {Construct}
  */
 class SOAPConfig extends Construct {
-  config: ISOAP;
+  config: ISoap;
 
   constructor(scope: Construct, id: string, props: SOAPProps) {
     super(scope, id);

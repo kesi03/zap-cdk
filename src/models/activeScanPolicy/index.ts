@@ -40,6 +40,23 @@ export interface IRule {
 }
 
 /**
+ * @interface IActiveScanPolicyDefinition
+ * Represents the policy definition for an active scan.
+ * @property {number} id - Unique identifier for the policy.
+ * @property {string} name - Name of the policy.
+ * @property {string} [description] - Description of the policy.
+ * @property {Date} createdAt - Creation date of the policy.
+ * @property {Date} updatedAt - Last updated date of the policy.
+ */
+export interface IActiveScanPolicyDefinition {
+  id: number; // Unique identifier for the policy
+  name: string; // Name of the policy
+  description?: string; // Description of the policy
+  createdAt: Date; // Creation date of the policy
+  updatedAt: Date; // Last updated date of the policy
+}
+
+/**
  * @interface IActiveScanPolicyParameters
  * Represents the parameters for an active scan policy.
  * @property {string} name - Name of the policy, mandatory.
@@ -51,12 +68,7 @@ export interface IRule {
  */
 export interface IActiveScanPolicyParameters {
   name: string; // Name of the policy, mandatory
-  policyDefinition: {
-    defaultStrength?: strength; // Default Attack Strength for all rules, default: Medium
-    defaultThreshold?: threshold; // Default Alert Threshold for all rules, default: Medium
-    alertTags?: IAlertTag; // Rules based on alert tags
-    rules?: IRule[]; // A list of one or more active scan rules
-  };
+  policyDefinition: IActiveScanPolicyDefinition;
 }
 
 /**

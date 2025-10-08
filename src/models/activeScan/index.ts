@@ -38,6 +38,37 @@ export interface IActiveScanParameters {
 }
 
 /**
+ * @interface IAlertTags
+ * Represents the configuration for alert tags.
+ * @property {string[]} include - List of alert tags to include, regex supported.
+ * @property {string[]} exclude - List of alert tags to exclude from this include list, regex supported.
+ * @property {string} [strength] - The Attack Strength for this set of rules, one of Low, Medium, High, Insane, default: Medium.
+ * @property {string} [threshold] - The Alert Threshold for this set of rules, one of Off, Low, Medium, High, default: Medium.
+ */
+export interface IAlertTags {
+  include: string[]; // List of alert tags to include, regex supported
+  exclude: string[]; // List of alert tags to exclude from this include list, regex supported
+  strength?: string; // The Attack Strength for this set of rules, one of Low, Medium, High, Insane, default: Medium
+  threshold?: string; // The Alert Threshold for this set of rules, one of Off, Low, Medium, High, default: Medium
+}
+
+/**
+ *
+ * @interface IRules
+ * Represents a rule for the active scan.
+ * @property {number} id - The rule id as per https://www.zaproxy.org/docs/alerts/.
+ * @property {string} [name] - The name of the rule for documentation purposes - this is not required or actually used.
+ * @property {string} [strength] - The Attack Strength for this rule, one of Low, Medium, High, Insane, default: Medium.
+ * @property {string} [threshold] - The Alert Threshold for this rule, one of Off, Low, Medium, High, default: Medium.
+ */
+export interface IRules {
+  id: number; // The rule id as per https://www.zaproxy.org/docs/alerts/
+  name?: string; // The name of the rule for documentation purposes - this is not required or actually used
+  strength?: string; // The Attack Strength for this rule, one of Low, Medium, High, Insane, default: Medium
+  threshold?: string; // The Alert Threshold for this rule, one of Off, Low, Medium, High, default: Medium
+}
+
+/**
  * @interface IPolicyDefinition
  * Represents the policy definition for an active scan.
  * @property {string} [defaultStrength] - The default Attack Strength for all rules, one of Low, Medium, High, Insane, default: Medium.
@@ -56,18 +87,8 @@ export interface IActiveScanParameters {
 export interface IPolicyDefinition {
   defaultStrength?: string; // The default Attack Strength for all rules, one of Low, Medium, High, Insane, default: Medium
   defaultThreshold?: string; // The default Alert Threshold for all rules, one of Off, Low, Medium, High, default: Medium
-  alertTags?: {
-    include: string[]; // List of alert tags to include, regex supported
-    exclude: string[]; // List of alert tags to exclude from this include list, regex supported
-    strength?: string; // The Attack Strength for this set of rules, one of Low, Medium, High, Insane, default: Medium
-    threshold?: string; // The Alert Threshold for this set of rules, one of Off, Low, Medium, High, default: Medium
-  };
-  rules?: {
-    id: number; // The rule id as per https://www.zaproxy.org/docs/alerts/
-    name?: string; // The name of the rule for documentation purposes - this is not required or actually used
-    strength?: string; // The Attack Strength for this rule, one of Low, Medium, High, Insane, default: Medium
-    threshold?: string; // The Alert Threshold for this rule, one of Off, Low, Medium, High, default: Medium
-  }[];
+  alertTags?: IAlertTags; // Configuration for alert tags
+  rules?: IRules[];
 }
 
 /**

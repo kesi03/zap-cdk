@@ -1,4 +1,141 @@
 /**
+ * Configuration options for scanning URL query strings and Data Driven Nodes (DDNs).
+ *
+ * @interface IUrlQueryStringAndDataDrivenNodes
+ *
+ * @property {boolean} [enabled] - If query parameters and DDNs scanning should be enabled. Default: true
+ * @property {boolean} [addParam] - If a query parameter should be added if none present. Default: false
+ * @property {boolean} [odata] - If OData query filters should be scanned. Default: true
+ */
+export interface IUrlQueryStringAndDataDrivenNodes {
+  /** If query parameters and DDNs scanning should be enabled. Default: true */
+  enabled?: boolean;
+
+  /** If a query parameter should be added if none present. Default: false */
+  addParam?: boolean;
+
+  /** If OData query filters should be scanned. Default: true */
+  odata?: boolean;
+}
+
+/**
+ * Configuration for JSON body scanning in POST data.
+ * @interface IJsonPostData
+ * @property {boolean} [enabled] - If JSON scanning should be enabled. Default: true.
+ * @property {boolean} [scanNullValues] - If null values should be scanned. Default: false.
+ */
+export interface IJsonPostData {
+  /** If JSON scanning should be enabled. Default: true */
+  enabled?: boolean;
+
+  /** If null values should be scanned. Default: false */
+  scanNullValues?: boolean;
+}
+
+/**
+ * Configuration for POST data scanning.
+ * @interface IPostData
+ * @property {boolean} [enabled] - If enabled. Default: true.
+ * @property {boolean} [multiPartFormData] - If multipart form data bodies should be scanned. Default: true.
+ * @property {boolean} [xml] - If XML bodies should be scanned. Default: true.
+ * @property {IJsonPostData} json - Configuration for JSON bodies.
+ * @property {boolean} [googleWebToolkit] - If GWT scanning should be enabled. Default: false.
+ * @property {boolean} [directWebRemoting] - If DWR scanning should be enabled. Default: false.
+ */
+export interface IPostData {
+  /** If POST data scanning is enabled. Default: true */
+  enabled?: boolean;
+
+  /** If multipart form data bodies should be scanned. Default: true */
+  multiPartFormData?: boolean;
+
+  /** If XML bodies should be scanned. Default: true */
+  xml?: boolean;
+
+  /** Configuration for JSON bodies */
+  json: IJsonPostData;
+
+  /** If GWT scanning should be enabled. Default: false */
+  googleWebToolkit?: boolean;
+
+  /** If DWR scanning should be enabled. Default: false */
+  directWebRemoting?: boolean;
+}
+
+/**
+ * Configuration for HTTP header scanning.
+ * @interface IHttpHeaders
+ * @property {boolean} [enabled] - If HTTP header scanning should be enabled. Default: false.
+ * @property {boolean} [allRequests] - If set, then the headers of requests that do not include any parameters will be scanned. Default: false.
+ */
+export interface IHttpHeaders {
+  /** If HTTP header scanning should be enabled. Default: false */
+  enabled?: boolean;
+
+  /** If headers of requests without parameters should be scanned. Default: false */
+  allRequests?: boolean;
+}
+
+/**
+ * Configuration for cookie data scanning.
+ * @interface ICookieData
+ * @property {boolean} [enabled] - If enabled. Default: false.
+ * @property {boolean} [encodeCookieValues] - If cookie values should be encoded. Default: false.
+ */
+export interface ICookieData {
+  /** If cookie scanning is enabled. Default: false */
+  enabled?: boolean;
+
+  /** If cookie values should be encoded. Default: false */
+  encodeCookieValues?: boolean;
+}
+
+/**
+ * Represents the configuration for input vectors used in an active scan.
+ * @interface IInputVectors
+ * @property {Object} urlQueryStringAndDataDrivenNodes - Configuration for query parameters and data-driven nodes.
+ * @property {boolean} [urlQueryStringAndDataDrivenNodes.enabled] - If query parameters and DDNs scanning should be enabled. Default: true.
+ * @property {boolean} [urlQueryStringAndDataDrivenNodes.addParam] - If a query parameter should be added if none present. Default: false.
+ * @property {boolean} [urlQueryStringAndDataDrivenNodes.odata] - If OData query filters should be scanned. Default: true.
+ * @property {Object} postData - Configuration for POST data scanning.
+ * @property {boolean} [postData.enabled] - If enabled. Default: true.
+ * @property {boolean} [postData.multiPartFormData] - If multipart form data bodies should be scanned. Default: true.
+ * @property {boolean} [postData.xml] - If XML bodies should be scanned. Default: true.
+ * @property {Object} postData.json - Configuration for JSON bodies.
+ * @property {boolean} [postData.json.enabled] - If JSON scanning should be enabled. Default: true.
+ * @property {boolean} [postData.json.scanNullValues] - If null values should be scanned. Default: false.
+ * @property {boolean} [postData.googleWebToolkit] - If GWT scanning should be enabled. Default: false.
+ * @property {boolean} [postData.directWebRemoting] - If DWR scanning should be enabled. Default: false.
+ * @property {boolean} [urlPath] - If URL path segments should be scanned. Default: false.
+ * @property {Object} httpHeaders - Configuration for HTTP header scanning.
+ * @property {boolean} [httpHeaders.enabled] - If HTTP header scanning should be enabled. Default: false.
+ * @property {boolean} [httpHeaders.allRequests] - If set, then the headers of requests that do not include any parameters will be scanned. Default: false.
+ * @property {Object} cookieData - Configuration for cookie data scanning.
+ * @property {boolean} [cookieData.enabled] - If enabled. Default: false.
+ * @property {boolean} [cookieData.encodeCookieValues] - If cookie values should be encoded. Default: false.
+ * @property {boolean} [scripts] - If Input Vector scripts should be used. Default: true.
+ */
+export interface IInputVectors {
+  /** Configuration for query parameters and data-driven nodes */
+  urlQueryStringAndDataDrivenNodes: IUrlQueryStringAndDataDrivenNodes;
+
+  /** Configuration for POST data scanning */
+  postData: IPostData;
+
+  /** If URL path segments should be scanned. Default: false */
+  urlPath?: boolean;
+
+  /** Configuration for HTTP header scanning */
+  httpHeaders: IHttpHeaders;
+
+  /** Configuration for cookie data scanning */
+  cookieData: ICookieData;
+
+  /** If Input Vector scripts should be used. Default: true */
+  scripts?: boolean;
+}
+
+/**
  * @interface IInputVectors
  * Represents the configuration for input vectors used in an active scan.
  * @property {Object} urlQueryStringAndDataDrivenNodes - Configuration for query parameters and data-driven nodes.
@@ -24,31 +161,11 @@
  * @property {boolean} [scripts] - If Input Vector scripts should be used. Default: true.
  */
 export interface IInputVectors {
-  urlQueryStringAndDataDrivenNodes: {
-    enabled?: boolean; // If query parameters and DDNs scanning should be enabled. Default: true
-    addParam?: boolean; // If a query parameter should be added if none present. Default: false
-    odata?: boolean; // If OData query filters should be scanned. Default: true
-  };
-  postData: {
-    enabled?: boolean; // If enabled. Default: true
-    multiPartFormData?: boolean; // If multipart form data bodies should be scanned. Default: true
-    xml?: boolean; // If XML bodies should be scanned. Default: true
-    json: {
-      enabled?: boolean; // If JSON scanning should be enabled. Default: true
-      scanNullValues?: boolean; // If null values should be scanned. Default: false
-    };
-    googleWebToolkit?: boolean; // If GWT scanning should be enabled. Default: false
-    directWebRemoting?: boolean; // If DWR scanning should be enabled. Default: false
-  };
+  urlQueryStringAndDataDrivenNodes: IUrlQueryStringAndDataDrivenNodes;
+  postData: IPostData;
   urlPath?: boolean; // If URL path segments should be scanned. Default: false
-  httpHeaders: {
-    enabled?: boolean; // If HTTP header scanning should be enabled. Default: false
-    allRequests?: boolean; // If set then the headers of requests that do not include any parameters will be scanned. Default: false
-  };
-  cookieData: {
-    enabled?: boolean; // If enabled. Default: false
-    encodeCookieValues?: boolean; // If cookie values should be encoded. Default: false
-  };
+  httpHeaders: IHttpHeaders;
+  cookieData: ICookieData;
   scripts?: boolean; // If Input Vector scripts should be used. Default: true
 }
 

@@ -13,11 +13,11 @@ import { IPostman } from '../postman';
 import { IReplacer } from '../replacer';
 import { IReport } from '../report';
 import { IRequest } from '../requestor';
-import { ISOAP } from '../soap';
+import { ISoap } from '../soap';
 import { ISpider } from '../spider';
 import { ISpiderAjax } from '../spiderAjax';
 
-interface NewType {
+export interface INewType {
   name: string;
   parameters?: Record<string, any>;
 } // Generic job with name and optional parameters
@@ -41,6 +41,6 @@ export type IJob =
 | IExitStatus
 | IDelay
 | IPostman
-| ISOAP
-| NewType
+| ISoap
+| INewType
 ;

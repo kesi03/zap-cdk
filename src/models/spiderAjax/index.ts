@@ -19,7 +19,7 @@ export interface IExcludedElement {
 
 /**
  * Interface representing a test configuration.
- * @interface ITest
+ * @interface IAjaxTest
  * @property {string} name - Name of the test.
  * @property {'stats'} type - Type of test, only 'stats' is supported for now.
  * @property {string} statistic - Name of an integer / long statistic.
@@ -27,7 +27,7 @@ export interface IExcludedElement {
  * @property {number} value - Value to compare against.
  * @property {'warn' | 'error' | 'info'} [onFail] - Action to take on failure.
  */
-export interface ITest {
+export interface IAjaxTest {
   name: string; // Name of the test
   type: 'stats'; // Type of test, only 'stats' is supported for now
   statistic: string; // Name of an integer / long statistic
@@ -78,5 +78,5 @@ export interface ISpiderAjax {
   scopeCheck?: 'Flexible' | 'Strict'; // Scope check type
   elements?: string[]; // List of HTML elements to click
   excludedElements?: IExcludedElement[]; // List of HTML elements to exclude
-  tests?: ITest[]; // List of tests to perform
+  tests?: IAjaxTest[]; // List of tests to perform
 }

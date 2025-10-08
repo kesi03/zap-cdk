@@ -6,7 +6,7 @@ import { ISpider } from '../../models/spider'; // Adjust the import path as nece
  *
  */
 export interface SpiderProps {
-  spider: ISpider; // Ensure that the spider property matches the ISpider interface
+  readonly spider: ISpider; // Ensure that the spider property matches the ISpider interface
 }
 
 /**

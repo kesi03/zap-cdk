@@ -1,3 +1,65 @@
+
+/**
+ * @interface IAuthenticationParametersParameters
+ * Represents the parameters for authentication in the scanning process.
+ * @property {string} [hostname] - Only for 'http' authentication.
+ * @property {number} [port] - Only for 'http' authentication.
+ * @property {string} [realm] - Only for 'http' authentication.
+ * @property {string} [loginPageUrl] - Only for 'form' or 'json' authentication.
+ * @property {string} [loginRequestUrl] - Only for 'form' or 'json' authentication.
+ * @property {string} [loginRequestBody] - Only for 'form' or 'json' authentication.
+ * @property {string} [script] - Path to script, only for 'script' authentication.
+ * @property {string} [scriptInline] - Full script (may be multi-line), only for 'script' authentication.
+ * @property {string} [scriptEngine] - Name of the script engine to use, only for 'script' authentication.
+ */
+export interface IAuthenticationParametersParameters {
+  hostname?: string; // Only for 'http' authentication
+  port?: number; // Only for 'http' authentication
+  realm?: string; // Only for 'http' authentication
+  loginPageUrl?: string; // Only for 'form' or 'json' authentication
+  loginRequestUrl?: string; // Only for 'form' or 'json' authentication
+  loginRequestBody?: string; // Only for 'form' or 'json' authentication
+  script?: string; // Path to script, only for 'script' authentication
+  scriptInline?: string; // Full script (may be multi-line), only for 'script' authentication
+  scriptEngine?: string; // Name of the script engine to use, only for 'script' authentication
+}
+
+/**
+ * @interface IPollAdditionalHeaders
+ * Represents additional headers for poll request in authentication verification.
+ * @property {string} header - The header name.
+ * @property {string} value - The header value.
+ */
+export interface IPollAdditionalHeaders {
+  header: string; // The header name
+  value: string; // The header value
+}
+
+/**
+ * @interface IAuthenticationParametersVerification
+ * Represents the verification details for authentication in the scanning process.
+ * @property {'response' | 'request' | 'both' | 'poll'} method - Verification method.
+ * @property {string} [loggedInRegex] - Regex pattern for determining if logged in.
+ * @property {string} [loggedOutRegex] - Regex pattern for determining if logged out.
+ * @property {number} [pollFrequency] - Poll frequency, only for 'poll' verification.
+ * @property {'requests' | 'seconds'} [pollUnits] - Poll units, only for 'poll' verification.
+ * @property {string} [pollUrl] - URL to poll, only for 'poll' verification.
+ * @property {string} [pollPostData] - Post data to include in the poll, only for 'poll' verification.
+ * @property {Object[]} [pollAdditionalHeaders] - Additional headers for poll request, only for 'poll' verification.
+ * @property {string} pollAdditionalHeaders[].header - The header name.
+ * @property {string} pollAdditionalHeaders[].value - The header value.
+ */
+export interface IAuthenticationParametersVerification {
+  method: 'response' | 'request' | 'both' | 'poll'; // Verification method
+  loggedInRegex?: string; // Regex pattern for determining if logged in
+  loggedOutRegex?: string; // Regex pattern for determining if logged out
+  pollFrequency?: number; // Poll frequency, only for 'poll' verification
+  pollUnits?: 'requests' | 'seconds'; // Poll units, only for 'poll' verification
+  pollUrl?: string; // URL to poll, only for 'poll' verification
+  pollPostData?: string; // Post data to include in the poll, only for 'poll' verification
+  pollAdditionalHeaders?: IPollAdditionalHeaders[]; // Additional headers for poll request, only for 'poll' verification
+}
+
 /**
  * @interface IAuthenticationParameters
  * Represents the parameters for authentication in the scanning process.
@@ -26,30 +88,13 @@
  */
 export interface IAuthenticationParameters {
   method: 'manual' | 'http' | 'form' | 'json' | 'script' | 'autodetect' | 'browser' | 'client'; // Authentication method
-  parameters: {
-    hostname?: string; // Only for 'http' authentication
-    port?: number; // Only for 'http' authentication
-    realm?: string; // Only for 'http' authentication
-    loginPageUrl?: string; // Only for 'form' or 'json' authentication
-    loginRequestUrl?: string; // Only for 'form' or 'json' authentication
-    loginRequestBody?: string; // Only for 'form' or 'json' authentication
-    script?: string; // Path to script, only for 'script' authentication
-    scriptInline?: string; // Full script (may be multi-line), only for 'script' authentication
-    scriptEngine?: string; // Name of the script engine to use, only for 'script' authentication
-  };
-  verification: {
-    method: 'response' | 'request' | 'both' | 'poll'; // Verification method
-    loggedInRegex?: string; // Regex pattern for determining if logged in
-    loggedOutRegex?: string; // Regex pattern for determining if logged out
-    pollFrequency?: number; // Poll frequency, only for 'poll' verification
-    pollUnits?: 'requests' | 'seconds'; // Poll units, only for 'poll' verification
-    pollUrl?: string; // URL to poll, only for 'poll' verification
-    pollPostData?: string; // Post data to include in the poll, only for 'poll' verification
-    pollAdditionalHeaders?: {
-      header: string; // The header name
-      value: string; // The header value
-    }[]; // Additional headers for poll request, only for 'poll' verification
-  };
+  parameters: IAuthenticationParametersParameters; // Parameters specific to the authentication method
+  verification: IAuthenticationParametersVerification; // Verification details for authentication
+}
+
+export interface ISessionManagementParametersParameters {
+  script?: string; // Path to script, only for 'script' session management
+  scriptEngine?: string; // Name of the script engine to use, only for 'script' session management
 }
 
 /**
@@ -62,10 +107,7 @@ export interface IAuthenticationParameters {
  */
 export interface ISessionManagementParameters {
   method: 'cookie' | 'http' | 'script'; // Session management method
-  parameters: {
-    script?: string; // Path to script, only for 'script' session management
-    scriptEngine?: string; // Name of the script engine to use, only for 'script' session management
-  };
+  parameters: ISessionManagementParametersParameters; // Parameters specific to the session management method
 }
 
 /**
@@ -85,11 +127,61 @@ export interface ITechnology {
  * @property {string} name - Name of the data driven node.
  * @property {string} regex - Regex of the data driven node, must contain 2 or 3 regex groups.
  */
-
 export interface IDataDrivenNode {
   name: string; // Name of the data driven node
   regex: string; // Regex of the data driven node, must contain 2 or 3 regex groups
 }
+
+/**
+ * @interface IContextStructure
+ * Represents the structure details of the context.
+ * @property {string[]} [structuralParameters] - List of names of structural parameters.
+ * @property {IDataDrivenNode[]} [dataDrivenNodes] - List of data driven nodes.
+ */
+export interface IContextStructure {
+  structuralParameters?: string[]; // List of names of structural parameters
+  dataDrivenNodes?: IDataDrivenNode[]; // List of data driven nodes
+}
+
+/**
+ * @interface ITotpConfig
+ * Represents the TOTP (Time-based One-Time Password) configuration for a user.
+ * @property {string} secret - TOTP secret.
+ * @property {number} [period] - TOTP period, default: 30.
+ * @property {number} [digits] - Number of digits, default: 6.
+ * @property {string} [algorithm] - Algorithm, default: SHA1.
+ */
+export interface ITotpConfig {
+  secret: string; // TOTP secret
+  period?: number; // TOTP period, default: 30
+  digits?: number; // Number of digits, default: 6
+  algorithm?: string; // Algorithm, default: SHA1
+}
+
+/**
+ * @interface IUserCredentials
+ * Represents the credentials for a user.
+ * @property {string} username - Username for authentication.
+ * @property {string} password - Password for authentication.
+ * @property {ITotpConfig} [totp] - Optional TOTP configuration.
+ */
+export interface IUserCredentials {
+  username: string; // Username for authentication
+  password: string; // Password for authentication
+  totp?: ITotpConfig; // Optional TOTP configuration
+}
+
+/**
+ * @interface IContextUser
+ * Represents a user in the context.
+ * @property {string} name - Name to be used by the jobs.
+ * @property {IUserCredentials[]} credentials - User credentials for authentication.
+ */
+export interface IContextUser {
+  name: string; // Name to be used by the jobs
+  credentials: IUserCredentials[]; // User credentials for authentication
+}
+
 /**
  * @interface IContext
  * Represents a scanning context with its configuration.
@@ -122,23 +214,40 @@ export interface IContext {
   authentication: IAuthenticationParameters; // Authentication details
   sessionManagement: ISessionManagementParameters; // Session management details
   technology: ITechnology; // Technology details
-  structure: {
-    structuralParameters?: string[]; // List of names of structural parameters
-    dataDrivenNodes?: IDataDrivenNode[]; // List of data driven nodes
-  };
-  users: {
-    name: string; // Name to be used by the jobs
-    credentials: {
-      username: string; // Username for authentication
-      password: string; // Password for authentication
-      totp?: {
-        secret: string; // TOTP secret
-        period?: number; // TOTP period, default: 30
-        digits?: number; // Number of digits, default: 6
-        algorithm?: string; // Algorithm, default: SHA1
-      };
-    }[];
-  }[];
+  structure: IContextStructure; // Structure details of the context
+  users: IContextUser[];
+}
+
+/**
+ * @interface IEnvironmentParameters
+ * Represents the parameters for the environment configuration in the scanning process.
+ * @property {boolean} [failOnError] - If true, exit on error.
+ * @property {boolean} [failOnWarning] - If true, exit on warning.
+ * @property {boolean} [continueOnFailure] - If true, continue running all jobs even if one fails.
+ * @property {boolean} [progressToStdout] - If true, write job progress to stdout.
+ */
+export interface IEnvironmentParameters {
+  failOnError?: boolean; // Exit on error
+  failOnWarning?: boolean; // Exit on warning
+  continueOnFailure?: boolean; // Continue running all jobs even if one fails
+  progressToStdout?: boolean; // Write job progress to stdout
+}
+
+/**
+ * @interface IEnvironmentProxy
+ * Represents the proxy configuration for the environment.
+ * @property {string} [hostname] - Proxy host.
+ * @property {number} [port] - Proxy port.
+ * @property {string} [realm] - Proxy realm.
+ * @property {string} [username] - Proxy username.
+ * @property {string} [password] - Proxy password.
+ */
+export interface IEnvironmentProxy {
+  hostname?: string; // Proxy host
+  port?: number; // Proxy port
+  realm?: string; // Proxy realm
+  username?: string; // Proxy username
+  password?: string; // Proxy password
 }
 
 /**
@@ -162,17 +271,6 @@ export interface IContext {
 export interface IEnvironment {
   contexts: IContext[]; // List of contexts
   vars?: { [key: string]: string }; // Custom variables
-  parameters: {
-    failOnError?: boolean; // Exit on error
-    failOnWarning?: boolean; // Exit on warning
-    continueOnFailure?: boolean; // Continue running all jobs even if one fails
-    progressToStdout?: boolean; // Write job progress to stdout
-  };
-  proxy?: {
-    hostname?: string; // Proxy host
-    port?: number; // Proxy port
-    realm?: string; // Proxy realm
-    username?: string; // Proxy username
-    password?: string; // Proxy password
-  };
+  parameters: IEnvironmentParameters;
+  proxy?: IEnvironmentProxy;
 }
