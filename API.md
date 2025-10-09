@@ -2,27 +2,27 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ActiveScanConfig <a name="ActiveScanConfig" id="zap-cdk.ActiveScanConfig"></a>
+### ActiveScanConfigConstruct <a name="ActiveScanConfigConstruct" id="zap-cdk.ActiveScanConfigConstruct"></a>
 
 Class representing the active scan configuration.
 
-#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanConfig.Initializer"></a>
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanConfigConstruct.Initializer"></a>
 
 ```typescript
-import { ActiveScanConfig } from 'zap-cdk'
+import { ActiveScanConfigConstruct } from 'zap-cdk'
 
-new ActiveScanConfig(scope: Construct, id: string, props: IActiveScanConfigProps)
+new ActiveScanConfigConstruct(scope: Construct, id: string, props: IActiveScanConfigProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#zap-cdk.ActiveScanConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
-| <code><a href="#zap-cdk.ActiveScanConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
-| <code><a href="#zap-cdk.ActiveScanConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IActiveScanConfigProps">IActiveScanConfigProps</a></code> | - The properties of the active scan configuration. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IActiveScanConfigProps">IActiveScanConfigProps</a></code> | - The properties of the active scan configuration. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ActiveScanConfig.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.ActiveScanConfigConstruct.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which this construct is defined.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ActiveScanConfig.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ActiveScanConfigConstruct.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -38,7 +38,7 @@ The ID of the construct.
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ActiveScanConfig.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.ActiveScanConfigConstruct.Initializer.parameter.props"></a>
 
 - *Type:* <a href="#zap-cdk.IActiveScanConfigProps">IActiveScanConfigProps</a>
 
@@ -50,12 +50,12 @@ The properties of the active scan configuration.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#zap-cdk.ActiveScanConfig.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#zap-cdk.ActiveScanConfig.toYaml">toYaml</a></code> | Converts the active scan configuration to YAML format. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.toYaml">toYaml</a></code> | Converts the active scan configuration to YAML format. |
 
 ---
 
-##### `toString` <a name="toString" id="zap-cdk.ActiveScanConfig.toString"></a>
+##### `toString` <a name="toString" id="zap-cdk.ActiveScanConfigConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -63,7 +63,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `toYaml` <a name="toYaml" id="zap-cdk.ActiveScanConfig.toYaml"></a>
+##### `toYaml` <a name="toYaml" id="zap-cdk.ActiveScanConfigConstruct.toYaml"></a>
 
 ```typescript
 public toYaml(): IActiveScanConfig
@@ -75,21 +75,21 @@ Converts the active scan configuration to YAML format.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#zap-cdk.ActiveScanConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ActiveScanConfig.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.ActiveScanConfigConstruct.isConstruct"></a>
 
 ```typescript
-import { ActiveScanConfig } from 'zap-cdk'
+import { ActiveScanConfigConstruct } from 'zap-cdk'
 
-ActiveScanConfig.isConstruct(x: any)
+ActiveScanConfigConstruct.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ActiveScanConfig.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.ActiveScanConfigConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -101,12 +101,12 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#zap-cdk.ActiveScanConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#zap-cdk.ActiveScanConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a></code> | The active scan configuration properties. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.ActiveScanConfigConstruct.property.config">config</a></code> | <code><a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a></code> | The active scan configuration properties. |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ActiveScanConfig.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.ActiveScanConfigConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -118,7 +118,7 @@ The tree node.
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ActiveScanConfig.property.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.ActiveScanConfigConstruct.property.config"></a>
 
 ```typescript
 public readonly config: IActiveScanConfig;
@@ -1375,27 +1375,27 @@ public readonly config: IOpenAPI;
 ---
 
 
-### PassiveScanConfig <a name="PassiveScanConfig" id="zap-cdk.PassiveScanConfig"></a>
+### PassiveScanConfigConstruct <a name="PassiveScanConfigConstruct" id="zap-cdk.PassiveScanConfigConstruct"></a>
 
 Class representing the passive scan configuration.
 
-#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanConfig.Initializer"></a>
+#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanConfigConstruct.Initializer"></a>
 
 ```typescript
-import { PassiveScanConfig } from 'zap-cdk'
+import { PassiveScanConfigConstruct } from 'zap-cdk'
 
-new PassiveScanConfig(scope: Construct, id: string, props: IPassiveScanConfigProps)
+new PassiveScanConfigConstruct(scope: Construct, id: string, props: IPassiveScanConfigProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#zap-cdk.PassiveScanConfig.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
-| <code><a href="#zap-cdk.PassiveScanConfig.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
-| <code><a href="#zap-cdk.PassiveScanConfig.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IPassiveScanConfigProps">IPassiveScanConfigProps</a></code> | - The properties of the passive scan configuration. |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | - The scope in which this construct is defined. |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.Initializer.parameter.id">id</a></code> | <code>string</code> | - The ID of the construct. |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.Initializer.parameter.props">props</a></code> | <code><a href="#zap-cdk.IPassiveScanConfigProps">IPassiveScanConfigProps</a></code> | - The properties of the passive scan configuration. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.PassiveScanConfig.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="zap-cdk.PassiveScanConfigConstruct.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1403,7 +1403,7 @@ The scope in which this construct is defined.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.PassiveScanConfig.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.PassiveScanConfigConstruct.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -1411,7 +1411,7 @@ The ID of the construct.
 
 ---
 
-##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.PassiveScanConfig.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="zap-cdk.PassiveScanConfigConstruct.Initializer.parameter.props"></a>
 
 - *Type:* <a href="#zap-cdk.IPassiveScanConfigProps">IPassiveScanConfigProps</a>
 
@@ -1423,12 +1423,12 @@ The properties of the passive scan configuration.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#zap-cdk.PassiveScanConfig.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#zap-cdk.PassiveScanConfig.toYaml">toYaml</a></code> | Converts the passive scan configuration to YAML format. |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.toYaml">toYaml</a></code> | Converts the passive scan configuration to YAML format. |
 
 ---
 
-##### `toString` <a name="toString" id="zap-cdk.PassiveScanConfig.toString"></a>
+##### `toString` <a name="toString" id="zap-cdk.PassiveScanConfigConstruct.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1436,7 +1436,7 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `toYaml` <a name="toYaml" id="zap-cdk.PassiveScanConfig.toYaml"></a>
+##### `toYaml` <a name="toYaml" id="zap-cdk.PassiveScanConfigConstruct.toYaml"></a>
 
 ```typescript
 public toYaml(): IPassiveScanConfig
@@ -1448,21 +1448,21 @@ Converts the passive scan configuration to YAML format.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#zap-cdk.PassiveScanConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.PassiveScanConfig.isConstruct"></a>
+##### ~~`isConstruct`~~ <a name="isConstruct" id="zap-cdk.PassiveScanConfigConstruct.isConstruct"></a>
 
 ```typescript
-import { PassiveScanConfig } from 'zap-cdk'
+import { PassiveScanConfigConstruct } from 'zap-cdk'
 
-PassiveScanConfig.isConstruct(x: any)
+PassiveScanConfigConstruct.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
 
-###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.PassiveScanConfig.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="zap-cdk.PassiveScanConfigConstruct.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -1474,12 +1474,12 @@ Any object.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#zap-cdk.PassiveScanConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#zap-cdk.PassiveScanConfig.property.config">config</a></code> | <code><a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a></code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#zap-cdk.PassiveScanConfigConstruct.property.config">config</a></code> | <code><a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a></code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.PassiveScanConfig.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="zap-cdk.PassiveScanConfigConstruct.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -1491,7 +1491,7 @@ The tree node.
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.PassiveScanConfig.property.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="zap-cdk.PassiveScanConfigConstruct.property.config"></a>
 
 ```typescript
 public readonly config: IPassiveScanConfig;
@@ -2686,12 +2686,6450 @@ public readonly spider: ISpider;
 
 ---
 
+## Classes <a name="Classes" id="Classes"></a>
+
+### ActiveScan <a name="ActiveScan" id="zap-cdk.ActiveScan"></a>
+
+- *Implements:* <a href="#zap-cdk.IActiveScan">IActiveScan</a>
+
+Class representing an active scan configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScan.Initializer"></a>
+
+```typescript
+import { ActiveScan } from 'zap-cdk'
+
+new ActiveScan(options: IActiveScan)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScan.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IActiveScan">IActiveScan</a></code> | - The active scan configuration details. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ActiveScan.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScan">IActiveScan</a>
+
+The active scan configuration details.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScan.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.IActiveScanParameters">IActiveScanParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScan.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScan.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScan.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScan.property.policyDefinition">policyDefinition</a></code> | <code><a href="#zap-cdk.IPolicyDefinition">IPolicyDefinition</a></code> | *No description.* |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.ActiveScan.property.parameters"></a>
+
+```typescript
+public readonly parameters: IActiveScanParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanParameters">IActiveScanParameters</a>
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.ActiveScan.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.ActiveScan.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.ActiveScan.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `policyDefinition`<sup>Optional</sup> <a name="policyDefinition" id="zap-cdk.ActiveScan.property.policyDefinition"></a>
+
+```typescript
+public readonly policyDefinition: IPolicyDefinition;
+```
+
+- *Type:* <a href="#zap-cdk.IPolicyDefinition">IPolicyDefinition</a>
+
+---
+
+
+### ActiveScanConfig <a name="ActiveScanConfig" id="zap-cdk.ActiveScanConfig"></a>
+
+- *Implements:* <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a>
+
+Class representing the configuration for an active scan.
+
+*Example*
+
+```typescript
+const activeScanConfig = new ActiveScanConfig({
+  parameters: new ActiveScanConfigParameters(),
+  excludePaths: ['^/api/health$', '^/static/.*$'],
+  enabled: true,
+  alwaysRun: false
+});
+console.log(activeScanConfig.type); // 'activeScan-config'
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanConfig.Initializer"></a>
+
+```typescript
+import { ActiveScanConfig } from 'zap-cdk'
+
+new ActiveScanConfig(options: IActiveScanConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfig.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a></code> | - The configuration options for the active scan. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ActiveScanConfig.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a>
+
+The configuration options for the active scan.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfig.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.IActiveScanConfigParameters">IActiveScanConfigParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfig.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfig.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfig.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfig.property.excludePaths">excludePaths</a></code> | <code>string[]</code> | *No description.* |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.ActiveScanConfig.property.parameters"></a>
+
+```typescript
+public readonly parameters: IActiveScanConfigParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanConfigParameters">IActiveScanConfigParameters</a>
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.ActiveScanConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.ActiveScanConfig.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.ActiveScanConfig.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `excludePaths`<sup>Optional</sup> <a name="excludePaths" id="zap-cdk.ActiveScanConfig.property.excludePaths"></a>
+
+```typescript
+public readonly excludePaths: string[];
+```
+
+- *Type:* string[]
+
+---
+
+
+### ActiveScanConfigParameters <a name="ActiveScanConfigParameters" id="zap-cdk.ActiveScanConfigParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IActiveScanConfigParameters">IActiveScanConfigParameters</a>
+
+Class representing the parameters for configuring an active scan.
+
+*Example*
+
+```typescript
+const activeScanConfig = new ActiveScanConfigParameters({
+  maxRuleDurationInMins: 0,
+  maxScanDurationInMins: 0,
+  maxAlertsPerRule: 0,
+  defaultPolicy: 'Default Policy',
+  handleAntiCSRFTokens: false,
+  injectPluginIdInHeader: false,
+  threadPerHost: 4,
+  inputVectors: new InputVectors()
+});
+console.log(activeScanConfig.defaultPolicy); // 'Default Policy'
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanConfigParameters.Initializer"></a>
+
+```typescript
+import { ActiveScanConfigParameters } from 'zap-cdk'
+
+new ActiveScanConfigParameters(options?: IActiveScanConfigParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IActiveScanConfigParameters">IActiveScanConfigParameters</a></code> | - The configuration options for the active scan. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.ActiveScanConfigParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanConfigParameters">IActiveScanConfigParameters</a>
+
+The configuration options for the active scan.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.inputVectors">inputVectors</a></code> | <code><a href="#zap-cdk.IInputVectors">IInputVectors</a></code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.defaultPolicy">defaultPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.handleAntiCSRFTokens">handleAntiCSRFTokens</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.injectPluginIdInHeader">injectPluginIdInHeader</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.maxAlertsPerRule">maxAlertsPerRule</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.maxRuleDurationInMins">maxRuleDurationInMins</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.maxScanDurationInMins">maxScanDurationInMins</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanConfigParameters.property.threadPerHost">threadPerHost</a></code> | <code>number</code> | *No description.* |
+
+---
+
+##### `inputVectors`<sup>Required</sup> <a name="inputVectors" id="zap-cdk.ActiveScanConfigParameters.property.inputVectors"></a>
+
+```typescript
+public readonly inputVectors: IInputVectors;
+```
+
+- *Type:* <a href="#zap-cdk.IInputVectors">IInputVectors</a>
+
+---
+
+##### `defaultPolicy`<sup>Optional</sup> <a name="defaultPolicy" id="zap-cdk.ActiveScanConfigParameters.property.defaultPolicy"></a>
+
+```typescript
+public readonly defaultPolicy: string;
+```
+
+- *Type:* string
+
+---
+
+##### `handleAntiCSRFTokens`<sup>Optional</sup> <a name="handleAntiCSRFTokens" id="zap-cdk.ActiveScanConfigParameters.property.handleAntiCSRFTokens"></a>
+
+```typescript
+public readonly handleAntiCSRFTokens: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `injectPluginIdInHeader`<sup>Optional</sup> <a name="injectPluginIdInHeader" id="zap-cdk.ActiveScanConfigParameters.property.injectPluginIdInHeader"></a>
+
+```typescript
+public readonly injectPluginIdInHeader: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `maxAlertsPerRule`<sup>Optional</sup> <a name="maxAlertsPerRule" id="zap-cdk.ActiveScanConfigParameters.property.maxAlertsPerRule"></a>
+
+```typescript
+public readonly maxAlertsPerRule: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxRuleDurationInMins`<sup>Optional</sup> <a name="maxRuleDurationInMins" id="zap-cdk.ActiveScanConfigParameters.property.maxRuleDurationInMins"></a>
+
+```typescript
+public readonly maxRuleDurationInMins: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxScanDurationInMins`<sup>Optional</sup> <a name="maxScanDurationInMins" id="zap-cdk.ActiveScanConfigParameters.property.maxScanDurationInMins"></a>
+
+```typescript
+public readonly maxScanDurationInMins: number;
+```
+
+- *Type:* number
+
+---
+
+##### `threadPerHost`<sup>Optional</sup> <a name="threadPerHost" id="zap-cdk.ActiveScanConfigParameters.property.threadPerHost"></a>
+
+```typescript
+public readonly threadPerHost: number;
+```
+
+- *Type:* number
+
+---
+
+
+### ActiveScanParameters <a name="ActiveScanParameters" id="zap-cdk.ActiveScanParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IActiveScanParameters">IActiveScanParameters</a>
+
+Class representing parameters for an active scan.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanParameters.Initializer"></a>
+
+```typescript
+import { ActiveScanParameters } from 'zap-cdk'
+
+new ActiveScanParameters(options?: IActiveScanParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IActiveScanParameters">IActiveScanParameters</a></code> | - The parameters for the active scan. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.ActiveScanParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanParameters">IActiveScanParameters</a>
+
+The parameters for the active scan.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.addQueryParam">addQueryParam</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.defaultPolicy">defaultPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.delayInMs">delayInMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.handleAntiCSRFTokens">handleAntiCSRFTokens</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.injectPluginIdInHeader">injectPluginIdInHeader</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.maxAlertsPerRule">maxAlertsPerRule</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.maxRuleDurationInMins">maxRuleDurationInMins</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.maxScanDurationInMins">maxScanDurationInMins</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.policy">policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.scanHeadersAllRequests">scanHeadersAllRequests</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.tests">tests</a></code> | <code><a href="#zap-cdk.IAlertTest">IAlertTest</a> \| <a href="#zap-cdk.IMonitorTest">IMonitorTest</a> \| <a href="#zap-cdk.IStatisticsTest">IStatisticsTest</a> \| <a href="#zap-cdk.IUrlTest">IUrlTest</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.threadPerHost">threadPerHost</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanParameters.property.user">user</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `addQueryParam`<sup>Optional</sup> <a name="addQueryParam" id="zap-cdk.ActiveScanParameters.property.addQueryParam"></a>
+
+```typescript
+public readonly addQueryParam: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="zap-cdk.ActiveScanParameters.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultPolicy`<sup>Optional</sup> <a name="defaultPolicy" id="zap-cdk.ActiveScanParameters.property.defaultPolicy"></a>
+
+```typescript
+public readonly defaultPolicy: string;
+```
+
+- *Type:* string
+
+---
+
+##### `delayInMs`<sup>Optional</sup> <a name="delayInMs" id="zap-cdk.ActiveScanParameters.property.delayInMs"></a>
+
+```typescript
+public readonly delayInMs: number;
+```
+
+- *Type:* number
+
+---
+
+##### `handleAntiCSRFTokens`<sup>Optional</sup> <a name="handleAntiCSRFTokens" id="zap-cdk.ActiveScanParameters.property.handleAntiCSRFTokens"></a>
+
+```typescript
+public readonly handleAntiCSRFTokens: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `injectPluginIdInHeader`<sup>Optional</sup> <a name="injectPluginIdInHeader" id="zap-cdk.ActiveScanParameters.property.injectPluginIdInHeader"></a>
+
+```typescript
+public readonly injectPluginIdInHeader: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `maxAlertsPerRule`<sup>Optional</sup> <a name="maxAlertsPerRule" id="zap-cdk.ActiveScanParameters.property.maxAlertsPerRule"></a>
+
+```typescript
+public readonly maxAlertsPerRule: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxRuleDurationInMins`<sup>Optional</sup> <a name="maxRuleDurationInMins" id="zap-cdk.ActiveScanParameters.property.maxRuleDurationInMins"></a>
+
+```typescript
+public readonly maxRuleDurationInMins: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxScanDurationInMins`<sup>Optional</sup> <a name="maxScanDurationInMins" id="zap-cdk.ActiveScanParameters.property.maxScanDurationInMins"></a>
+
+```typescript
+public readonly maxScanDurationInMins: number;
+```
+
+- *Type:* number
+
+---
+
+##### `policy`<sup>Optional</sup> <a name="policy" id="zap-cdk.ActiveScanParameters.property.policy"></a>
+
+```typescript
+public readonly policy: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scanHeadersAllRequests`<sup>Optional</sup> <a name="scanHeadersAllRequests" id="zap-cdk.ActiveScanParameters.property.scanHeadersAllRequests"></a>
+
+```typescript
+public readonly scanHeadersAllRequests: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `tests`<sup>Optional</sup> <a name="tests" id="zap-cdk.ActiveScanParameters.property.tests"></a>
+
+```typescript
+public readonly tests: IAlertTest | IMonitorTest | IStatisticsTest | IUrlTest[];
+```
+
+- *Type:* <a href="#zap-cdk.IAlertTest">IAlertTest</a> | <a href="#zap-cdk.IMonitorTest">IMonitorTest</a> | <a href="#zap-cdk.IStatisticsTest">IStatisticsTest</a> | <a href="#zap-cdk.IUrlTest">IUrlTest</a>[]
+
+---
+
+##### `threadPerHost`<sup>Optional</sup> <a name="threadPerHost" id="zap-cdk.ActiveScanParameters.property.threadPerHost"></a>
+
+```typescript
+public readonly threadPerHost: number;
+```
+
+- *Type:* number
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="zap-cdk.ActiveScanParameters.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="zap-cdk.ActiveScanParameters.property.user"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* string
+
+---
+
+
+### ActiveScanPolicy <a name="ActiveScanPolicy" id="zap-cdk.ActiveScanPolicy"></a>
+
+- *Implements:* <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a>
+
+Class representing an active scan policy configuration.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanPolicy.Initializer"></a>
+
+```typescript
+import { ActiveScanPolicy } from 'zap-cdk'
+
+new ActiveScanPolicy(options: IActiveScanPolicy)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicy.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a></code> | - The configuration options for the active scan policy. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ActiveScanPolicy.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a>
+
+The configuration options for the active scan policy.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicy.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.IActiveScanPolicyParameters">IActiveScanPolicyParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicy.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicy.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicy.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.ActiveScanPolicy.property.parameters"></a>
+
+```typescript
+public readonly parameters: IActiveScanPolicyParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicyParameters">IActiveScanPolicyParameters</a>
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.ActiveScanPolicy.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.ActiveScanPolicy.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.ActiveScanPolicy.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+
+### ActiveScanPolicyDefinition <a name="ActiveScanPolicyDefinition" id="zap-cdk.ActiveScanPolicyDefinition"></a>
+
+- *Implements:* <a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a>
+
+Class representing the policy definition for an active scan.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanPolicyDefinition.Initializer"></a>
+
+```typescript
+import { ActiveScanPolicyDefinition } from 'zap-cdk'
+
+new ActiveScanPolicyDefinition(options: IActiveScanPolicyDefinition)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyDefinition.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a></code> | - The configuration options for the policy definition. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ActiveScanPolicyDefinition.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a>
+
+The configuration options for the policy definition.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyDefinition.property.createdAt">createdAt</a></code> | <code>Date</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicyDefinition.property.id">id</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicyDefinition.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicyDefinition.property.updatedAt">updatedAt</a></code> | <code>Date</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicyDefinition.property.description">description</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="zap-cdk.ActiveScanPolicyDefinition.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: Date;
+```
+
+- *Type:* Date
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.ActiveScanPolicyDefinition.property.id"></a>
+
+```typescript
+public readonly id: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="zap-cdk.ActiveScanPolicyDefinition.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="zap-cdk.ActiveScanPolicyDefinition.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: Date;
+```
+
+- *Type:* Date
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="zap-cdk.ActiveScanPolicyDefinition.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+
+### ActiveScanPolicyParameters <a name="ActiveScanPolicyParameters" id="zap-cdk.ActiveScanPolicyParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IActiveScanPolicyParameters">IActiveScanPolicyParameters</a>
+
+Class representing the parameters for an active scan policy.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ActiveScanPolicyParameters.Initializer"></a>
+
+```typescript
+import { ActiveScanPolicyParameters } from 'zap-cdk'
+
+new ActiveScanPolicyParameters(options: IActiveScanPolicyParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IActiveScanPolicyParameters">IActiveScanPolicyParameters</a></code> | - The configuration options for the active scan policy parameters. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ActiveScanPolicyParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicyParameters">IActiveScanPolicyParameters</a>
+
+The configuration options for the active scan policy parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ActiveScanPolicyParameters.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ActiveScanPolicyParameters.property.policyDefinition">policyDefinition</a></code> | <code><a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a></code> | *No description.* |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="zap-cdk.ActiveScanPolicyParameters.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `policyDefinition`<sup>Required</sup> <a name="policyDefinition" id="zap-cdk.ActiveScanPolicyParameters.property.policyDefinition"></a>
+
+```typescript
+public readonly policyDefinition: IActiveScanPolicyDefinition;
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a>
+
+---
+
+
+### AjaxTest <a name="AjaxTest" id="zap-cdk.AjaxTest"></a>
+
+- *Implements:* <a href="#zap-cdk.IAjaxTest">IAjaxTest</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.AjaxTest.Initializer"></a>
+
+```typescript
+import { AjaxTest } from 'zap-cdk'
+
+new AjaxTest(options: IAjaxTest)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AjaxTest.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAjaxTest">IAjaxTest</a></code> | - The options to initialize the AJAX test. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.AjaxTest.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAjaxTest">IAjaxTest</a>
+
+The options to initialize the AJAX test.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AjaxTest.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AjaxTest.property.operator">operator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AjaxTest.property.statistic">statistic</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AjaxTest.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AjaxTest.property.value">value</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.AjaxTest.property.onFail">onFail</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="zap-cdk.AjaxTest.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `operator`<sup>Required</sup> <a name="operator" id="zap-cdk.AjaxTest.property.operator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* string
+
+---
+
+##### `statistic`<sup>Required</sup> <a name="statistic" id="zap-cdk.AjaxTest.property.statistic"></a>
+
+```typescript
+public readonly statistic: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.AjaxTest.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="zap-cdk.AjaxTest.property.value"></a>
+
+```typescript
+public readonly value: number;
+```
+
+- *Type:* number
+
+---
+
+##### `onFail`<sup>Optional</sup> <a name="onFail" id="zap-cdk.AjaxTest.property.onFail"></a>
+
+```typescript
+public readonly onFail: string;
+```
+
+- *Type:* string
+
+---
+
+
+### AlertFilter <a name="AlertFilter" id="zap-cdk.AlertFilter"></a>
+
+- *Implements:* <a href="#zap-cdk.IAlertFilter">IAlertFilter</a>
+
+Class representing a filter for alerts in the scanning process.
+
+*Example*
+
+```typescript
+const alertFilter = new AlertFilter({
+  ruleId: 10010,
+  newRisk: 'Low',
+  context: 'MyContext',
+  url: '.*example.*',
+  urlRegex: true,
+  parameter: 'sessionid',
+  parameterRegex: false,
+  attack: 'SQL Injection',
+  attackRegex: false,
+  evidence: 'SELECT',
+  evidenceRegex: true
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.AlertFilter.Initializer"></a>
+
+```typescript
+import { AlertFilter } from 'zap-cdk'
+
+new AlertFilter(options: IAlertFilter)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertFilter.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAlertFilter">IAlertFilter</a></code> | - The configuration options for the alert filter. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.AlertFilter.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAlertFilter">IAlertFilter</a>
+
+The configuration options for the alert filter.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertFilter.property.newRisk">newRisk</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.ruleId">ruleId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.attack">attack</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.attackRegex">attackRegex</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.evidence">evidence</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.evidenceRegex">evidenceRegex</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.parameter">parameter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.parameterRegex">parameterRegex</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilter.property.urlRegex">urlRegex</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `newRisk`<sup>Required</sup> <a name="newRisk" id="zap-cdk.AlertFilter.property.newRisk"></a>
+
+```typescript
+public readonly newRisk: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ruleId`<sup>Required</sup> <a name="ruleId" id="zap-cdk.AlertFilter.property.ruleId"></a>
+
+```typescript
+public readonly ruleId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `attack`<sup>Optional</sup> <a name="attack" id="zap-cdk.AlertFilter.property.attack"></a>
+
+```typescript
+public readonly attack: string;
+```
+
+- *Type:* string
+
+---
+
+##### `attackRegex`<sup>Optional</sup> <a name="attackRegex" id="zap-cdk.AlertFilter.property.attackRegex"></a>
+
+```typescript
+public readonly attackRegex: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="zap-cdk.AlertFilter.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+---
+
+##### `evidence`<sup>Optional</sup> <a name="evidence" id="zap-cdk.AlertFilter.property.evidence"></a>
+
+```typescript
+public readonly evidence: string;
+```
+
+- *Type:* string
+
+---
+
+##### `evidenceRegex`<sup>Optional</sup> <a name="evidenceRegex" id="zap-cdk.AlertFilter.property.evidenceRegex"></a>
+
+```typescript
+public readonly evidenceRegex: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `parameter`<sup>Optional</sup> <a name="parameter" id="zap-cdk.AlertFilter.property.parameter"></a>
+
+```typescript
+public readonly parameter: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parameterRegex`<sup>Optional</sup> <a name="parameterRegex" id="zap-cdk.AlertFilter.property.parameterRegex"></a>
+
+```typescript
+public readonly parameterRegex: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="zap-cdk.AlertFilter.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `urlRegex`<sup>Optional</sup> <a name="urlRegex" id="zap-cdk.AlertFilter.property.urlRegex"></a>
+
+```typescript
+public readonly urlRegex: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+
+### AlertFilterParameters <a name="AlertFilterParameters" id="zap-cdk.AlertFilterParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IAlertFilterParameters">IAlertFilterParameters</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.AlertFilterParameters.Initializer"></a>
+
+```typescript
+import { AlertFilterParameters } from 'zap-cdk'
+
+new AlertFilterParameters(options: IAlertFilterParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertFilterParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAlertFilterParameters">IAlertFilterParameters</a></code> | - The configuration options for the alert filter parameters. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.AlertFilterParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAlertFilterParameters">IAlertFilterParameters</a>
+
+The configuration options for the alert filter parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertFilterParameters.property.alertFilters">alertFilters</a></code> | <code><a href="#zap-cdk.IAlertFilter">IAlertFilter</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertFilterParameters.property.deleteGlobalAlerts">deleteGlobalAlerts</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `alertFilters`<sup>Required</sup> <a name="alertFilters" id="zap-cdk.AlertFilterParameters.property.alertFilters"></a>
+
+```typescript
+public readonly alertFilters: IAlertFilter[];
+```
+
+- *Type:* <a href="#zap-cdk.IAlertFilter">IAlertFilter</a>[]
+
+---
+
+##### `deleteGlobalAlerts`<sup>Optional</sup> <a name="deleteGlobalAlerts" id="zap-cdk.AlertFilterParameters.property.deleteGlobalAlerts"></a>
+
+```typescript
+public readonly deleteGlobalAlerts: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+
+### AlertTag <a name="AlertTag" id="zap-cdk.AlertTag"></a>
+
+- *Implements:* <a href="#zap-cdk.IAlertTag">IAlertTag</a>
+
+Class representing the configuration for alert tags.
+
+#### Initializers <a name="Initializers" id="zap-cdk.AlertTag.Initializer"></a>
+
+```typescript
+import { AlertTag } from 'zap-cdk'
+
+new AlertTag(options?: IAlertTag)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertTag.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAlertTag">IAlertTag</a></code> | - The configuration options for alert tags. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.AlertTag.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAlertTag">IAlertTag</a>
+
+The configuration options for alert tags.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertTag.property.exclude">exclude</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTag.property.include">include</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTag.property.strength">strength</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTag.property.threshold">threshold</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `exclude`<sup>Optional</sup> <a name="exclude" id="zap-cdk.AlertTag.property.exclude"></a>
+
+```typescript
+public readonly exclude: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `include`<sup>Optional</sup> <a name="include" id="zap-cdk.AlertTag.property.include"></a>
+
+```typescript
+public readonly include: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `strength`<sup>Optional</sup> <a name="strength" id="zap-cdk.AlertTag.property.strength"></a>
+
+```typescript
+public readonly strength: string;
+```
+
+- *Type:* string
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="zap-cdk.AlertTag.property.threshold"></a>
+
+```typescript
+public readonly threshold: string;
+```
+
+- *Type:* string
+
+---
+
+
+### AlertTags <a name="AlertTags" id="zap-cdk.AlertTags"></a>
+
+- *Implements:* <a href="#zap-cdk.IAlertTags">IAlertTags</a>
+
+Class representing the configuration for alert tags.
+
+#### Initializers <a name="Initializers" id="zap-cdk.AlertTags.Initializer"></a>
+
+```typescript
+import { AlertTags } from 'zap-cdk'
+
+new AlertTags(options: IAlertTags)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertTags.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAlertTags">IAlertTags</a></code> | - The configuration for alert tags. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.AlertTags.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAlertTags">IAlertTags</a>
+
+The configuration for alert tags.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertTags.property.exclude">exclude</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTags.property.include">include</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTags.property.strength">strength</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTags.property.threshold">threshold</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `exclude`<sup>Required</sup> <a name="exclude" id="zap-cdk.AlertTags.property.exclude"></a>
+
+```typescript
+public readonly exclude: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `include`<sup>Required</sup> <a name="include" id="zap-cdk.AlertTags.property.include"></a>
+
+```typescript
+public readonly include: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `strength`<sup>Optional</sup> <a name="strength" id="zap-cdk.AlertTags.property.strength"></a>
+
+```typescript
+public readonly strength: string;
+```
+
+- *Type:* string
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="zap-cdk.AlertTags.property.threshold"></a>
+
+```typescript
+public readonly threshold: string;
+```
+
+- *Type:* string
+
+---
+
+
+### AlertTest <a name="AlertTest" id="zap-cdk.AlertTest"></a>
+
+- *Implements:* <a href="#zap-cdk.IAlertTest">IAlertTest</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.AlertTest.Initializer"></a>
+
+```typescript
+import { AlertTest } from 'zap-cdk'
+
+new AlertTest(options: IAlertTest)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertTest.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAlertTest">IAlertTest</a></code> | - The configuration options for the alert test. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.AlertTest.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAlertTest">IAlertTest</a>
+
+The configuration options for the alert test.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AlertTest.property.onFail">onFail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.scanRuleId">scanRuleId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.action">action</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.alertName">alertName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.attack">attack</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.confidence">confidence</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.evidence">evidence</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.method">method</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.param">param</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.risk">risk</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AlertTest.property.url">url</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `onFail`<sup>Required</sup> <a name="onFail" id="zap-cdk.AlertTest.property.onFail"></a>
+
+```typescript
+public readonly onFail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scanRuleId`<sup>Required</sup> <a name="scanRuleId" id="zap-cdk.AlertTest.property.scanRuleId"></a>
+
+```typescript
+public readonly scanRuleId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.AlertTest.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `action`<sup>Optional</sup> <a name="action" id="zap-cdk.AlertTest.property.action"></a>
+
+```typescript
+public readonly action: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alertName`<sup>Optional</sup> <a name="alertName" id="zap-cdk.AlertTest.property.alertName"></a>
+
+```typescript
+public readonly alertName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `attack`<sup>Optional</sup> <a name="attack" id="zap-cdk.AlertTest.property.attack"></a>
+
+```typescript
+public readonly attack: string;
+```
+
+- *Type:* string
+
+---
+
+##### `confidence`<sup>Optional</sup> <a name="confidence" id="zap-cdk.AlertTest.property.confidence"></a>
+
+```typescript
+public readonly confidence: string;
+```
+
+- *Type:* string
+
+---
+
+##### `evidence`<sup>Optional</sup> <a name="evidence" id="zap-cdk.AlertTest.property.evidence"></a>
+
+```typescript
+public readonly evidence: string;
+```
+
+- *Type:* string
+
+---
+
+##### `method`<sup>Optional</sup> <a name="method" id="zap-cdk.AlertTest.property.method"></a>
+
+```typescript
+public readonly method: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.AlertTest.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `param`<sup>Optional</sup> <a name="param" id="zap-cdk.AlertTest.property.param"></a>
+
+```typescript
+public readonly param: string;
+```
+
+- *Type:* string
+
+---
+
+##### `risk`<sup>Optional</sup> <a name="risk" id="zap-cdk.AlertTest.property.risk"></a>
+
+```typescript
+public readonly risk: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="zap-cdk.AlertTest.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+
+### AuthenticationParameters <a name="AuthenticationParameters" id="zap-cdk.AuthenticationParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IAuthenticationParameters">IAuthenticationParameters</a>
+
+Represents the parameters for authentication in the scanning process.
+
+#### Initializers <a name="Initializers" id="zap-cdk.AuthenticationParameters.Initializer"></a>
+
+```typescript
+import { AuthenticationParameters } from 'zap-cdk'
+
+new AuthenticationParameters(options: IAuthenticationParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AuthenticationParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAuthenticationParameters">IAuthenticationParameters</a></code> | - The options to initialize the authentication parameters. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.AuthenticationParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAuthenticationParameters">IAuthenticationParameters</a>
+
+The options to initialize the authentication parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AuthenticationParameters.property.method">method</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParameters.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.IAuthenticationParametersParameters">IAuthenticationParametersParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParameters.property.verification">verification</a></code> | <code><a href="#zap-cdk.IAuthenticationParametersVerification">IAuthenticationParametersVerification</a></code> | *No description.* |
+
+---
+
+##### `method`<sup>Required</sup> <a name="method" id="zap-cdk.AuthenticationParameters.property.method"></a>
+
+```typescript
+public readonly method: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.AuthenticationParameters.property.parameters"></a>
+
+```typescript
+public readonly parameters: IAuthenticationParametersParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IAuthenticationParametersParameters">IAuthenticationParametersParameters</a>
+
+---
+
+##### `verification`<sup>Required</sup> <a name="verification" id="zap-cdk.AuthenticationParameters.property.verification"></a>
+
+```typescript
+public readonly verification: IAuthenticationParametersVerification;
+```
+
+- *Type:* <a href="#zap-cdk.IAuthenticationParametersVerification">IAuthenticationParametersVerification</a>
+
+---
+
+
+### AuthenticationParametersParameters <a name="AuthenticationParametersParameters" id="zap-cdk.AuthenticationParametersParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IAuthenticationParametersParameters">IAuthenticationParametersParameters</a>
+
+Represents the parameters for authentication in the scanning process.
+
+#### Initializers <a name="Initializers" id="zap-cdk.AuthenticationParametersParameters.Initializer"></a>
+
+```typescript
+import { AuthenticationParametersParameters } from 'zap-cdk'
+
+new AuthenticationParametersParameters(options?: IAuthenticationParametersParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAuthenticationParametersParameters">IAuthenticationParametersParameters</a></code> | *No description.* |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.AuthenticationParametersParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAuthenticationParametersParameters">IAuthenticationParametersParameters</a>
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.hostname">hostname</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.loginPageUrl">loginPageUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.loginRequestBody">loginRequestBody</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.loginRequestUrl">loginRequestUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.port">port</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.realm">realm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.script">script</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.scriptEngine">scriptEngine</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersParameters.property.scriptInline">scriptInline</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `hostname`<sup>Optional</sup> <a name="hostname" id="zap-cdk.AuthenticationParametersParameters.property.hostname"></a>
+
+```typescript
+public readonly hostname: string;
+```
+
+- *Type:* string
+
+---
+
+##### `loginPageUrl`<sup>Optional</sup> <a name="loginPageUrl" id="zap-cdk.AuthenticationParametersParameters.property.loginPageUrl"></a>
+
+```typescript
+public readonly loginPageUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `loginRequestBody`<sup>Optional</sup> <a name="loginRequestBody" id="zap-cdk.AuthenticationParametersParameters.property.loginRequestBody"></a>
+
+```typescript
+public readonly loginRequestBody: string;
+```
+
+- *Type:* string
+
+---
+
+##### `loginRequestUrl`<sup>Optional</sup> <a name="loginRequestUrl" id="zap-cdk.AuthenticationParametersParameters.property.loginRequestUrl"></a>
+
+```typescript
+public readonly loginRequestUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="zap-cdk.AuthenticationParametersParameters.property.port"></a>
+
+```typescript
+public readonly port: number;
+```
+
+- *Type:* number
+
+---
+
+##### `realm`<sup>Optional</sup> <a name="realm" id="zap-cdk.AuthenticationParametersParameters.property.realm"></a>
+
+```typescript
+public readonly realm: string;
+```
+
+- *Type:* string
+
+---
+
+##### `script`<sup>Optional</sup> <a name="script" id="zap-cdk.AuthenticationParametersParameters.property.script"></a>
+
+```typescript
+public readonly script: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scriptEngine`<sup>Optional</sup> <a name="scriptEngine" id="zap-cdk.AuthenticationParametersParameters.property.scriptEngine"></a>
+
+```typescript
+public readonly scriptEngine: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scriptInline`<sup>Optional</sup> <a name="scriptInline" id="zap-cdk.AuthenticationParametersParameters.property.scriptInline"></a>
+
+```typescript
+public readonly scriptInline: string;
+```
+
+- *Type:* string
+
+---
+
+
+### AuthenticationParametersVerification <a name="AuthenticationParametersVerification" id="zap-cdk.AuthenticationParametersVerification"></a>
+
+- *Implements:* <a href="#zap-cdk.IAuthenticationParametersVerification">IAuthenticationParametersVerification</a>
+
+Represents the verification details for authentication in the scanning process.
+
+#### Initializers <a name="Initializers" id="zap-cdk.AuthenticationParametersVerification.Initializer"></a>
+
+```typescript
+import { AuthenticationParametersVerification } from 'zap-cdk'
+
+new AuthenticationParametersVerification(options: IAuthenticationParametersVerification)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IAuthenticationParametersVerification">IAuthenticationParametersVerification</a></code> | - The options to initialize the verification details. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.AuthenticationParametersVerification.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IAuthenticationParametersVerification">IAuthenticationParametersVerification</a>
+
+The options to initialize the verification details.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.method">method</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.loggedInRegex">loggedInRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.loggedOutRegex">loggedOutRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.pollAdditionalHeaders">pollAdditionalHeaders</a></code> | <code><a href="#zap-cdk.IPollAdditionalHeaders">IPollAdditionalHeaders</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.pollFrequency">pollFrequency</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.pollPostData">pollPostData</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.pollUnits">pollUnits</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.AuthenticationParametersVerification.property.pollUrl">pollUrl</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `method`<sup>Required</sup> <a name="method" id="zap-cdk.AuthenticationParametersVerification.property.method"></a>
+
+```typescript
+public readonly method: string;
+```
+
+- *Type:* string
+
+---
+
+##### `loggedInRegex`<sup>Optional</sup> <a name="loggedInRegex" id="zap-cdk.AuthenticationParametersVerification.property.loggedInRegex"></a>
+
+```typescript
+public readonly loggedInRegex: string;
+```
+
+- *Type:* string
+
+---
+
+##### `loggedOutRegex`<sup>Optional</sup> <a name="loggedOutRegex" id="zap-cdk.AuthenticationParametersVerification.property.loggedOutRegex"></a>
+
+```typescript
+public readonly loggedOutRegex: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pollAdditionalHeaders`<sup>Optional</sup> <a name="pollAdditionalHeaders" id="zap-cdk.AuthenticationParametersVerification.property.pollAdditionalHeaders"></a>
+
+```typescript
+public readonly pollAdditionalHeaders: IPollAdditionalHeaders[];
+```
+
+- *Type:* <a href="#zap-cdk.IPollAdditionalHeaders">IPollAdditionalHeaders</a>[]
+
+---
+
+##### `pollFrequency`<sup>Optional</sup> <a name="pollFrequency" id="zap-cdk.AuthenticationParametersVerification.property.pollFrequency"></a>
+
+```typescript
+public readonly pollFrequency: number;
+```
+
+- *Type:* number
+
+---
+
+##### `pollPostData`<sup>Optional</sup> <a name="pollPostData" id="zap-cdk.AuthenticationParametersVerification.property.pollPostData"></a>
+
+```typescript
+public readonly pollPostData: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pollUnits`<sup>Optional</sup> <a name="pollUnits" id="zap-cdk.AuthenticationParametersVerification.property.pollUnits"></a>
+
+```typescript
+public readonly pollUnits: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pollUrl`<sup>Optional</sup> <a name="pollUrl" id="zap-cdk.AuthenticationParametersVerification.property.pollUrl"></a>
+
+```typescript
+public readonly pollUrl: string;
+```
+
+- *Type:* string
+
+---
+
+
+### ContextStructure <a name="ContextStructure" id="zap-cdk.ContextStructure"></a>
+
+- *Implements:* <a href="#zap-cdk.IContextStructure">IContextStructure</a>
+
+Represents the structure details of the context.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ContextStructure.Initializer"></a>
+
+```typescript
+import { ContextStructure } from 'zap-cdk'
+
+new ContextStructure(options: IContextStructure)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ContextStructure.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IContextStructure">IContextStructure</a></code> | - The options to initialize the context structure. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ContextStructure.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IContextStructure">IContextStructure</a>
+
+The options to initialize the context structure.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ContextStructure.property.dataDrivenNodes">dataDrivenNodes</a></code> | <code><a href="#zap-cdk.IDataDrivenNode">IDataDrivenNode</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.ContextStructure.property.structuralParameters">structuralParameters</a></code> | <code>string[]</code> | *No description.* |
+
+---
+
+##### `dataDrivenNodes`<sup>Optional</sup> <a name="dataDrivenNodes" id="zap-cdk.ContextStructure.property.dataDrivenNodes"></a>
+
+```typescript
+public readonly dataDrivenNodes: IDataDrivenNode[];
+```
+
+- *Type:* <a href="#zap-cdk.IDataDrivenNode">IDataDrivenNode</a>[]
+
+---
+
+##### `structuralParameters`<sup>Optional</sup> <a name="structuralParameters" id="zap-cdk.ContextStructure.property.structuralParameters"></a>
+
+```typescript
+public readonly structuralParameters: string[];
+```
+
+- *Type:* string[]
+
+---
+
+
+### ContextUser <a name="ContextUser" id="zap-cdk.ContextUser"></a>
+
+- *Implements:* <a href="#zap-cdk.IContextUser">IContextUser</a>
+
+Represents a user in the context.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ContextUser.Initializer"></a>
+
+```typescript
+import { ContextUser } from 'zap-cdk'
+
+new ContextUser(options: IContextUser)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ContextUser.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IContextUser">IContextUser</a></code> | - The options to initialize the context user. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ContextUser.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IContextUser">IContextUser</a>
+
+The options to initialize the context user.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ContextUser.property.credentials">credentials</a></code> | <code><a href="#zap-cdk.IUserCredentials">IUserCredentials</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.ContextUser.property.name">name</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `credentials`<sup>Required</sup> <a name="credentials" id="zap-cdk.ContextUser.property.credentials"></a>
+
+```typescript
+public readonly credentials: IUserCredentials[];
+```
+
+- *Type:* <a href="#zap-cdk.IUserCredentials">IUserCredentials</a>[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="zap-cdk.ContextUser.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+
+### CookieData <a name="CookieData" id="zap-cdk.CookieData"></a>
+
+- *Implements:* <a href="#zap-cdk.ICookieData">ICookieData</a>
+
+Class representing the configuration for cookie data scanning.
+
+*Example*
+
+```typescript
+const cookieConfig = new CookieData({ enabled: false, encodeCookieValues: false });
+console.log(cookieConfig.enabled); // false
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.CookieData.Initializer"></a>
+
+```typescript
+import { CookieData } from 'zap-cdk'
+
+new CookieData(options?: ICookieData)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.CookieData.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ICookieData">ICookieData</a></code> | - The configuration options for cookie data scanning. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.CookieData.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ICookieData">ICookieData</a>
+
+The configuration options for cookie data scanning.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.CookieData.property.enabled">enabled</a></code> | <code>boolean</code> | If cookie scanning is enabled. |
+| <code><a href="#zap-cdk.CookieData.property.encodeCookieValues">encodeCookieValues</a></code> | <code>boolean</code> | If cookie values should be encoded. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.CookieData.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+If cookie scanning is enabled.
+
+Default: false
+
+---
+
+##### `encodeCookieValues`<sup>Optional</sup> <a name="encodeCookieValues" id="zap-cdk.CookieData.property.encodeCookieValues"></a>
+
+```typescript
+public readonly encodeCookieValues: boolean;
+```
+
+- *Type:* boolean
+
+If cookie values should be encoded.
+
+Default: false
+
+---
+
+
+### DataDrivenNode <a name="DataDrivenNode" id="zap-cdk.DataDrivenNode"></a>
+
+- *Implements:* <a href="#zap-cdk.IDataDrivenNode">IDataDrivenNode</a>
+
+Represents a data-driven node in the scanning process.
+
+#### Initializers <a name="Initializers" id="zap-cdk.DataDrivenNode.Initializer"></a>
+
+```typescript
+import { DataDrivenNode } from 'zap-cdk'
+
+new DataDrivenNode(options: IDataDrivenNode)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.DataDrivenNode.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IDataDrivenNode">IDataDrivenNode</a></code> | - The options to initialize the data-driven node. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.DataDrivenNode.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IDataDrivenNode">IDataDrivenNode</a>
+
+The options to initialize the data-driven node.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.DataDrivenNode.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.DataDrivenNode.property.regex">regex</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="zap-cdk.DataDrivenNode.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `regex`<sup>Required</sup> <a name="regex" id="zap-cdk.DataDrivenNode.property.regex"></a>
+
+```typescript
+public readonly regex: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Delay <a name="Delay" id="zap-cdk.Delay"></a>
+
+- *Implements:* <a href="#zap-cdk.IDelay">IDelay</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.Delay.Initializer"></a>
+
+```typescript
+import { Delay } from 'zap-cdk'
+
+new Delay(parameters: IDelayParameters, enabled?: boolean, alwaysRun?: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Delay.Initializer.parameter.parameters">parameters</a></code> | <code><a href="#zap-cdk.IDelayParameters">IDelayParameters</a></code> | - The parameters for the delay configuration. |
+| <code><a href="#zap-cdk.Delay.Initializer.parameter.enabled">enabled</a></code> | <code>boolean</code> | - If set to false the job will not be run, default: true. |
+| <code><a href="#zap-cdk.Delay.Initializer.parameter.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | - If set and the job is enabled then it will run even if the plan exits early, default: false. |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.Delay.Initializer.parameter.parameters"></a>
+
+- *Type:* <a href="#zap-cdk.IDelayParameters">IDelayParameters</a>
+
+The parameters for the delay configuration.
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.Delay.Initializer.parameter.enabled"></a>
+
+- *Type:* boolean
+
+If set to false the job will not be run, default: true.
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.Delay.Initializer.parameter.alwaysRun"></a>
+
+- *Type:* boolean
+
+If set and the job is enabled then it will run even if the plan exits early, default: false.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Delay.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.IDelayParameters">IDelayParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.Delay.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Delay.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.Delay.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.Delay.property.parameters"></a>
+
+```typescript
+public readonly parameters: IDelayParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IDelayParameters">IDelayParameters</a>
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.Delay.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.Delay.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.Delay.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+
+### DelayParameters <a name="DelayParameters" id="zap-cdk.DelayParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IDelayParameters">IDelayParameters</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.DelayParameters.Initializer"></a>
+
+```typescript
+import { DelayParameters } from 'zap-cdk'
+
+new DelayParameters(time?: string, fileName?: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.DelayParameters.Initializer.parameter.time">time</a></code> | <code>string</code> | - The time to wait, format any of ['hh:mm:ss', 'mm:ss', 'ss'], default: 0. |
+| <code><a href="#zap-cdk.DelayParameters.Initializer.parameter.fileName">fileName</a></code> | <code>string</code> | - Name of a file which will cause the job to end early if created, default: empty. |
+
+---
+
+##### `time`<sup>Optional</sup> <a name="time" id="zap-cdk.DelayParameters.Initializer.parameter.time"></a>
+
+- *Type:* string
+
+The time to wait, format any of ['hh:mm:ss', 'mm:ss', 'ss'], default: 0.
+
+---
+
+##### `fileName`<sup>Optional</sup> <a name="fileName" id="zap-cdk.DelayParameters.Initializer.parameter.fileName"></a>
+
+- *Type:* string
+
+Name of a file which will cause the job to end early if created, default: empty.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.DelayParameters.property.fileName">fileName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.DelayParameters.property.time">time</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fileName`<sup>Optional</sup> <a name="fileName" id="zap-cdk.DelayParameters.property.fileName"></a>
+
+```typescript
+public readonly fileName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `time`<sup>Optional</sup> <a name="time" id="zap-cdk.DelayParameters.property.time"></a>
+
+```typescript
+public readonly time: string;
+```
+
+- *Type:* string
+
+---
+
+
+### ExcludedElement <a name="ExcludedElement" id="zap-cdk.ExcludedElement"></a>
+
+- *Implements:* <a href="#zap-cdk.IExcludedElement">IExcludedElement</a>
+
+Class representing an excluded HTML element configuration.
+
+*Example*
+
+```typescript
+const excludedElement = new ExcludedElement({
+  description: 'Exclude login button',
+  element: 'button',
+  text: 'Login'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.ExcludedElement.Initializer"></a>
+
+```typescript
+import { ExcludedElement } from 'zap-cdk'
+
+new ExcludedElement(options: IExcludedElement)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExcludedElement.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IExcludedElement">IExcludedElement</a></code> | - The options to initialize the excluded element. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ExcludedElement.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IExcludedElement">IExcludedElement</a>
+
+The options to initialize the excluded element.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExcludedElement.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ExcludedElement.property.element">element</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ExcludedElement.property.attributeName">attributeName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ExcludedElement.property.attributeValue">attributeValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ExcludedElement.property.text">text</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ExcludedElement.property.xpath">xpath</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="zap-cdk.ExcludedElement.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `element`<sup>Required</sup> <a name="element" id="zap-cdk.ExcludedElement.property.element"></a>
+
+```typescript
+public readonly element: string;
+```
+
+- *Type:* string
+
+---
+
+##### `attributeName`<sup>Optional</sup> <a name="attributeName" id="zap-cdk.ExcludedElement.property.attributeName"></a>
+
+```typescript
+public readonly attributeName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `attributeValue`<sup>Optional</sup> <a name="attributeValue" id="zap-cdk.ExcludedElement.property.attributeValue"></a>
+
+```typescript
+public readonly attributeValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `text`<sup>Optional</sup> <a name="text" id="zap-cdk.ExcludedElement.property.text"></a>
+
+```typescript
+public readonly text: string;
+```
+
+- *Type:* string
+
+---
+
+##### `xpath`<sup>Optional</sup> <a name="xpath" id="zap-cdk.ExcludedElement.property.xpath"></a>
+
+```typescript
+public readonly xpath: string;
+```
+
+- *Type:* string
+
+---
+
+
+### ExitStatus <a name="ExitStatus" id="zap-cdk.ExitStatus"></a>
+
+- *Implements:* <a href="#zap-cdk.IExitStatus">IExitStatus</a>
+
+Represents the exit status configuration for the scanning process.
+
+#### Initializers <a name="Initializers" id="zap-cdk.ExitStatus.Initializer"></a>
+
+```typescript
+import { ExitStatus } from 'zap-cdk'
+
+new ExitStatus(options: IExitStatus)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExitStatus.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IExitStatus">IExitStatus</a></code> | *No description.* |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ExitStatus.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IExitStatus">IExitStatus</a>
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExitStatus.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.IExitStatusParameters">IExitStatusParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.ExitStatus.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ExitStatus.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ExitStatus.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.ExitStatus.property.parameters"></a>
+
+```typescript
+public readonly parameters: IExitStatusParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IExitStatusParameters">IExitStatusParameters</a>
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.ExitStatus.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.ExitStatus.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.ExitStatus.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+
+### ExitStatusParameters <a name="ExitStatusParameters" id="zap-cdk.ExitStatusParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IExitStatusParameters">IExitStatusParameters</a>
+
+Represents the parameters for configuring exit status in the scanning process.
+
+*Example*
+
+```typescript
+const exitStatusParams = new ExitStatusParameters({
+  errorLevel: 'High',
+  warnLevel: 'Medium',
+  okExitValue: 0,
+  errorExitValue: 1,
+  warnExitValue: 2
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.ExitStatusParameters.Initializer"></a>
+
+```typescript
+import { ExitStatusParameters } from 'zap-cdk'
+
+new ExitStatusParameters(options: IExitStatusParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExitStatusParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IExitStatusParameters">IExitStatusParameters</a></code> | - The options to initialize the exit status parameters. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ExitStatusParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IExitStatusParameters">IExitStatusParameters</a>
+
+The options to initialize the exit status parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ExitStatusParameters.property.errorExitValue">errorExitValue</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ExitStatusParameters.property.errorLevel">errorLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ExitStatusParameters.property.okExitValue">okExitValue</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ExitStatusParameters.property.warnExitValue">warnExitValue</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.ExitStatusParameters.property.warnLevel">warnLevel</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `errorExitValue`<sup>Optional</sup> <a name="errorExitValue" id="zap-cdk.ExitStatusParameters.property.errorExitValue"></a>
+
+```typescript
+public readonly errorExitValue: number;
+```
+
+- *Type:* number
+
+---
+
+##### `errorLevel`<sup>Optional</sup> <a name="errorLevel" id="zap-cdk.ExitStatusParameters.property.errorLevel"></a>
+
+```typescript
+public readonly errorLevel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `okExitValue`<sup>Optional</sup> <a name="okExitValue" id="zap-cdk.ExitStatusParameters.property.okExitValue"></a>
+
+```typescript
+public readonly okExitValue: number;
+```
+
+- *Type:* number
+
+---
+
+##### `warnExitValue`<sup>Optional</sup> <a name="warnExitValue" id="zap-cdk.ExitStatusParameters.property.warnExitValue"></a>
+
+```typescript
+public readonly warnExitValue: number;
+```
+
+- *Type:* number
+
+---
+
+##### `warnLevel`<sup>Optional</sup> <a name="warnLevel" id="zap-cdk.ExitStatusParameters.property.warnLevel"></a>
+
+```typescript
+public readonly warnLevel: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Export <a name="Export" id="zap-cdk.Export"></a>
+
+- *Implements:* <a href="#zap-cdk.IExport">IExport</a>
+
+Class representing an export operation.
+
+*Example*
+
+```typescript
+const exportConfig = new Export({
+  fileName: 'export.har',
+  type: 'har',
+  source: 'history',
+  context: 'MyContext'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.Export.Initializer"></a>
+
+```typescript
+import { Export } from 'zap-cdk'
+
+new Export(options: IExport)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Export.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IExport">IExport</a></code> | *No description.* |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Export.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IExport">IExport</a>
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Export.property.fileName">fileName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Export.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Export.property.source">source</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Export.property.type">type</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fileName`<sup>Required</sup> <a name="fileName" id="zap-cdk.Export.property.fileName"></a>
+
+```typescript
+public readonly fileName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="zap-cdk.Export.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+---
+
+##### `source`<sup>Optional</sup> <a name="source" id="zap-cdk.Export.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="zap-cdk.Export.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+
+### GraphQL <a name="GraphQL" id="zap-cdk.GraphQL"></a>
+
+- *Implements:* <a href="#zap-cdk.IGraphQL">IGraphQL</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.GraphQL.Initializer"></a>
+
+```typescript
+import { GraphQL } from 'zap-cdk'
+
+new GraphQL(options: IGraphQL)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.GraphQL.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IGraphQL">IGraphQL</a></code> | - The options to initialize the GraphQL configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.GraphQL.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IGraphQL">IGraphQL</a>
+
+The options to initialize the GraphQL configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.GraphQL.property.argsType">argsType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.lenientMaxQueryDepthEnabled">lenientMaxQueryDepthEnabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.maxAdditionalQueryDepth">maxAdditionalQueryDepth</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.maxArgsDepth">maxArgsDepth</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.maxQueryDepth">maxQueryDepth</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.optionalArgsEnabled">optionalArgsEnabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.queryGenEnabled">queryGenEnabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.querySplitType">querySplitType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.requestMethod">requestMethod</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.schemaFile">schemaFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.GraphQL.property.schemaUrl">schemaUrl</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `argsType`<sup>Optional</sup> <a name="argsType" id="zap-cdk.GraphQL.property.argsType"></a>
+
+```typescript
+public readonly argsType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `endpoint`<sup>Optional</sup> <a name="endpoint" id="zap-cdk.GraphQL.property.endpoint"></a>
+
+```typescript
+public readonly endpoint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lenientMaxQueryDepthEnabled`<sup>Optional</sup> <a name="lenientMaxQueryDepthEnabled" id="zap-cdk.GraphQL.property.lenientMaxQueryDepthEnabled"></a>
+
+```typescript
+public readonly lenientMaxQueryDepthEnabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `maxAdditionalQueryDepth`<sup>Optional</sup> <a name="maxAdditionalQueryDepth" id="zap-cdk.GraphQL.property.maxAdditionalQueryDepth"></a>
+
+```typescript
+public readonly maxAdditionalQueryDepth: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxArgsDepth`<sup>Optional</sup> <a name="maxArgsDepth" id="zap-cdk.GraphQL.property.maxArgsDepth"></a>
+
+```typescript
+public readonly maxArgsDepth: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxQueryDepth`<sup>Optional</sup> <a name="maxQueryDepth" id="zap-cdk.GraphQL.property.maxQueryDepth"></a>
+
+```typescript
+public readonly maxQueryDepth: number;
+```
+
+- *Type:* number
+
+---
+
+##### `optionalArgsEnabled`<sup>Optional</sup> <a name="optionalArgsEnabled" id="zap-cdk.GraphQL.property.optionalArgsEnabled"></a>
+
+```typescript
+public readonly optionalArgsEnabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `queryGenEnabled`<sup>Optional</sup> <a name="queryGenEnabled" id="zap-cdk.GraphQL.property.queryGenEnabled"></a>
+
+```typescript
+public readonly queryGenEnabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `querySplitType`<sup>Optional</sup> <a name="querySplitType" id="zap-cdk.GraphQL.property.querySplitType"></a>
+
+```typescript
+public readonly querySplitType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requestMethod`<sup>Optional</sup> <a name="requestMethod" id="zap-cdk.GraphQL.property.requestMethod"></a>
+
+```typescript
+public readonly requestMethod: string;
+```
+
+- *Type:* string
+
+---
+
+##### `schemaFile`<sup>Optional</sup> <a name="schemaFile" id="zap-cdk.GraphQL.property.schemaFile"></a>
+
+```typescript
+public readonly schemaFile: string;
+```
+
+- *Type:* string
+
+---
+
+##### `schemaUrl`<sup>Optional</sup> <a name="schemaUrl" id="zap-cdk.GraphQL.property.schemaUrl"></a>
+
+```typescript
+public readonly schemaUrl: string;
+```
+
+- *Type:* string
+
+---
+
+
+### HttpHeaders <a name="HttpHeaders" id="zap-cdk.HttpHeaders"></a>
+
+- *Implements:* <a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a>
+
+Class representing the configuration for HTTP header scanning.
+
+*Example*
+
+```typescript
+const headerConfig = new HttpHeaders({ enabled: false, allRequests: false });
+console.log(headerConfig.enabled); // false
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.HttpHeaders.Initializer"></a>
+
+```typescript
+import { HttpHeaders } from 'zap-cdk'
+
+new HttpHeaders(options?: IHttpHeaders)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.HttpHeaders.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a></code> | - The configuration options for HTTP header scanning. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.HttpHeaders.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a>
+
+The configuration options for HTTP header scanning.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.HttpHeaders.property.allRequests">allRequests</a></code> | <code>boolean</code> | If headers of requests without parameters should be scanned. |
+| <code><a href="#zap-cdk.HttpHeaders.property.enabled">enabled</a></code> | <code>boolean</code> | If HTTP header scanning should be enabled. |
+
+---
+
+##### `allRequests`<sup>Optional</sup> <a name="allRequests" id="zap-cdk.HttpHeaders.property.allRequests"></a>
+
+```typescript
+public readonly allRequests: boolean;
+```
+
+- *Type:* boolean
+
+If headers of requests without parameters should be scanned.
+
+Default: false
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.HttpHeaders.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+If HTTP header scanning should be enabled.
+
+Default: false
+
+---
+
+
+### Import <a name="Import" id="zap-cdk.Import"></a>
+
+- *Implements:* <a href="#zap-cdk.IImport">IImport</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.Import.Initializer"></a>
+
+```typescript
+import { Import } from 'zap-cdk'
+
+new Import(options: IImport)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Import.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IImport">IImport</a></code> | *No description.* |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Import.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IImport">IImport</a>
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Import.property.fileName">fileName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Import.property.type">type</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fileName`<sup>Required</sup> <a name="fileName" id="zap-cdk.Import.property.fileName"></a>
+
+```typescript
+public readonly fileName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.Import.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+
+### InputVectors <a name="InputVectors" id="zap-cdk.InputVectors"></a>
+
+- *Implements:* <a href="#zap-cdk.IInputVectors">IInputVectors</a>
+
+Class representing the configuration for input vectors used in an active scan.
+
+*Example*
+
+```typescript
+const inputVectorsConfig = new InputVectors({
+  urlQueryStringAndDataDrivenNodes: new UrlQueryStringAndDataDrivenNodes(),
+  postData: new PostData(),
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.InputVectors.Initializer"></a>
+
+```typescript
+import { InputVectors } from 'zap-cdk'
+
+new InputVectors(options?: IInputVectors)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.InputVectors.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IInputVectors">IInputVectors</a></code> | - The configuration options for input vectors. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.InputVectors.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IInputVectors">IInputVectors</a>
+
+The configuration options for input vectors.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.InputVectors.property.cookieData">cookieData</a></code> | <code><a href="#zap-cdk.ICookieData">ICookieData</a></code> | Configuration for cookie data scanning. |
+| <code><a href="#zap-cdk.InputVectors.property.httpHeaders">httpHeaders</a></code> | <code><a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a></code> | Configuration for HTTP header scanning. |
+| <code><a href="#zap-cdk.InputVectors.property.postData">postData</a></code> | <code><a href="#zap-cdk.IPostData">IPostData</a></code> | Configuration for POST data scanning. |
+| <code><a href="#zap-cdk.InputVectors.property.urlQueryStringAndDataDrivenNodes">urlQueryStringAndDataDrivenNodes</a></code> | <code><a href="#zap-cdk.IUrlQueryStringAndDataDrivenNodes">IUrlQueryStringAndDataDrivenNodes</a></code> | Configuration for query parameters and data-driven nodes. |
+| <code><a href="#zap-cdk.InputVectors.property.scripts">scripts</a></code> | <code>boolean</code> | If Input Vector scripts should be used. |
+| <code><a href="#zap-cdk.InputVectors.property.urlPath">urlPath</a></code> | <code>boolean</code> | If URL path segments should be scanned. |
+
+---
+
+##### `cookieData`<sup>Required</sup> <a name="cookieData" id="zap-cdk.InputVectors.property.cookieData"></a>
+
+```typescript
+public readonly cookieData: ICookieData;
+```
+
+- *Type:* <a href="#zap-cdk.ICookieData">ICookieData</a>
+
+Configuration for cookie data scanning.
+
+---
+
+##### `httpHeaders`<sup>Required</sup> <a name="httpHeaders" id="zap-cdk.InputVectors.property.httpHeaders"></a>
+
+```typescript
+public readonly httpHeaders: IHttpHeaders;
+```
+
+- *Type:* <a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a>
+
+Configuration for HTTP header scanning.
+
+---
+
+##### `postData`<sup>Required</sup> <a name="postData" id="zap-cdk.InputVectors.property.postData"></a>
+
+```typescript
+public readonly postData: IPostData;
+```
+
+- *Type:* <a href="#zap-cdk.IPostData">IPostData</a>
+
+Configuration for POST data scanning.
+
+---
+
+##### `urlQueryStringAndDataDrivenNodes`<sup>Required</sup> <a name="urlQueryStringAndDataDrivenNodes" id="zap-cdk.InputVectors.property.urlQueryStringAndDataDrivenNodes"></a>
+
+```typescript
+public readonly urlQueryStringAndDataDrivenNodes: IUrlQueryStringAndDataDrivenNodes;
+```
+
+- *Type:* <a href="#zap-cdk.IUrlQueryStringAndDataDrivenNodes">IUrlQueryStringAndDataDrivenNodes</a>
+
+Configuration for query parameters and data-driven nodes.
+
+---
+
+##### `scripts`<sup>Optional</sup> <a name="scripts" id="zap-cdk.InputVectors.property.scripts"></a>
+
+```typescript
+public readonly scripts: boolean;
+```
+
+- *Type:* boolean
+
+If Input Vector scripts should be used.
+
+Default: true
+
+---
+
+##### `urlPath`<sup>Optional</sup> <a name="urlPath" id="zap-cdk.InputVectors.property.urlPath"></a>
+
+```typescript
+public readonly urlPath: boolean;
+```
+
+- *Type:* boolean
+
+If URL path segments should be scanned.
+
+Default: false
+
+---
+
+
+### JsonPostData <a name="JsonPostData" id="zap-cdk.JsonPostData"></a>
+
+- *Implements:* <a href="#zap-cdk.IJsonPostData">IJsonPostData</a>
+
+Class representing the configuration for JSON body scanning in POST data.
+
+*Example*
+
+```typescript
+const jsonConfig = new JsonPostData({ enabled: true, scanNullValues: false });
+console.log(jsonConfig.enabled); // true
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.JsonPostData.Initializer"></a>
+
+```typescript
+import { JsonPostData } from 'zap-cdk'
+
+new JsonPostData(options?: IJsonPostData)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.JsonPostData.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IJsonPostData">IJsonPostData</a></code> | - The configuration options for JSON scanning. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.JsonPostData.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IJsonPostData">IJsonPostData</a>
+
+The configuration options for JSON scanning.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.JsonPostData.property.enabled">enabled</a></code> | <code>boolean</code> | If JSON scanning should be enabled. |
+| <code><a href="#zap-cdk.JsonPostData.property.scanNullValues">scanNullValues</a></code> | <code>boolean</code> | If null values should be scanned. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.JsonPostData.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+If JSON scanning should be enabled.
+
+Default: true
+
+---
+
+##### `scanNullValues`<sup>Optional</sup> <a name="scanNullValues" id="zap-cdk.JsonPostData.property.scanNullValues"></a>
+
+```typescript
+public readonly scanNullValues: boolean;
+```
+
+- *Type:* boolean
+
+If null values should be scanned.
+
+Default: false
+
+---
+
+
+### MonitorTest <a name="MonitorTest" id="zap-cdk.MonitorTest"></a>
+
+- *Implements:* <a href="#zap-cdk.IMonitorTest">IMonitorTest</a>
+
+Class representing a monitor test.
+
+*Example*
+
+```typescript
+const monitorTest = new MonitorTest({
+  name: 'test one',
+  statistic: 'stats.addon.something',
+  site: 'MySite',
+  onFail: 'info'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.MonitorTest.Initializer"></a>
+
+```typescript
+import { MonitorTest } from 'zap-cdk'
+
+new MonitorTest(options: IMonitorTest)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.MonitorTest.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IMonitorTest">IMonitorTest</a></code> | - The configuration options for the monitor test. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.MonitorTest.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IMonitorTest">IMonitorTest</a>
+
+The configuration options for the monitor test.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.MonitorTest.property.onFail">onFail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.MonitorTest.property.statistic">statistic</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.MonitorTest.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.MonitorTest.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.MonitorTest.property.site">site</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `onFail`<sup>Required</sup> <a name="onFail" id="zap-cdk.MonitorTest.property.onFail"></a>
+
+```typescript
+public readonly onFail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `statistic`<sup>Required</sup> <a name="statistic" id="zap-cdk.MonitorTest.property.statistic"></a>
+
+```typescript
+public readonly statistic: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.MonitorTest.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.MonitorTest.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `site`<sup>Optional</sup> <a name="site" id="zap-cdk.MonitorTest.property.site"></a>
+
+```typescript
+public readonly site: string;
+```
+
+- *Type:* string
+
+---
+
+
+### OpenAPI <a name="OpenAPI" id="zap-cdk.OpenAPI"></a>
+
+- *Implements:* <a href="#zap-cdk.IOpenAPI">IOpenAPI</a>
+
+Class representing the OpenAPI import configuration.
+
+*Example*
+
+```typescript
+const openApiConfig = new OpenAPI({
+  apiFile: 'api-definition.yaml',
+  context: 'MyContext',
+  user: 'apiUser',
+  targetUrl: 'https://api.example.com'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.OpenAPI.Initializer"></a>
+
+```typescript
+import { OpenAPI } from 'zap-cdk'
+
+new OpenAPI(options: IOpenAPI)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.OpenAPI.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IOpenAPI">IOpenAPI</a></code> | - The options to initialize the OpenAPI configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.OpenAPI.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IOpenAPI">IOpenAPI</a>
+
+The options to initialize the OpenAPI configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.OpenAPI.property.apiFile">apiFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.OpenAPI.property.apiUrl">apiUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.OpenAPI.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.OpenAPI.property.targetUrl">targetUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.OpenAPI.property.user">user</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `apiFile`<sup>Optional</sup> <a name="apiFile" id="zap-cdk.OpenAPI.property.apiFile"></a>
+
+```typescript
+public readonly apiFile: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiUrl`<sup>Optional</sup> <a name="apiUrl" id="zap-cdk.OpenAPI.property.apiUrl"></a>
+
+```typescript
+public readonly apiUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="zap-cdk.OpenAPI.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetUrl`<sup>Optional</sup> <a name="targetUrl" id="zap-cdk.OpenAPI.property.targetUrl"></a>
+
+```typescript
+public readonly targetUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="zap-cdk.OpenAPI.property.user"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* string
+
+---
+
+
+### PassiveScanConfig <a name="PassiveScanConfig" id="zap-cdk.PassiveScanConfig"></a>
+
+- *Implements:* <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a>
+
+Class representing the passive scan configuration.
+
+*Example*
+
+```typescript
+const passiveScanConfig = new PassiveScanConfig({
+  parameters: {
+    maxAlertsPerRule: 5,
+    scanOnlyInScope: true,
+    maxBodySizeInBytesToScan: 0,
+    enableTags: false,
+    disableAllRules: true
+  },
+  rules: [
+    { id: 10010, name: 'Cross-Domain Misconfiguration', threshold: 'Medium' },
+    { id: 10011, name: 'CSP Header Not Set', threshold: 'High' }
+  ],
+  enabled: true,
+  alwaysRun: false
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanConfig.Initializer"></a>
+
+```typescript
+import { PassiveScanConfig } from 'zap-cdk'
+
+new PassiveScanConfig(options: IPassiveScanConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanConfig.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a></code> | - The options to initialize the passive scan configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.PassiveScanConfig.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a>
+
+The options to initialize the passive scan configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanConfig.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.IPassiveScanParameters">IPassiveScanParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanConfig.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanConfig.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanConfig.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanConfig.property.rules">rules</a></code> | <code><a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a>[]</code> | *No description.* |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.PassiveScanConfig.property.parameters"></a>
+
+```typescript
+public readonly parameters: IPassiveScanParameters;
+```
+
+- *Type:* <a href="#zap-cdk.IPassiveScanParameters">IPassiveScanParameters</a>
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.PassiveScanConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.PassiveScanConfig.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.PassiveScanConfig.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `rules`<sup>Optional</sup> <a name="rules" id="zap-cdk.PassiveScanConfig.property.rules"></a>
+
+```typescript
+public readonly rules: IPassiveScanRule[];
+```
+
+- *Type:* <a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a>[]
+
+---
+
+
+### PassiveScanParameters <a name="PassiveScanParameters" id="zap-cdk.PassiveScanParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IPassiveScanParameters">IPassiveScanParameters</a>
+
+Class representing the parameters for configuring a passive scan.
+
+*Example*
+
+```typescript
+const passiveScanParams = new PassiveScanParameters({
+  maxAlertsPerRule: 5,
+  scanOnlyInScope: true,
+  maxBodySizeInBytesToScan: 0,
+  enableTags: false,
+  disableAllRules: true
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanParameters.Initializer"></a>
+
+```typescript
+import { PassiveScanParameters } from 'zap-cdk'
+
+new PassiveScanParameters(options: IPassiveScanParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IPassiveScanParameters">IPassiveScanParameters</a></code> | - The options to initialize the passive scan parameters. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.PassiveScanParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IPassiveScanParameters">IPassiveScanParameters</a>
+
+The options to initialize the passive scan parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanParameters.property.disableAllRules">disableAllRules</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanParameters.property.enableTags">enableTags</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanParameters.property.maxAlertsPerRule">maxAlertsPerRule</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanParameters.property.maxBodySizeInBytesToScan">maxBodySizeInBytesToScan</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanParameters.property.scanOnlyInScope">scanOnlyInScope</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `disableAllRules`<sup>Optional</sup> <a name="disableAllRules" id="zap-cdk.PassiveScanParameters.property.disableAllRules"></a>
+
+```typescript
+public readonly disableAllRules: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enableTags`<sup>Optional</sup> <a name="enableTags" id="zap-cdk.PassiveScanParameters.property.enableTags"></a>
+
+```typescript
+public readonly enableTags: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `maxAlertsPerRule`<sup>Optional</sup> <a name="maxAlertsPerRule" id="zap-cdk.PassiveScanParameters.property.maxAlertsPerRule"></a>
+
+```typescript
+public readonly maxAlertsPerRule: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxBodySizeInBytesToScan`<sup>Optional</sup> <a name="maxBodySizeInBytesToScan" id="zap-cdk.PassiveScanParameters.property.maxBodySizeInBytesToScan"></a>
+
+```typescript
+public readonly maxBodySizeInBytesToScan: number;
+```
+
+- *Type:* number
+
+---
+
+##### `scanOnlyInScope`<sup>Optional</sup> <a name="scanOnlyInScope" id="zap-cdk.PassiveScanParameters.property.scanOnlyInScope"></a>
+
+```typescript
+public readonly scanOnlyInScope: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+
+### PassiveScanRule <a name="PassiveScanRule" id="zap-cdk.PassiveScanRule"></a>
+
+- *Implements:* <a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a>
+
+Class representing a passive scan rule configuration.
+
+*Example*
+
+```typescript
+const passiveScanRule = new PassiveScanRule({
+  id: 10010,
+  name: 'Cross-Domain Misconfiguration',
+  threshold: 'Medium'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanRule.Initializer"></a>
+
+```typescript
+import { PassiveScanRule } from 'zap-cdk'
+
+new PassiveScanRule(options: IPassiveScanRule)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanRule.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a></code> | - The options to initialize the passive scan rule. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.PassiveScanRule.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a>
+
+The options to initialize the passive scan rule.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanRule.property.id">id</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanRule.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.PassiveScanRule.property.threshold">threshold</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.PassiveScanRule.property.id"></a>
+
+```typescript
+public readonly id: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.PassiveScanRule.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="zap-cdk.PassiveScanRule.property.threshold"></a>
+
+```typescript
+public readonly threshold: string;
+```
+
+- *Type:* string
+
+---
+
+
+### PassiveScanWait <a name="PassiveScanWait" id="zap-cdk.PassiveScanWait"></a>
+
+- *Implements:* <a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a>
+
+Class representing the configuration for waiting during a passive scan.
+
+*Example*
+
+```typescript
+const passiveScanWaitConfig = new PassiveScanWait({
+  maxDuration: 300
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.PassiveScanWait.Initializer"></a>
+
+```typescript
+import { PassiveScanWait } from 'zap-cdk'
+
+new PassiveScanWait(maxDuration?: number)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanWait.Initializer.parameter.maxDuration">maxDuration</a></code> | <code>number</code> | - The max time to wait for the passive scanner, default: 0 (unlimited). |
+
+---
+
+##### `maxDuration`<sup>Optional</sup> <a name="maxDuration" id="zap-cdk.PassiveScanWait.Initializer.parameter.maxDuration"></a>
+
+- *Type:* number
+
+The max time to wait for the passive scanner, default: 0 (unlimited).
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PassiveScanWait.property.maxDuration">maxDuration</a></code> | <code>number</code> | *No description.* |
+
+---
+
+##### `maxDuration`<sup>Optional</sup> <a name="maxDuration" id="zap-cdk.PassiveScanWait.property.maxDuration"></a>
+
+```typescript
+public readonly maxDuration: number;
+```
+
+- *Type:* number
+
+---
+
+
+### PolicyDefinition <a name="PolicyDefinition" id="zap-cdk.PolicyDefinition"></a>
+
+- *Implements:* <a href="#zap-cdk.IPolicyDefinition">IPolicyDefinition</a>
+
+Class representing the policy definition for an active scan.
+
+#### Initializers <a name="Initializers" id="zap-cdk.PolicyDefinition.Initializer"></a>
+
+```typescript
+import { PolicyDefinition } from 'zap-cdk'
+
+new PolicyDefinition(options?: IPolicyDefinition)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PolicyDefinition.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IPolicyDefinition">IPolicyDefinition</a></code> | - The policy definition details. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.PolicyDefinition.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IPolicyDefinition">IPolicyDefinition</a>
+
+The policy definition details.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PolicyDefinition.property.alertTags">alertTags</a></code> | <code><a href="#zap-cdk.IAlertTags">IAlertTags</a></code> | *No description.* |
+| <code><a href="#zap-cdk.PolicyDefinition.property.defaultStrength">defaultStrength</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.PolicyDefinition.property.defaultThreshold">defaultThreshold</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.PolicyDefinition.property.rules">rules</a></code> | <code><a href="#zap-cdk.IRules">IRules</a>[]</code> | *No description.* |
+
+---
+
+##### `alertTags`<sup>Optional</sup> <a name="alertTags" id="zap-cdk.PolicyDefinition.property.alertTags"></a>
+
+```typescript
+public readonly alertTags: IAlertTags;
+```
+
+- *Type:* <a href="#zap-cdk.IAlertTags">IAlertTags</a>
+
+---
+
+##### `defaultStrength`<sup>Optional</sup> <a name="defaultStrength" id="zap-cdk.PolicyDefinition.property.defaultStrength"></a>
+
+```typescript
+public readonly defaultStrength: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultThreshold`<sup>Optional</sup> <a name="defaultThreshold" id="zap-cdk.PolicyDefinition.property.defaultThreshold"></a>
+
+```typescript
+public readonly defaultThreshold: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rules`<sup>Optional</sup> <a name="rules" id="zap-cdk.PolicyDefinition.property.rules"></a>
+
+```typescript
+public readonly rules: IRules[];
+```
+
+- *Type:* <a href="#zap-cdk.IRules">IRules</a>[]
+
+---
+
+
+### PollAdditionalHeaders <a name="PollAdditionalHeaders" id="zap-cdk.PollAdditionalHeaders"></a>
+
+- *Implements:* <a href="#zap-cdk.IPollAdditionalHeaders">IPollAdditionalHeaders</a>
+
+Represents additional headers for poll request in authentication verification.
+
+#### Initializers <a name="Initializers" id="zap-cdk.PollAdditionalHeaders.Initializer"></a>
+
+```typescript
+import { PollAdditionalHeaders } from 'zap-cdk'
+
+new PollAdditionalHeaders(options: IPollAdditionalHeaders)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PollAdditionalHeaders.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IPollAdditionalHeaders">IPollAdditionalHeaders</a></code> | - The options to initialize the headers. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.PollAdditionalHeaders.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IPollAdditionalHeaders">IPollAdditionalHeaders</a>
+
+The options to initialize the headers.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PollAdditionalHeaders.property.header">header</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.PollAdditionalHeaders.property.value">value</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `header`<sup>Required</sup> <a name="header" id="zap-cdk.PollAdditionalHeaders.property.header"></a>
+
+```typescript
+public readonly header: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="zap-cdk.PollAdditionalHeaders.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+
+### PostData <a name="PostData" id="zap-cdk.PostData"></a>
+
+- *Implements:* <a href="#zap-cdk.IPostData">IPostData</a>
+
+Class representing the configuration for POST data scanning.
+
+*Example*
+
+```typescript
+const postDataConfig = new PostData({ enabled: true, multiPartFormData: true, xml: true, json: new JsonPostData(), googleWebToolkit: false, directWebRemoting: false });
+console.log(postDataConfig.enabled); // true
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.PostData.Initializer"></a>
+
+```typescript
+import { PostData } from 'zap-cdk'
+
+new PostData(options?: IPostData)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PostData.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IPostData">IPostData</a></code> | - The configuration options for POST data scanning. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.PostData.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IPostData">IPostData</a>
+
+The configuration options for POST data scanning.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.PostData.property.json">json</a></code> | <code><a href="#zap-cdk.IJsonPostData">IJsonPostData</a></code> | Configuration for JSON bodies. |
+| <code><a href="#zap-cdk.PostData.property.directWebRemoting">directWebRemoting</a></code> | <code>boolean</code> | If DWR scanning should be enabled. |
+| <code><a href="#zap-cdk.PostData.property.enabled">enabled</a></code> | <code>boolean</code> | If POST data scanning is enabled. |
+| <code><a href="#zap-cdk.PostData.property.googleWebToolkit">googleWebToolkit</a></code> | <code>boolean</code> | If GWT scanning should be enabled. |
+| <code><a href="#zap-cdk.PostData.property.multiPartFormData">multiPartFormData</a></code> | <code>boolean</code> | If multipart form data bodies should be scanned. |
+| <code><a href="#zap-cdk.PostData.property.xml">xml</a></code> | <code>boolean</code> | If XML bodies should be scanned. |
+
+---
+
+##### `json`<sup>Required</sup> <a name="json" id="zap-cdk.PostData.property.json"></a>
+
+```typescript
+public readonly json: IJsonPostData;
+```
+
+- *Type:* <a href="#zap-cdk.IJsonPostData">IJsonPostData</a>
+
+Configuration for JSON bodies.
+
+---
+
+##### `directWebRemoting`<sup>Optional</sup> <a name="directWebRemoting" id="zap-cdk.PostData.property.directWebRemoting"></a>
+
+```typescript
+public readonly directWebRemoting: boolean;
+```
+
+- *Type:* boolean
+
+If DWR scanning should be enabled.
+
+Default: false
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.PostData.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+If POST data scanning is enabled.
+
+Default: true
+
+---
+
+##### `googleWebToolkit`<sup>Optional</sup> <a name="googleWebToolkit" id="zap-cdk.PostData.property.googleWebToolkit"></a>
+
+```typescript
+public readonly googleWebToolkit: boolean;
+```
+
+- *Type:* boolean
+
+If GWT scanning should be enabled.
+
+Default: false
+
+---
+
+##### `multiPartFormData`<sup>Optional</sup> <a name="multiPartFormData" id="zap-cdk.PostData.property.multiPartFormData"></a>
+
+```typescript
+public readonly multiPartFormData: boolean;
+```
+
+- *Type:* boolean
+
+If multipart form data bodies should be scanned.
+
+Default: true
+
+---
+
+##### `xml`<sup>Optional</sup> <a name="xml" id="zap-cdk.PostData.property.xml"></a>
+
+```typescript
+public readonly xml: boolean;
+```
+
+- *Type:* boolean
+
+If XML bodies should be scanned.
+
+Default: true
+
+---
+
+
+### Postman <a name="Postman" id="zap-cdk.Postman"></a>
+
+- *Implements:* <a href="#zap-cdk.IPostman">IPostman</a>
+
+Class representing the Postman import configuration.
+
+*Example*
+
+```typescript
+const postmanConfig = new Postman({
+  collectionFile: 'postman-collection.json',
+  variables: 'baseUrl=https://api.example.com,apiKey=12345'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.Postman.Initializer"></a>
+
+```typescript
+import { Postman } from 'zap-cdk'
+
+new Postman(options: IPostman)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Postman.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IPostman">IPostman</a></code> | - The options to initialize the Postman configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Postman.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IPostman">IPostman</a>
+
+The options to initialize the Postman configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Postman.property.collectionFile">collectionFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Postman.property.collectionUrl">collectionUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Postman.property.variables">variables</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `collectionFile`<sup>Optional</sup> <a name="collectionFile" id="zap-cdk.Postman.property.collectionFile"></a>
+
+```typescript
+public readonly collectionFile: string;
+```
+
+- *Type:* string
+
+---
+
+##### `collectionUrl`<sup>Optional</sup> <a name="collectionUrl" id="zap-cdk.Postman.property.collectionUrl"></a>
+
+```typescript
+public readonly collectionUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `variables`<sup>Optional</sup> <a name="variables" id="zap-cdk.Postman.property.variables"></a>
+
+```typescript
+public readonly variables: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Replacer <a name="Replacer" id="zap-cdk.Replacer"></a>
+
+- *Implements:* <a href="#zap-cdk.IReplacer">IReplacer</a>
+
+Class representing the configuration for string replacement rules.
+
+*Example*
+
+```typescript
+const replacerConfig = new Replacer({
+  deleteAllRules: true,
+  rules: [
+    new ReplacerRule({
+      description: 'Replace API Key',
+      url: '.*example.*',
+      matchType: 'req_header_str',
+      matchString: 'API-Key: .*',
+      matchRegex: true,
+      replacementString: 'API-Key: 12345',
+      tokenProcessing: false,
+      initiators: [1, 2, 3]
+    })
+  ]
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.Replacer.Initializer"></a>
+
+```typescript
+import { Replacer } from 'zap-cdk'
+
+new Replacer(options: IReplacer)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Replacer.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IReplacer">IReplacer</a></code> | - The options to initialize the replacer configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Replacer.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IReplacer">IReplacer</a>
+
+The options to initialize the replacer configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Replacer.property.rules">rules</a></code> | <code><a href="#zap-cdk.IReplacerRule">IReplacerRule</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.Replacer.property.deleteAllRules">deleteAllRules</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `rules`<sup>Required</sup> <a name="rules" id="zap-cdk.Replacer.property.rules"></a>
+
+```typescript
+public readonly rules: IReplacerRule[];
+```
+
+- *Type:* <a href="#zap-cdk.IReplacerRule">IReplacerRule</a>[]
+
+---
+
+##### `deleteAllRules`<sup>Optional</sup> <a name="deleteAllRules" id="zap-cdk.Replacer.property.deleteAllRules"></a>
+
+```typescript
+public readonly deleteAllRules: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+
+### ReplacerRule <a name="ReplacerRule" id="zap-cdk.ReplacerRule"></a>
+
+- *Implements:* <a href="#zap-cdk.IReplacerRule">IReplacerRule</a>
+
+Class representing a rule for replacing strings in requests or responses.
+
+*Example*
+
+```typescript
+const replacerRule = new ReplacerRule({
+  description: 'Replace API Key',
+  url: '.*example.*',
+  matchType: 'req_header_str',
+  matchString: 'API-Key: .*',
+  matchRegex: true,
+  replacementString: 'API-Key: 12345',
+  tokenProcessing: false,
+  initiators: [1, 2, 3]
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.ReplacerRule.Initializer"></a>
+
+```typescript
+import { ReplacerRule } from 'zap-cdk'
+
+new ReplacerRule(options: IReplacerRule)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ReplacerRule.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IReplacerRule">IReplacerRule</a></code> | - The configuration options for the replacer rule. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.ReplacerRule.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IReplacerRule">IReplacerRule</a>
+
+The configuration options for the replacer rule.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.ReplacerRule.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ReplacerRule.property.matchString">matchString</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ReplacerRule.property.matchType">matchType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ReplacerRule.property.replacementString">replacementString</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.ReplacerRule.property.initiators">initiators</a></code> | <code>number[]</code> | *No description.* |
+| <code><a href="#zap-cdk.ReplacerRule.property.matchRegex">matchRegex</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ReplacerRule.property.tokenProcessing">tokenProcessing</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.ReplacerRule.property.url">url</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="zap-cdk.ReplacerRule.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `matchString`<sup>Required</sup> <a name="matchString" id="zap-cdk.ReplacerRule.property.matchString"></a>
+
+```typescript
+public readonly matchString: string;
+```
+
+- *Type:* string
+
+---
+
+##### `matchType`<sup>Required</sup> <a name="matchType" id="zap-cdk.ReplacerRule.property.matchType"></a>
+
+```typescript
+public readonly matchType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `replacementString`<sup>Required</sup> <a name="replacementString" id="zap-cdk.ReplacerRule.property.replacementString"></a>
+
+```typescript
+public readonly replacementString: string;
+```
+
+- *Type:* string
+
+---
+
+##### `initiators`<sup>Optional</sup> <a name="initiators" id="zap-cdk.ReplacerRule.property.initiators"></a>
+
+```typescript
+public readonly initiators: number[];
+```
+
+- *Type:* number[]
+
+---
+
+##### `matchRegex`<sup>Optional</sup> <a name="matchRegex" id="zap-cdk.ReplacerRule.property.matchRegex"></a>
+
+```typescript
+public readonly matchRegex: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `tokenProcessing`<sup>Optional</sup> <a name="tokenProcessing" id="zap-cdk.ReplacerRule.property.tokenProcessing"></a>
+
+```typescript
+public readonly tokenProcessing: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="zap-cdk.ReplacerRule.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Report <a name="Report" id="zap-cdk.Report"></a>
+
+- *Implements:* <a href="#zap-cdk.IReport">IReport</a>
+
+Class representing a report configuration.
+
+*Example*
+
+```typescript
+const reportConfig = new Report({
+  template: 'traditional-html',
+  theme: 'corporate',
+  reportDir: '/reports',
+  reportFile: '{{yyyy-MM-dd}}-ZAP-Report-[[site]]',
+  reportTitle: 'Weekly Security Report',
+  reportDescription: 'This is the weekly security report generated by ZAP.',
+  displayReport: true,
+  risks: ['high', 'medium'],
+  confidences: ['high', 'medium', 'low'],
+  sections: ['alertSummary', 'siteSummary', 'alertsByRisk'],
+  sites: ['https://example.com', 'https://another-example.com']
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.Report.Initializer"></a>
+
+```typescript
+import { Report } from 'zap-cdk'
+
+new Report(options: IReport)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Report.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IReport">IReport</a></code> | - The options to initialize the report configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Report.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IReport">IReport</a>
+
+The options to initialize the report configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Report.property.confidences">confidences</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.displayReport">displayReport</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.reportDescription">reportDescription</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.reportDir">reportDir</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.reportFile">reportFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.reportTitle">reportTitle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.risks">risks</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.sections">sections</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.sites">sites</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.template">template</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Report.property.theme">theme</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `confidences`<sup>Optional</sup> <a name="confidences" id="zap-cdk.Report.property.confidences"></a>
+
+```typescript
+public readonly confidences: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `displayReport`<sup>Optional</sup> <a name="displayReport" id="zap-cdk.Report.property.displayReport"></a>
+
+```typescript
+public readonly displayReport: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `reportDescription`<sup>Optional</sup> <a name="reportDescription" id="zap-cdk.Report.property.reportDescription"></a>
+
+```typescript
+public readonly reportDescription: string;
+```
+
+- *Type:* string
+
+---
+
+##### `reportDir`<sup>Optional</sup> <a name="reportDir" id="zap-cdk.Report.property.reportDir"></a>
+
+```typescript
+public readonly reportDir: string;
+```
+
+- *Type:* string
+
+---
+
+##### `reportFile`<sup>Optional</sup> <a name="reportFile" id="zap-cdk.Report.property.reportFile"></a>
+
+```typescript
+public readonly reportFile: string;
+```
+
+- *Type:* string
+
+---
+
+##### `reportTitle`<sup>Optional</sup> <a name="reportTitle" id="zap-cdk.Report.property.reportTitle"></a>
+
+```typescript
+public readonly reportTitle: string;
+```
+
+- *Type:* string
+
+---
+
+##### `risks`<sup>Optional</sup> <a name="risks" id="zap-cdk.Report.property.risks"></a>
+
+```typescript
+public readonly risks: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `sections`<sup>Optional</sup> <a name="sections" id="zap-cdk.Report.property.sections"></a>
+
+```typescript
+public readonly sections: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `sites`<sup>Optional</sup> <a name="sites" id="zap-cdk.Report.property.sites"></a>
+
+```typescript
+public readonly sites: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `template`<sup>Optional</sup> <a name="template" id="zap-cdk.Report.property.template"></a>
+
+```typescript
+public readonly template: string;
+```
+
+- *Type:* string
+
+---
+
+##### `theme`<sup>Optional</sup> <a name="theme" id="zap-cdk.Report.property.theme"></a>
+
+```typescript
+public readonly theme: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Request <a name="Request" id="zap-cdk.Request"></a>
+
+- *Implements:* <a href="#zap-cdk.IRequest">IRequest</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.Request.Initializer"></a>
+
+```typescript
+import { Request } from 'zap-cdk'
+
+new Request(options: IRequest)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Request.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IRequest">IRequest</a></code> | - The configuration options for the request. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Request.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IRequest">IRequest</a>
+
+The configuration options for the request.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Request.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Request.property.data">data</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Request.property.headers">headers</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.Request.property.httpVersion">httpVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Request.property.method">method</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Request.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Request.property.responseCode">responseCode</a></code> | <code>number</code> | *No description.* |
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="zap-cdk.Request.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `data`<sup>Optional</sup> <a name="data" id="zap-cdk.Request.property.data"></a>
+
+```typescript
+public readonly data: string;
+```
+
+- *Type:* string
+
+---
+
+##### `headers`<sup>Optional</sup> <a name="headers" id="zap-cdk.Request.property.headers"></a>
+
+```typescript
+public readonly headers: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `httpVersion`<sup>Optional</sup> <a name="httpVersion" id="zap-cdk.Request.property.httpVersion"></a>
+
+```typescript
+public readonly httpVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `method`<sup>Optional</sup> <a name="method" id="zap-cdk.Request.property.method"></a>
+
+```typescript
+public readonly method: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.Request.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `responseCode`<sup>Optional</sup> <a name="responseCode" id="zap-cdk.Request.property.responseCode"></a>
+
+```typescript
+public readonly responseCode: number;
+```
+
+- *Type:* number
+
+---
+
+
+### RequestorParameters <a name="RequestorParameters" id="zap-cdk.RequestorParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.RequestorParameters.Initializer"></a>
+
+```typescript
+import { RequestorParameters } from 'zap-cdk'
+
+new RequestorParameters(options: IRequestorParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.RequestorParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a></code> | - The configuration options for the requestor parameters. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.RequestorParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a>
+
+The configuration options for the requestor parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.RequestorParameters.property.requests">requests</a></code> | <code><a href="#zap-cdk.IRequest">IRequest</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.RequestorParameters.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.RequestorParameters.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.RequestorParameters.property.user">user</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `requests`<sup>Required</sup> <a name="requests" id="zap-cdk.RequestorParameters.property.requests"></a>
+
+```typescript
+public readonly requests: IRequest[];
+```
+
+- *Type:* <a href="#zap-cdk.IRequest">IRequest</a>[]
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.RequestorParameters.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.RequestorParameters.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="zap-cdk.RequestorParameters.property.user"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Rule <a name="Rule" id="zap-cdk.Rule"></a>
+
+- *Implements:* <a href="#zap-cdk.IRule">IRule</a>
+
+Class representing an individual rule in the active scan policy.
+
+#### Initializers <a name="Initializers" id="zap-cdk.Rule.Initializer"></a>
+
+```typescript
+import { Rule } from 'zap-cdk'
+
+new Rule(options: IRule)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Rule.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IRule">IRule</a></code> | - The configuration options for the rule. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Rule.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IRule">IRule</a>
+
+The configuration options for the rule.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Rule.property.id">id</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.Rule.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Rule.property.strength">strength</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Rule.property.threshold">threshold</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.Rule.property.id"></a>
+
+```typescript
+public readonly id: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.Rule.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `strength`<sup>Optional</sup> <a name="strength" id="zap-cdk.Rule.property.strength"></a>
+
+```typescript
+public readonly strength: string;
+```
+
+- *Type:* string
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="zap-cdk.Rule.property.threshold"></a>
+
+```typescript
+public readonly threshold: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Rules <a name="Rules" id="zap-cdk.Rules"></a>
+
+- *Implements:* <a href="#zap-cdk.IRules">IRules</a>
+
+Class representing a rule for the active scan.
+
+#### Initializers <a name="Initializers" id="zap-cdk.Rules.Initializer"></a>
+
+```typescript
+import { Rules } from 'zap-cdk'
+
+new Rules(options: IRules)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Rules.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IRules">IRules</a></code> | - The rule details. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Rules.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IRules">IRules</a>
+
+The rule details.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Rules.property.id">id</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.Rules.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Rules.property.strength">strength</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Rules.property.threshold">threshold</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="zap-cdk.Rules.property.id"></a>
+
+```typescript
+public readonly id: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.Rules.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `strength`<sup>Optional</sup> <a name="strength" id="zap-cdk.Rules.property.strength"></a>
+
+```typescript
+public readonly strength: string;
+```
+
+- *Type:* string
+
+---
+
+##### `threshold`<sup>Optional</sup> <a name="threshold" id="zap-cdk.Rules.property.threshold"></a>
+
+```typescript
+public readonly threshold: string;
+```
+
+- *Type:* string
+
+---
+
+
+### SessionManagementParameters <a name="SessionManagementParameters" id="zap-cdk.SessionManagementParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.ISessionManagementParameters">ISessionManagementParameters</a>
+
+Represents the parameters for session management in the scanning process.
+
+#### Initializers <a name="Initializers" id="zap-cdk.SessionManagementParameters.Initializer"></a>
+
+```typescript
+import { SessionManagementParameters } from 'zap-cdk'
+
+new SessionManagementParameters(options: ISessionManagementParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SessionManagementParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ISessionManagementParameters">ISessionManagementParameters</a></code> | *No description.* |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.SessionManagementParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ISessionManagementParameters">ISessionManagementParameters</a>
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SessionManagementParameters.property.method">method</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SessionManagementParameters.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.ISessionManagementParametersParameters">ISessionManagementParametersParameters</a></code> | *No description.* |
+
+---
+
+##### `method`<sup>Required</sup> <a name="method" id="zap-cdk.SessionManagementParameters.property.method"></a>
+
+```typescript
+public readonly method: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.SessionManagementParameters.property.parameters"></a>
+
+```typescript
+public readonly parameters: ISessionManagementParametersParameters;
+```
+
+- *Type:* <a href="#zap-cdk.ISessionManagementParametersParameters">ISessionManagementParametersParameters</a>
+
+---
+
+
+### SessionManagementParametersParameters <a name="SessionManagementParametersParameters" id="zap-cdk.SessionManagementParametersParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.ISessionManagementParametersParameters">ISessionManagementParametersParameters</a>
+
+Represents the parameters for session management in the scanning process.
+
+#### Initializers <a name="Initializers" id="zap-cdk.SessionManagementParametersParameters.Initializer"></a>
+
+```typescript
+import { SessionManagementParametersParameters } from 'zap-cdk'
+
+new SessionManagementParametersParameters(options?: ISessionManagementParametersParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SessionManagementParametersParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ISessionManagementParametersParameters">ISessionManagementParametersParameters</a></code> | - The options to initialize the session management parameters. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.SessionManagementParametersParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ISessionManagementParametersParameters">ISessionManagementParametersParameters</a>
+
+The options to initialize the session management parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SessionManagementParametersParameters.property.script">script</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SessionManagementParametersParameters.property.scriptEngine">scriptEngine</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `script`<sup>Optional</sup> <a name="script" id="zap-cdk.SessionManagementParametersParameters.property.script"></a>
+
+```typescript
+public readonly script: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scriptEngine`<sup>Optional</sup> <a name="scriptEngine" id="zap-cdk.SessionManagementParametersParameters.property.scriptEngine"></a>
+
+```typescript
+public readonly scriptEngine: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Soap <a name="Soap" id="zap-cdk.Soap"></a>
+
+- *Implements:* <a href="#zap-cdk.ISoap">ISoap</a>
+
+Class representing the SOAP service configuration.
+
+*Example*
+
+```typescript
+const soapConfig = new Soap({
+  wsdlFile: 'service.wsdl',
+  wsdlUrl: 'https://example.com/service?wsdl'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.Soap.Initializer"></a>
+
+```typescript
+import { Soap } from 'zap-cdk'
+
+new Soap(options: ISoap)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Soap.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ISoap">ISoap</a></code> | - The options to initialize the SOAP configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Soap.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ISoap">ISoap</a>
+
+The options to initialize the SOAP configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Soap.property.wsdlFile">wsdlFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Soap.property.wsdlUrl">wsdlUrl</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `wsdlFile`<sup>Optional</sup> <a name="wsdlFile" id="zap-cdk.Soap.property.wsdlFile"></a>
+
+```typescript
+public readonly wsdlFile: string;
+```
+
+- *Type:* string
+
+---
+
+##### `wsdlUrl`<sup>Optional</sup> <a name="wsdlUrl" id="zap-cdk.Soap.property.wsdlUrl"></a>
+
+```typescript
+public readonly wsdlUrl: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Spider <a name="Spider" id="zap-cdk.Spider"></a>
+
+- *Implements:* <a href="#zap-cdk.ISpider">ISpider</a>
+
+Class representing a spider configuration.
+
+*Example*
+
+```typescript
+const spiderParams = new SpiderParameters({
+  context: 'MyContext',
+  maxDuration: 10,
+  parseComments: false
+});
+const spiderTest = new SpiderTest({
+  statistic: 'urls',
+  operator: '>=',
+  value: 10,
+  onFail: 'error'
+});
+const spider = new Spider(spiderParams, [spiderTest], true, false);
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.Spider.Initializer"></a>
+
+```typescript
+import { Spider } from 'zap-cdk'
+
+new Spider(parameters: ISpiderParameters, tests?: ISpiderTest[], enabled?: boolean, alwaysRun?: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Spider.Initializer.parameter.parameters">parameters</a></code> | <code><a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a></code> | - The parameters for the spider configuration. |
+| <code><a href="#zap-cdk.Spider.Initializer.parameter.tests">tests</a></code> | <code><a href="#zap-cdk.ISpiderTest">ISpiderTest</a>[]</code> | - List of tests to perform. |
+| <code><a href="#zap-cdk.Spider.Initializer.parameter.enabled">enabled</a></code> | <code>boolean</code> | - If set to false the job will not be run, default: true. |
+| <code><a href="#zap-cdk.Spider.Initializer.parameter.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | - If set and the job is enabled then it will run even if the plan exits early, default: false. |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.Spider.Initializer.parameter.parameters"></a>
+
+- *Type:* <a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a>
+
+The parameters for the spider configuration.
+
+---
+
+##### `tests`<sup>Optional</sup> <a name="tests" id="zap-cdk.Spider.Initializer.parameter.tests"></a>
+
+- *Type:* <a href="#zap-cdk.ISpiderTest">ISpiderTest</a>[]
+
+List of tests to perform.
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.Spider.Initializer.parameter.enabled"></a>
+
+- *Type:* boolean
+
+If set to false the job will not be run, default: true.
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.Spider.Initializer.parameter.alwaysRun"></a>
+
+- *Type:* boolean
+
+If set and the job is enabled then it will run even if the plan exits early, default: false.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Spider.property.parameters">parameters</a></code> | <code><a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a></code> | *No description.* |
+| <code><a href="#zap-cdk.Spider.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.Spider.property.alwaysRun">alwaysRun</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.Spider.property.enabled">enabled</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.Spider.property.tests">tests</a></code> | <code><a href="#zap-cdk.ISpiderTest">ISpiderTest</a>[]</code> | *No description.* |
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="zap-cdk.Spider.property.parameters"></a>
+
+```typescript
+public readonly parameters: ISpiderParameters;
+```
+
+- *Type:* <a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a>
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.Spider.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `alwaysRun`<sup>Optional</sup> <a name="alwaysRun" id="zap-cdk.Spider.property.alwaysRun"></a>
+
+```typescript
+public readonly alwaysRun: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.Spider.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `tests`<sup>Optional</sup> <a name="tests" id="zap-cdk.Spider.property.tests"></a>
+
+```typescript
+public readonly tests: ISpiderTest[];
+```
+
+- *Type:* <a href="#zap-cdk.ISpiderTest">ISpiderTest</a>[]
+
+---
+
+
+### SpiderAjax <a name="SpiderAjax" id="zap-cdk.SpiderAjax"></a>
+
+- *Implements:* <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a>
+
+Class representing the configuration for an AJAX spider.
+
+*Example*
+
+```typescript
+const spiderAjax = new SpiderAjax({
+  context: 'MyContext',
+  url: 'https://example.com',
+  maxDuration: 10,
+  inScopeOnly: true,
+  elements: ['a', 'button'],
+  excludedElements: [
+    new ExcludedElement({
+      description: 'Exclude login button',
+      element: 'button',
+      text: 'Login'
+    })
+  ],
+  tests: [
+    new AjaxTest({
+      name: 'Check AJAX requests',
+      type: 'stats',
+      statistic: 'ajax.requests',
+      operator: '>',
+      value: 10,
+      onFail: 'warn'
+    })
+  ]
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.SpiderAjax.Initializer"></a>
+
+```typescript
+import { SpiderAjax } from 'zap-cdk'
+
+new SpiderAjax(options: ISpiderAjax)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderAjax.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a></code> | - The options to initialize the AJAX spider configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.SpiderAjax.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a>
+
+The options to initialize the AJAX spider configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderAjax.property.browserId">browserId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.clickDefaultElems">clickDefaultElems</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.clickElemsOnce">clickElemsOnce</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.elements">elements</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.eventWait">eventWait</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.excludedElements">excludedElements</a></code> | <code><a href="#zap-cdk.IExcludedElement">IExcludedElement</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.inScopeOnly">inScopeOnly</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.maxCrawlDepth">maxCrawlDepth</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.maxCrawlStates">maxCrawlStates</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.maxDuration">maxDuration</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.numberOfBrowsers">numberOfBrowsers</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.randomInputs">randomInputs</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.reloadWait">reloadWait</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.runOnlyIfModern">runOnlyIfModern</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.scopeCheck">scopeCheck</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.tests">tests</a></code> | <code><a href="#zap-cdk.IAjaxTest">IAjaxTest</a>[]</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderAjax.property.user">user</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `browserId`<sup>Optional</sup> <a name="browserId" id="zap-cdk.SpiderAjax.property.browserId"></a>
+
+```typescript
+public readonly browserId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clickDefaultElems`<sup>Optional</sup> <a name="clickDefaultElems" id="zap-cdk.SpiderAjax.property.clickDefaultElems"></a>
+
+```typescript
+public readonly clickDefaultElems: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `clickElemsOnce`<sup>Optional</sup> <a name="clickElemsOnce" id="zap-cdk.SpiderAjax.property.clickElemsOnce"></a>
+
+```typescript
+public readonly clickElemsOnce: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="zap-cdk.SpiderAjax.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+---
+
+##### `elements`<sup>Optional</sup> <a name="elements" id="zap-cdk.SpiderAjax.property.elements"></a>
+
+```typescript
+public readonly elements: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `eventWait`<sup>Optional</sup> <a name="eventWait" id="zap-cdk.SpiderAjax.property.eventWait"></a>
+
+```typescript
+public readonly eventWait: number;
+```
+
+- *Type:* number
+
+---
+
+##### `excludedElements`<sup>Optional</sup> <a name="excludedElements" id="zap-cdk.SpiderAjax.property.excludedElements"></a>
+
+```typescript
+public readonly excludedElements: IExcludedElement[];
+```
+
+- *Type:* <a href="#zap-cdk.IExcludedElement">IExcludedElement</a>[]
+
+---
+
+##### `inScopeOnly`<sup>Optional</sup> <a name="inScopeOnly" id="zap-cdk.SpiderAjax.property.inScopeOnly"></a>
+
+```typescript
+public readonly inScopeOnly: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `maxCrawlDepth`<sup>Optional</sup> <a name="maxCrawlDepth" id="zap-cdk.SpiderAjax.property.maxCrawlDepth"></a>
+
+```typescript
+public readonly maxCrawlDepth: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxCrawlStates`<sup>Optional</sup> <a name="maxCrawlStates" id="zap-cdk.SpiderAjax.property.maxCrawlStates"></a>
+
+```typescript
+public readonly maxCrawlStates: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxDuration`<sup>Optional</sup> <a name="maxDuration" id="zap-cdk.SpiderAjax.property.maxDuration"></a>
+
+```typescript
+public readonly maxDuration: number;
+```
+
+- *Type:* number
+
+---
+
+##### `numberOfBrowsers`<sup>Optional</sup> <a name="numberOfBrowsers" id="zap-cdk.SpiderAjax.property.numberOfBrowsers"></a>
+
+```typescript
+public readonly numberOfBrowsers: number;
+```
+
+- *Type:* number
+
+---
+
+##### `randomInputs`<sup>Optional</sup> <a name="randomInputs" id="zap-cdk.SpiderAjax.property.randomInputs"></a>
+
+```typescript
+public readonly randomInputs: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `reloadWait`<sup>Optional</sup> <a name="reloadWait" id="zap-cdk.SpiderAjax.property.reloadWait"></a>
+
+```typescript
+public readonly reloadWait: number;
+```
+
+- *Type:* number
+
+---
+
+##### `runOnlyIfModern`<sup>Optional</sup> <a name="runOnlyIfModern" id="zap-cdk.SpiderAjax.property.runOnlyIfModern"></a>
+
+```typescript
+public readonly runOnlyIfModern: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `scopeCheck`<sup>Optional</sup> <a name="scopeCheck" id="zap-cdk.SpiderAjax.property.scopeCheck"></a>
+
+```typescript
+public readonly scopeCheck: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tests`<sup>Optional</sup> <a name="tests" id="zap-cdk.SpiderAjax.property.tests"></a>
+
+```typescript
+public readonly tests: IAjaxTest[];
+```
+
+- *Type:* <a href="#zap-cdk.IAjaxTest">IAjaxTest</a>[]
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="zap-cdk.SpiderAjax.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="zap-cdk.SpiderAjax.property.user"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* string
+
+---
+
+
+### SpiderParameters <a name="SpiderParameters" id="zap-cdk.SpiderParameters"></a>
+
+- *Implements:* <a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.SpiderParameters.Initializer"></a>
+
+```typescript
+import { SpiderParameters } from 'zap-cdk'
+
+new SpiderParameters(options: ISpiderParameters)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderParameters.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a></code> | - The options to initialize the spider parameters. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.SpiderParameters.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a>
+
+The options to initialize the spider parameters.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderParameters.property.acceptCookies">acceptCookies</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.handleODataParametersVisited">handleODataParametersVisited</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.handleParameters">handleParameters</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.logoutAvoidance">logoutAvoidance</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.maxChildren">maxChildren</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.maxDepth">maxDepth</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.maxDuration">maxDuration</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.maxParseSizeBytes">maxParseSizeBytes</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.parseComments">parseComments</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.parseDsStore">parseDsStore</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.parseGit">parseGit</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.parseRobotsTxt">parseRobotsTxt</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.parseSitemapXml">parseSitemapXml</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.parseSVNEntries">parseSVNEntries</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.postForm">postForm</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.processForm">processForm</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.sendRefererHeader">sendRefererHeader</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.threadCount">threadCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.user">user</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderParameters.property.userAgent">userAgent</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `acceptCookies`<sup>Optional</sup> <a name="acceptCookies" id="zap-cdk.SpiderParameters.property.acceptCookies"></a>
+
+```typescript
+public readonly acceptCookies: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="zap-cdk.SpiderParameters.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+---
+
+##### `handleODataParametersVisited`<sup>Optional</sup> <a name="handleODataParametersVisited" id="zap-cdk.SpiderParameters.property.handleODataParametersVisited"></a>
+
+```typescript
+public readonly handleODataParametersVisited: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `handleParameters`<sup>Optional</sup> <a name="handleParameters" id="zap-cdk.SpiderParameters.property.handleParameters"></a>
+
+```typescript
+public readonly handleParameters: string;
+```
+
+- *Type:* string
+
+---
+
+##### `logoutAvoidance`<sup>Optional</sup> <a name="logoutAvoidance" id="zap-cdk.SpiderParameters.property.logoutAvoidance"></a>
+
+```typescript
+public readonly logoutAvoidance: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `maxChildren`<sup>Optional</sup> <a name="maxChildren" id="zap-cdk.SpiderParameters.property.maxChildren"></a>
+
+```typescript
+public readonly maxChildren: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxDepth`<sup>Optional</sup> <a name="maxDepth" id="zap-cdk.SpiderParameters.property.maxDepth"></a>
+
+```typescript
+public readonly maxDepth: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxDuration`<sup>Optional</sup> <a name="maxDuration" id="zap-cdk.SpiderParameters.property.maxDuration"></a>
+
+```typescript
+public readonly maxDuration: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxParseSizeBytes`<sup>Optional</sup> <a name="maxParseSizeBytes" id="zap-cdk.SpiderParameters.property.maxParseSizeBytes"></a>
+
+```typescript
+public readonly maxParseSizeBytes: number;
+```
+
+- *Type:* number
+
+---
+
+##### `parseComments`<sup>Optional</sup> <a name="parseComments" id="zap-cdk.SpiderParameters.property.parseComments"></a>
+
+```typescript
+public readonly parseComments: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `parseDsStore`<sup>Optional</sup> <a name="parseDsStore" id="zap-cdk.SpiderParameters.property.parseDsStore"></a>
+
+```typescript
+public readonly parseDsStore: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `parseGit`<sup>Optional</sup> <a name="parseGit" id="zap-cdk.SpiderParameters.property.parseGit"></a>
+
+```typescript
+public readonly parseGit: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `parseRobotsTxt`<sup>Optional</sup> <a name="parseRobotsTxt" id="zap-cdk.SpiderParameters.property.parseRobotsTxt"></a>
+
+```typescript
+public readonly parseRobotsTxt: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `parseSitemapXml`<sup>Optional</sup> <a name="parseSitemapXml" id="zap-cdk.SpiderParameters.property.parseSitemapXml"></a>
+
+```typescript
+public readonly parseSitemapXml: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `parseSVNEntries`<sup>Optional</sup> <a name="parseSVNEntries" id="zap-cdk.SpiderParameters.property.parseSVNEntries"></a>
+
+```typescript
+public readonly parseSVNEntries: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `postForm`<sup>Optional</sup> <a name="postForm" id="zap-cdk.SpiderParameters.property.postForm"></a>
+
+```typescript
+public readonly postForm: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `processForm`<sup>Optional</sup> <a name="processForm" id="zap-cdk.SpiderParameters.property.processForm"></a>
+
+```typescript
+public readonly processForm: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `sendRefererHeader`<sup>Optional</sup> <a name="sendRefererHeader" id="zap-cdk.SpiderParameters.property.sendRefererHeader"></a>
+
+```typescript
+public readonly sendRefererHeader: boolean;
+```
+
+- *Type:* boolean
+
+---
+
+##### `threadCount`<sup>Optional</sup> <a name="threadCount" id="zap-cdk.SpiderParameters.property.threadCount"></a>
+
+```typescript
+public readonly threadCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="zap-cdk.SpiderParameters.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="zap-cdk.SpiderParameters.property.user"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* string
+
+---
+
+##### `userAgent`<sup>Optional</sup> <a name="userAgent" id="zap-cdk.SpiderParameters.property.userAgent"></a>
+
+```typescript
+public readonly userAgent: string;
+```
+
+- *Type:* string
+
+---
+
+
+### SpiderTest <a name="SpiderTest" id="zap-cdk.SpiderTest"></a>
+
+- *Implements:* <a href="#zap-cdk.ISpiderTest">ISpiderTest</a>
+
+Class representing a test configuration for the spider.
+
+*Example*
+
+```typescript
+const spiderTest = new SpiderTest({
+  statistic: 'urls',
+  operator: '>=',
+  value: 10,
+  onFail: 'error'
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.SpiderTest.Initializer"></a>
+
+```typescript
+import { SpiderTest } from 'zap-cdk'
+
+new SpiderTest(options: ISpiderTest)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderTest.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ISpiderTest">ISpiderTest</a></code> | - The options to initialize the spider test. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.SpiderTest.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ISpiderTest">ISpiderTest</a>
+
+The options to initialize the spider test.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.SpiderTest.property.onFail">onFail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderTest.property.operator">operator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderTest.property.statistic">statistic</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderTest.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderTest.property.value">value</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.SpiderTest.property.name">name</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `onFail`<sup>Required</sup> <a name="onFail" id="zap-cdk.SpiderTest.property.onFail"></a>
+
+```typescript
+public readonly onFail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `operator`<sup>Required</sup> <a name="operator" id="zap-cdk.SpiderTest.property.operator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* string
+
+---
+
+##### `statistic`<sup>Required</sup> <a name="statistic" id="zap-cdk.SpiderTest.property.statistic"></a>
+
+```typescript
+public readonly statistic: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.SpiderTest.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="zap-cdk.SpiderTest.property.value"></a>
+
+```typescript
+public readonly value: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.SpiderTest.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+
+### StatisticsTest <a name="StatisticsTest" id="zap-cdk.StatisticsTest"></a>
+
+- *Implements:* <a href="#zap-cdk.IStatisticsTest">IStatisticsTest</a>
+
+#### Initializers <a name="Initializers" id="zap-cdk.StatisticsTest.Initializer"></a>
+
+```typescript
+import { StatisticsTest } from 'zap-cdk'
+
+new StatisticsTest(options: IStatisticsTest)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.StatisticsTest.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IStatisticsTest">IStatisticsTest</a></code> | - The configuration options for the statistics test. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.StatisticsTest.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IStatisticsTest">IStatisticsTest</a>
+
+The configuration options for the statistics test.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.StatisticsTest.property.onFail">onFail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.StatisticsTest.property.operator">operator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.StatisticsTest.property.statistic">statistic</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.StatisticsTest.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.StatisticsTest.property.value">value</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.StatisticsTest.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.StatisticsTest.property.site">site</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `onFail`<sup>Required</sup> <a name="onFail" id="zap-cdk.StatisticsTest.property.onFail"></a>
+
+```typescript
+public readonly onFail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `operator`<sup>Required</sup> <a name="operator" id="zap-cdk.StatisticsTest.property.operator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* string
+
+---
+
+##### `statistic`<sup>Required</sup> <a name="statistic" id="zap-cdk.StatisticsTest.property.statistic"></a>
+
+```typescript
+public readonly statistic: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.StatisticsTest.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="zap-cdk.StatisticsTest.property.value"></a>
+
+```typescript
+public readonly value: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.StatisticsTest.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `site`<sup>Optional</sup> <a name="site" id="zap-cdk.StatisticsTest.property.site"></a>
+
+```typescript
+public readonly site: string;
+```
+
+- *Type:* string
+
+---
+
+
+### Technology <a name="Technology" id="zap-cdk.Technology"></a>
+
+- *Implements:* <a href="#zap-cdk.ITechnology">ITechnology</a>
+
+Represents the technology details for the scanning context.
+
+#### Initializers <a name="Initializers" id="zap-cdk.Technology.Initializer"></a>
+
+```typescript
+import { Technology } from 'zap-cdk'
+
+new Technology(options: ITechnology)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Technology.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ITechnology">ITechnology</a></code> | - The options to initialize the technology details. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Technology.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ITechnology">ITechnology</a>
+
+The options to initialize the technology details.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Technology.property.exclude">exclude</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#zap-cdk.Technology.property.include">include</a></code> | <code>string[]</code> | *No description.* |
+
+---
+
+##### `exclude`<sup>Optional</sup> <a name="exclude" id="zap-cdk.Technology.property.exclude"></a>
+
+```typescript
+public readonly exclude: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `include`<sup>Optional</sup> <a name="include" id="zap-cdk.Technology.property.include"></a>
+
+```typescript
+public readonly include: string[];
+```
+
+- *Type:* string[]
+
+---
+
+
+### TotpConfig <a name="TotpConfig" id="zap-cdk.TotpConfig"></a>
+
+- *Implements:* <a href="#zap-cdk.ITotpConfig">ITotpConfig</a>
+
+Represents the TOTP (Time-based One-Time Password) configuration for a user.
+
+#### Initializers <a name="Initializers" id="zap-cdk.TotpConfig.Initializer"></a>
+
+```typescript
+import { TotpConfig } from 'zap-cdk'
+
+new TotpConfig(options: ITotpConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.TotpConfig.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.ITotpConfig">ITotpConfig</a></code> | - The options to initialize the TOTP configuration. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.TotpConfig.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.ITotpConfig">ITotpConfig</a>
+
+The options to initialize the TOTP configuration.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.TotpConfig.property.secret">secret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.TotpConfig.property.algorithm">algorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.TotpConfig.property.digits">digits</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#zap-cdk.TotpConfig.property.period">period</a></code> | <code>number</code> | *No description.* |
+
+---
+
+##### `secret`<sup>Required</sup> <a name="secret" id="zap-cdk.TotpConfig.property.secret"></a>
+
+```typescript
+public readonly secret: string;
+```
+
+- *Type:* string
+
+---
+
+##### `algorithm`<sup>Optional</sup> <a name="algorithm" id="zap-cdk.TotpConfig.property.algorithm"></a>
+
+```typescript
+public readonly algorithm: string;
+```
+
+- *Type:* string
+
+---
+
+##### `digits`<sup>Optional</sup> <a name="digits" id="zap-cdk.TotpConfig.property.digits"></a>
+
+```typescript
+public readonly digits: number;
+```
+
+- *Type:* number
+
+---
+
+##### `period`<sup>Optional</sup> <a name="period" id="zap-cdk.TotpConfig.property.period"></a>
+
+```typescript
+public readonly period: number;
+```
+
+- *Type:* number
+
+---
+
+
+### UrlQueryStringAndDataDrivenNodes <a name="UrlQueryStringAndDataDrivenNodes" id="zap-cdk.UrlQueryStringAndDataDrivenNodes"></a>
+
+- *Implements:* <a href="#zap-cdk.IUrlQueryStringAndDataDrivenNodes">IUrlQueryStringAndDataDrivenNodes</a>
+
+Class representing the configuration options for scanning URL query strings and Data Driven Nodes (DDNs).
+
+*Example*
+
+```typescript
+const config = new UrlQueryStringAndDataDrivenNodes({ enabled: true, addParam: false, odata: true });
+console.log(config.enabled); // true
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.UrlQueryStringAndDataDrivenNodes.Initializer"></a>
+
+```typescript
+import { UrlQueryStringAndDataDrivenNodes } from 'zap-cdk'
+
+new UrlQueryStringAndDataDrivenNodes(options?: IUrlQueryStringAndDataDrivenNodes)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.UrlQueryStringAndDataDrivenNodes.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IUrlQueryStringAndDataDrivenNodes">IUrlQueryStringAndDataDrivenNodes</a></code> | - The configuration options. |
+
+---
+
+##### `options`<sup>Optional</sup> <a name="options" id="zap-cdk.UrlQueryStringAndDataDrivenNodes.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IUrlQueryStringAndDataDrivenNodes">IUrlQueryStringAndDataDrivenNodes</a>
+
+The configuration options.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.UrlQueryStringAndDataDrivenNodes.property.addParam">addParam</a></code> | <code>boolean</code> | If a query parameter should be added if none present. |
+| <code><a href="#zap-cdk.UrlQueryStringAndDataDrivenNodes.property.enabled">enabled</a></code> | <code>boolean</code> | If query parameters and DDNs scanning should be enabled. |
+| <code><a href="#zap-cdk.UrlQueryStringAndDataDrivenNodes.property.odata">odata</a></code> | <code>boolean</code> | If OData query filters should be scanned. |
+
+---
+
+##### `addParam`<sup>Optional</sup> <a name="addParam" id="zap-cdk.UrlQueryStringAndDataDrivenNodes.property.addParam"></a>
+
+```typescript
+public readonly addParam: boolean;
+```
+
+- *Type:* boolean
+
+If a query parameter should be added if none present.
+
+Default: false
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="zap-cdk.UrlQueryStringAndDataDrivenNodes.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean;
+```
+
+- *Type:* boolean
+
+If query parameters and DDNs scanning should be enabled.
+
+Default: true
+
+---
+
+##### `odata`<sup>Optional</sup> <a name="odata" id="zap-cdk.UrlQueryStringAndDataDrivenNodes.property.odata"></a>
+
+```typescript
+public readonly odata: boolean;
+```
+
+- *Type:* boolean
+
+If OData query filters should be scanned.
+
+Default: true
+
+---
+
+
+### UrlTest <a name="UrlTest" id="zap-cdk.UrlTest"></a>
+
+- *Implements:* <a href="#zap-cdk.IUrlTest">IUrlTest</a>
+
+Class representing a URL test.
+
+*Example*
+
+```typescript
+const urlTest = new UrlTest({
+  name: 'test one',
+  url: 'http://www.example.com/path',
+  operator: 'and',
+  requestHeaderRegex: 'some-regex',
+  requestBodyRegex: 'some-regex',
+  responseHeaderRegex: 'some-regex',
+  responseBodyRegex: 'some-regex',
+  onFail: 'error',
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.UrlTest.Initializer"></a>
+
+```typescript
+import { UrlTest } from 'zap-cdk'
+
+new UrlTest(options: IUrlTest)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.UrlTest.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IUrlTest">IUrlTest</a></code> | - The configuration options  for the URL test. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.UrlTest.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IUrlTest">IUrlTest</a>
+
+The configuration options  for the URL test.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.UrlTest.property.onFail">onFail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.operator">operator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.requestBodyRegex">requestBodyRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.requestHeaderRegex">requestHeaderRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.responseBodyRegex">responseBodyRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UrlTest.property.responseHeaderRegex">responseHeaderRegex</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `onFail`<sup>Required</sup> <a name="onFail" id="zap-cdk.UrlTest.property.onFail"></a>
+
+```typescript
+public readonly onFail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `operator`<sup>Required</sup> <a name="operator" id="zap-cdk.UrlTest.property.operator"></a>
+
+```typescript
+public readonly operator: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="zap-cdk.UrlTest.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="zap-cdk.UrlTest.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="zap-cdk.UrlTest.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requestBodyRegex`<sup>Optional</sup> <a name="requestBodyRegex" id="zap-cdk.UrlTest.property.requestBodyRegex"></a>
+
+```typescript
+public readonly requestBodyRegex: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requestHeaderRegex`<sup>Optional</sup> <a name="requestHeaderRegex" id="zap-cdk.UrlTest.property.requestHeaderRegex"></a>
+
+```typescript
+public readonly requestHeaderRegex: string;
+```
+
+- *Type:* string
+
+---
+
+##### `responseBodyRegex`<sup>Optional</sup> <a name="responseBodyRegex" id="zap-cdk.UrlTest.property.responseBodyRegex"></a>
+
+```typescript
+public readonly responseBodyRegex: string;
+```
+
+- *Type:* string
+
+---
+
+##### `responseHeaderRegex`<sup>Optional</sup> <a name="responseHeaderRegex" id="zap-cdk.UrlTest.property.responseHeaderRegex"></a>
+
+```typescript
+public readonly responseHeaderRegex: string;
+```
+
+- *Type:* string
+
+---
+
+
+### UserCredentials <a name="UserCredentials" id="zap-cdk.UserCredentials"></a>
+
+- *Implements:* <a href="#zap-cdk.IUserCredentials">IUserCredentials</a>
+
+Represents the credentials for a user.
+
+#### Initializers <a name="Initializers" id="zap-cdk.UserCredentials.Initializer"></a>
+
+```typescript
+import { UserCredentials } from 'zap-cdk'
+
+new UserCredentials(options: IUserCredentials)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.UserCredentials.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IUserCredentials">IUserCredentials</a></code> | - The options to initialize the user credentials. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.UserCredentials.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IUserCredentials">IUserCredentials</a>
+
+The options to initialize the user credentials.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.UserCredentials.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UserCredentials.property.username">username</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#zap-cdk.UserCredentials.property.totp">totp</a></code> | <code><a href="#zap-cdk.ITotpConfig">ITotpConfig</a></code> | *No description.* |
+
+---
+
+##### `password`<sup>Required</sup> <a name="password" id="zap-cdk.UserCredentials.property.password"></a>
+
+```typescript
+public readonly password: string;
+```
+
+- *Type:* string
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="zap-cdk.UserCredentials.property.username"></a>
+
+```typescript
+public readonly username: string;
+```
+
+- *Type:* string
+
+---
+
+##### `totp`<sup>Optional</sup> <a name="totp" id="zap-cdk.UserCredentials.property.totp"></a>
+
+```typescript
+public readonly totp: ITotpConfig;
+```
+
+- *Type:* <a href="#zap-cdk.ITotpConfig">ITotpConfig</a>
+
+---
+
+
+### Zap <a name="Zap" id="zap-cdk.Zap"></a>
+
+- *Implements:* <a href="#zap-cdk.IZap">IZap</a>
+
+Class representing the ZAP configuration.
+
+*Example*
+
+```typescript
+const zapConfig = new Zap({
+  env: new Environment({ /* environment config options *\/ }),
+  jobs: [
+    new Job({ /* job config options *\/ }),
+    new Job({ /* another job config options *\/ })
+  ]
+});
+```
+
+
+#### Initializers <a name="Initializers" id="zap-cdk.Zap.Initializer"></a>
+
+```typescript
+import { Zap } from 'zap-cdk'
+
+new Zap(options: IZap)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Zap.Initializer.parameter.options">options</a></code> | <code><a href="#zap-cdk.IZap">IZap</a></code> | - The ZAP configuration options. |
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="zap-cdk.Zap.Initializer.parameter.options"></a>
+
+- *Type:* <a href="#zap-cdk.IZap">IZap</a>
+
+The ZAP configuration options.
+
+---
+
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#zap-cdk.Zap.property.env">env</a></code> | <code><a href="#zap-cdk.IEnvironment">IEnvironment</a></code> | *No description.* |
+| <code><a href="#zap-cdk.Zap.property.jobs">jobs</a></code> | <code><a href="#zap-cdk.IActiveScan">IActiveScan</a> \| <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a> \| <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a> \| <a href="#zap-cdk.ISpider">ISpider</a> \| <a href="#zap-cdk.IDelay">IDelay</a> \| <a href="#zap-cdk.IExitStatus">IExitStatus</a> \| <a href="#zap-cdk.IExport">IExport</a> \| <a href="#zap-cdk.IGraphQL">IGraphQL</a> \| <a href="#zap-cdk.IImport">IImport</a> \| <a href="#zap-cdk.IOpenAPI">IOpenAPI</a> \| <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a> \| <a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a> \| <a href="#zap-cdk.IPostman">IPostman</a> \| <a href="#zap-cdk.IReplacer">IReplacer</a> \| <a href="#zap-cdk.IReport">IReport</a> \| <a href="#zap-cdk.IRequest">IRequest</a> \| <a href="#zap-cdk.ISoap">ISoap</a> \| <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a> \| <a href="#zap-cdk.INewType">INewType</a>[]</code> | *No description.* |
+
+---
+
+##### `env`<sup>Required</sup> <a name="env" id="zap-cdk.Zap.property.env"></a>
+
+```typescript
+public readonly env: IEnvironment;
+```
+
+- *Type:* <a href="#zap-cdk.IEnvironment">IEnvironment</a>
+
+---
+
+##### `jobs`<sup>Required</sup> <a name="jobs" id="zap-cdk.Zap.property.jobs"></a>
+
+```typescript
+public readonly jobs: IActiveScan | IActiveScanPolicy | IActiveScanConfig | ISpider | IDelay | IExitStatus | IExport | IGraphQL | IImport | IOpenAPI | IPassiveScanConfig | IPassiveScanWait | IPostman | IReplacer | IReport | IRequest | ISoap | ISpiderAjax | INewType[];
+```
+
+- *Type:* <a href="#zap-cdk.IActiveScan">IActiveScan</a> | <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a> | <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a> | <a href="#zap-cdk.ISpider">ISpider</a> | <a href="#zap-cdk.IDelay">IDelay</a> | <a href="#zap-cdk.IExitStatus">IExitStatus</a> | <a href="#zap-cdk.IExport">IExport</a> | <a href="#zap-cdk.IGraphQL">IGraphQL</a> | <a href="#zap-cdk.IImport">IImport</a> | <a href="#zap-cdk.IOpenAPI">IOpenAPI</a> | <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a> | <a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a> | <a href="#zap-cdk.IPostman">IPostman</a> | <a href="#zap-cdk.IReplacer">IReplacer</a> | <a href="#zap-cdk.IReport">IReport</a> | <a href="#zap-cdk.IRequest">IRequest</a> | <a href="#zap-cdk.ISoap">ISoap</a> | <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a> | <a href="#zap-cdk.INewType">INewType</a>[]
+
+---
+
 
 ## Protocols <a name="Protocols" id="Protocols"></a>
 
 ### IActiveScan <a name="IActiveScan" id="zap-cdk.IActiveScan"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IActiveScan">IActiveScan</a>
+- *Implemented By:* <a href="#zap-cdk.ActiveScan">ActiveScan</a>, <a href="#zap-cdk.IActiveScan">IActiveScan</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -2758,7 +9196,7 @@ public readonly policyDefinition: IPolicyDefinition;
 
 ### IActiveScanConfig <a name="IActiveScanConfig" id="zap-cdk.IActiveScanConfig"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a>
+- *Implemented By:* <a href="#zap-cdk.ActiveScanConfig">ActiveScanConfig</a>, <a href="#zap-cdk.IActiveScanConfig">IActiveScanConfig</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -2825,7 +9263,7 @@ public readonly excludePaths: string[];
 
 ### IActiveScanConfigParameters <a name="IActiveScanConfigParameters" id="zap-cdk.IActiveScanConfigParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IActiveScanConfigParameters">IActiveScanConfigParameters</a>
+- *Implemented By:* <a href="#zap-cdk.ActiveScanConfigParameters">ActiveScanConfigParameters</a>, <a href="#zap-cdk.IActiveScanConfigParameters">IActiveScanConfigParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -2973,7 +9411,7 @@ public readonly activeScan: IActiveScan;
 
 ### IActiveScanParameters <a name="IActiveScanParameters" id="zap-cdk.IActiveScanParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IActiveScanParameters">IActiveScanParameters</a>
+- *Implemented By:* <a href="#zap-cdk.ActiveScanParameters">ActiveScanParameters</a>, <a href="#zap-cdk.IActiveScanParameters">IActiveScanParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3150,7 +9588,7 @@ public readonly user: string;
 
 ### IActiveScanPolicy <a name="IActiveScanPolicy" id="zap-cdk.IActiveScanPolicy"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a>
+- *Implemented By:* <a href="#zap-cdk.ActiveScanPolicy">ActiveScanPolicy</a>, <a href="#zap-cdk.IActiveScanPolicy">IActiveScanPolicy</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3206,7 +9644,7 @@ public readonly enabled: boolean;
 
 ### IActiveScanPolicyDefinition <a name="IActiveScanPolicyDefinition" id="zap-cdk.IActiveScanPolicyDefinition"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a>
+- *Implemented By:* <a href="#zap-cdk.ActiveScanPolicyDefinition">ActiveScanPolicyDefinition</a>, <a href="#zap-cdk.IActiveScanPolicyDefinition">IActiveScanPolicyDefinition</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3273,7 +9711,7 @@ public readonly description: string;
 
 ### IActiveScanPolicyParameters <a name="IActiveScanPolicyParameters" id="zap-cdk.IActiveScanPolicyParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IActiveScanPolicyParameters">IActiveScanPolicyParameters</a>
+- *Implemented By:* <a href="#zap-cdk.ActiveScanPolicyParameters">ActiveScanPolicyParameters</a>, <a href="#zap-cdk.IActiveScanPolicyParameters">IActiveScanPolicyParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3332,7 +9770,7 @@ public readonly activeScanPolicy: IActiveScanPolicy;
 
 ### IAjaxTest <a name="IAjaxTest" id="zap-cdk.IAjaxTest"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAjaxTest">IAjaxTest</a>
+- *Implemented By:* <a href="#zap-cdk.AjaxTest">AjaxTest</a>, <a href="#zap-cdk.IAjaxTest">IAjaxTest</a>
 
 Interface representing a test configuration.
 
@@ -3412,7 +9850,7 @@ public readonly onFail: string;
 
 ### IAlertFilter <a name="IAlertFilter" id="zap-cdk.IAlertFilter"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAlertFilter">IAlertFilter</a>
+- *Implemented By:* <a href="#zap-cdk.AlertFilter">AlertFilter</a>, <a href="#zap-cdk.IAlertFilter">IAlertFilter</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3545,7 +9983,7 @@ public readonly urlRegex: boolean;
 
 ### IAlertFilterParameters <a name="IAlertFilterParameters" id="zap-cdk.IAlertFilterParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAlertFilterParameters">IAlertFilterParameters</a>
+- *Implemented By:* <a href="#zap-cdk.AlertFilterParameters">AlertFilterParameters</a>, <a href="#zap-cdk.IAlertFilterParameters">IAlertFilterParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3579,7 +10017,7 @@ public readonly deleteGlobalAlerts: boolean;
 
 ### IAlertTag <a name="IAlertTag" id="zap-cdk.IAlertTag"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAlertTag">IAlertTag</a>
+- *Implemented By:* <a href="#zap-cdk.AlertTag">AlertTag</a>, <a href="#zap-cdk.IAlertTag">IAlertTag</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3635,7 +10073,7 @@ public readonly threshold: string;
 
 ### IAlertTags <a name="IAlertTags" id="zap-cdk.IAlertTags"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAlertTags">IAlertTags</a>
+- *Implemented By:* <a href="#zap-cdk.AlertTags">AlertTags</a>, <a href="#zap-cdk.IAlertTags">IAlertTags</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3691,7 +10129,7 @@ public readonly threshold: string;
 
 ### IAlertTest <a name="IAlertTest" id="zap-cdk.IAlertTest"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAlertTest">IAlertTest</a>
+- *Implemented By:* <a href="#zap-cdk.AlertTest">AlertTest</a>, <a href="#zap-cdk.IAlertTest">IAlertTest</a>
 
 Interface for alert tests.
 
@@ -3866,7 +10304,7 @@ public readonly url: string;
 
 ### IAuthenticationParameters <a name="IAuthenticationParameters" id="zap-cdk.IAuthenticationParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAuthenticationParameters">IAuthenticationParameters</a>
+- *Implemented By:* <a href="#zap-cdk.AuthenticationParameters">AuthenticationParameters</a>, <a href="#zap-cdk.IAuthenticationParameters">IAuthenticationParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -3911,7 +10349,7 @@ public readonly verification: IAuthenticationParametersVerification;
 
 ### IAuthenticationParametersParameters <a name="IAuthenticationParametersParameters" id="zap-cdk.IAuthenticationParametersParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAuthenticationParametersParameters">IAuthenticationParametersParameters</a>
+- *Implemented By:* <a href="#zap-cdk.AuthenticationParametersParameters">AuthenticationParametersParameters</a>, <a href="#zap-cdk.IAuthenticationParametersParameters">IAuthenticationParametersParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4022,7 +10460,7 @@ public readonly scriptInline: string;
 
 ### IAuthenticationParametersVerification <a name="IAuthenticationParametersVerification" id="zap-cdk.IAuthenticationParametersVerification"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IAuthenticationParametersVerification">IAuthenticationParametersVerification</a>
+- *Implemented By:* <a href="#zap-cdk.AuthenticationParametersVerification">AuthenticationParametersVerification</a>, <a href="#zap-cdk.IAuthenticationParametersVerification">IAuthenticationParametersVerification</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4233,7 +10671,7 @@ public readonly includePaths: string[];
 
 ### IContextStructure <a name="IContextStructure" id="zap-cdk.IContextStructure"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IContextStructure">IContextStructure</a>
+- *Implemented By:* <a href="#zap-cdk.ContextStructure">ContextStructure</a>, <a href="#zap-cdk.IContextStructure">IContextStructure</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4267,7 +10705,7 @@ public readonly structuralParameters: string[];
 
 ### IContextUser <a name="IContextUser" id="zap-cdk.IContextUser"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IContextUser">IContextUser</a>
+- *Implemented By:* <a href="#zap-cdk.ContextUser">ContextUser</a>, <a href="#zap-cdk.IContextUser">IContextUser</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4301,7 +10739,7 @@ public readonly name: string;
 
 ### ICookieData <a name="ICookieData" id="zap-cdk.ICookieData"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ICookieData">ICookieData</a>
+- *Implemented By:* <a href="#zap-cdk.CookieData">CookieData</a>, <a href="#zap-cdk.ICookieData">ICookieData</a>
 
 Configuration for cookie data scanning.
 
@@ -4345,7 +10783,7 @@ Default: false
 
 ### IDataDrivenNode <a name="IDataDrivenNode" id="zap-cdk.IDataDrivenNode"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IDataDrivenNode">IDataDrivenNode</a>
+- *Implemented By:* <a href="#zap-cdk.DataDrivenNode">DataDrivenNode</a>, <a href="#zap-cdk.IDataDrivenNode">IDataDrivenNode</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4379,7 +10817,7 @@ public readonly regex: string;
 
 ### IDelay <a name="IDelay" id="zap-cdk.IDelay"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IDelay">IDelay</a>
+- *Implemented By:* <a href="#zap-cdk.Delay">Delay</a>, <a href="#zap-cdk.IDelay">IDelay</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4435,7 +10873,7 @@ public readonly enabled: boolean;
 
 ### IDelayParameters <a name="IDelayParameters" id="zap-cdk.IDelayParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IDelayParameters">IDelayParameters</a>
+- *Implemented By:* <a href="#zap-cdk.DelayParameters">DelayParameters</a>, <a href="#zap-cdk.IDelayParameters">IDelayParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4698,7 +11136,7 @@ public readonly username: string;
 
 ### IExcludedElement <a name="IExcludedElement" id="zap-cdk.IExcludedElement"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IExcludedElement">IExcludedElement</a>
+- *Implemented By:* <a href="#zap-cdk.ExcludedElement">ExcludedElement</a>, <a href="#zap-cdk.IExcludedElement">IExcludedElement</a>
 
 Interface representing an excluded HTML element configuration.
 
@@ -4778,7 +11216,7 @@ public readonly xpath: string;
 
 ### IExitStatus <a name="IExitStatus" id="zap-cdk.IExitStatus"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IExitStatus">IExitStatus</a>
+- *Implemented By:* <a href="#zap-cdk.ExitStatus">ExitStatus</a>, <a href="#zap-cdk.IExitStatus">IExitStatus</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4834,7 +11272,7 @@ public readonly enabled: boolean;
 
 ### IExitStatusParameters <a name="IExitStatusParameters" id="zap-cdk.IExitStatusParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IExitStatusParameters">IExitStatusParameters</a>
+- *Implemented By:* <a href="#zap-cdk.ExitStatusParameters">ExitStatusParameters</a>, <a href="#zap-cdk.IExitStatusParameters">IExitStatusParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -4926,7 +11364,7 @@ public readonly exitStatus: IExitStatus;
 
 ### IExport <a name="IExport" id="zap-cdk.IExport"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IExport">IExport</a>
+- *Implemented By:* <a href="#zap-cdk.Export">Export</a>, <a href="#zap-cdk.IExport">IExport</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5007,7 +11445,7 @@ public readonly export: IExport;
 
 ### IGraphQL <a name="IGraphQL" id="zap-cdk.IGraphQL"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IGraphQL">IGraphQL</a>
+- *Implemented By:* <a href="#zap-cdk.GraphQL">GraphQL</a>, <a href="#zap-cdk.IGraphQL">IGraphQL</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5176,7 +11614,7 @@ public readonly graphql: IGraphQL;
 
 ### IHttpHeaders <a name="IHttpHeaders" id="zap-cdk.IHttpHeaders"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a>
+- *Implemented By:* <a href="#zap-cdk.HttpHeaders">HttpHeaders</a>, <a href="#zap-cdk.IHttpHeaders">IHttpHeaders</a>
 
 Configuration for HTTP header scanning.
 
@@ -5220,7 +11658,7 @@ Default: false
 
 ### IImport <a name="IImport" id="zap-cdk.IImport"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IImport">IImport</a>
+- *Implemented By:* <a href="#zap-cdk.Import">Import</a>, <a href="#zap-cdk.IImport">IImport</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5279,7 +11717,7 @@ public readonly import: IImport;
 
 ### IInputVectors <a name="IInputVectors" id="zap-cdk.IInputVectors"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IInputVectors">IInputVectors</a>
+- *Implemented By:* <a href="#zap-cdk.InputVectors">InputVectors</a>, <a href="#zap-cdk.IInputVectors">IInputVectors</a>
 
 Represents the configuration for input vectors used in an active scan.
 
@@ -5375,7 +11813,7 @@ Default: false
 
 ### IJsonPostData <a name="IJsonPostData" id="zap-cdk.IJsonPostData"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IJsonPostData">IJsonPostData</a>
+- *Implemented By:* <a href="#zap-cdk.JsonPostData">JsonPostData</a>, <a href="#zap-cdk.IJsonPostData">IJsonPostData</a>
 
 Configuration for JSON body scanning in POST data.
 
@@ -5419,7 +11857,7 @@ Default: false
 
 ### IMonitorTest <a name="IMonitorTest" id="zap-cdk.IMonitorTest"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IMonitorTest">IMonitorTest</a>
+- *Implemented By:* <a href="#zap-cdk.MonitorTest">MonitorTest</a>, <a href="#zap-cdk.IMonitorTest">IMonitorTest</a>
 
 Interface for monitor tests.
 
@@ -5532,7 +11970,7 @@ public readonly parameters: {[ key: string ]: any};
 
 ### IOpenAPI <a name="IOpenAPI" id="zap-cdk.IOpenAPI"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IOpenAPI">IOpenAPI</a>
+- *Implemented By:* <a href="#zap-cdk.OpenAPI">OpenAPI</a>, <a href="#zap-cdk.IOpenAPI">IOpenAPI</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5624,7 +12062,7 @@ public readonly openapi: IOpenAPI;
 
 ### IPassiveScanConfig <a name="IPassiveScanConfig" id="zap-cdk.IPassiveScanConfig"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a>
+- *Implemented By:* <a href="#zap-cdk.PassiveScanConfig">PassiveScanConfig</a>, <a href="#zap-cdk.IPassiveScanConfig">IPassiveScanConfig</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5716,7 +12154,7 @@ public readonly passiveScanConfig: IPassiveScanConfig;
 
 ### IPassiveScanParameters <a name="IPassiveScanParameters" id="zap-cdk.IPassiveScanParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPassiveScanParameters">IPassiveScanParameters</a>
+- *Implemented By:* <a href="#zap-cdk.PassiveScanParameters">PassiveScanParameters</a>, <a href="#zap-cdk.IPassiveScanParameters">IPassiveScanParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5783,7 +12221,7 @@ public readonly scanOnlyInScope: boolean;
 
 ### IPassiveScanRule <a name="IPassiveScanRule" id="zap-cdk.IPassiveScanRule"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a>
+- *Implemented By:* <a href="#zap-cdk.PassiveScanRule">PassiveScanRule</a>, <a href="#zap-cdk.IPassiveScanRule">IPassiveScanRule</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5828,7 +12266,7 @@ public readonly threshold: string;
 
 ### IPassiveScanWait <a name="IPassiveScanWait" id="zap-cdk.IPassiveScanWait"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a>
+- *Implemented By:* <a href="#zap-cdk.PassiveScanWait">PassiveScanWait</a>, <a href="#zap-cdk.IPassiveScanWait">IPassiveScanWait</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5876,7 +12314,7 @@ public readonly passiveScanWait: IPassiveScanWait;
 
 ### IPolicyDefinition <a name="IPolicyDefinition" id="zap-cdk.IPolicyDefinition"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPolicyDefinition">IPolicyDefinition</a>
+- *Implemented By:* <a href="#zap-cdk.PolicyDefinition">PolicyDefinition</a>, <a href="#zap-cdk.IPolicyDefinition">IPolicyDefinition</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5932,7 +12370,7 @@ public readonly rules: IRules[];
 
 ### IPollAdditionalHeaders <a name="IPollAdditionalHeaders" id="zap-cdk.IPollAdditionalHeaders"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPollAdditionalHeaders">IPollAdditionalHeaders</a>
+- *Implemented By:* <a href="#zap-cdk.PollAdditionalHeaders">PollAdditionalHeaders</a>, <a href="#zap-cdk.IPollAdditionalHeaders">IPollAdditionalHeaders</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5966,7 +12404,7 @@ public readonly value: string;
 
 ### IPostData <a name="IPostData" id="zap-cdk.IPostData"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPostData">IPostData</a>
+- *Implemented By:* <a href="#zap-cdk.PostData">PostData</a>, <a href="#zap-cdk.IPostData">IPostData</a>
 
 Configuration for POST data scanning.
 
@@ -6068,7 +12506,7 @@ Default: true
 
 ### IPostman <a name="IPostman" id="zap-cdk.IPostman"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IPostman">IPostman</a>
+- *Implemented By:* <a href="#zap-cdk.Postman">Postman</a>, <a href="#zap-cdk.IPostman">IPostman</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6138,7 +12576,7 @@ public readonly postman: IPostman;
 
 ### IReplacer <a name="IReplacer" id="zap-cdk.IReplacer"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IReplacer">IReplacer</a>
+- *Implemented By:* <a href="#zap-cdk.Replacer">Replacer</a>, <a href="#zap-cdk.IReplacer">IReplacer</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6197,7 +12635,7 @@ public readonly replacer: IReplacer;
 
 ### IReplacerRule <a name="IReplacerRule" id="zap-cdk.IReplacerRule"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IReplacerRule">IReplacerRule</a>
+- *Implemented By:* <a href="#zap-cdk.ReplacerRule">ReplacerRule</a>, <a href="#zap-cdk.IReplacerRule">IReplacerRule</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6297,7 +12735,7 @@ public readonly url: string;
 
 ### IReport <a name="IReport" id="zap-cdk.IReport"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IReport">IReport</a>
+- *Implemented By:* <a href="#zap-cdk.Report">Report</a>, <a href="#zap-cdk.IReport">IReport</a>
 
 Interface representing a report configuration.
 
@@ -6457,7 +12895,7 @@ public readonly report: IReport;
 
 ### IRequest <a name="IRequest" id="zap-cdk.IRequest"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IRequest">IRequest</a>
+- *Implemented By:* <a href="#zap-cdk.Request">Request</a>, <a href="#zap-cdk.IRequest">IRequest</a>
 
 Interface representing a single request configuration.
 
@@ -6548,7 +12986,7 @@ public readonly responseCode: number;
 
 ### IRequestorParameters <a name="IRequestorParameters" id="zap-cdk.IRequestorParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a>
+- *Implemented By:* <a href="#zap-cdk.RequestorParameters">RequestorParameters</a>, <a href="#zap-cdk.IRequestorParameters">IRequestorParameters</a>
 
 Interface representing the parameters for making requests.
 
@@ -6631,7 +13069,7 @@ public readonly requestor: IRequestorParameters;
 
 ### IRule <a name="IRule" id="zap-cdk.IRule"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IRule">IRule</a>
+- *Implemented By:* <a href="#zap-cdk.Rule">Rule</a>, <a href="#zap-cdk.IRule">IRule</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6687,7 +13125,7 @@ public readonly threshold: string;
 
 ### IRules <a name="IRules" id="zap-cdk.IRules"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IRules">IRules</a>
+- *Implemented By:* <a href="#zap-cdk.Rules">Rules</a>, <a href="#zap-cdk.IRules">IRules</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6743,7 +13181,7 @@ public readonly threshold: string;
 
 ### ISessionManagementParameters <a name="ISessionManagementParameters" id="zap-cdk.ISessionManagementParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ISessionManagementParameters">ISessionManagementParameters</a>
+- *Implemented By:* <a href="#zap-cdk.SessionManagementParameters">SessionManagementParameters</a>, <a href="#zap-cdk.ISessionManagementParameters">ISessionManagementParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6777,7 +13215,7 @@ public readonly parameters: ISessionManagementParametersParameters;
 
 ### ISessionManagementParametersParameters <a name="ISessionManagementParametersParameters" id="zap-cdk.ISessionManagementParametersParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ISessionManagementParametersParameters">ISessionManagementParametersParameters</a>
+- *Implemented By:* <a href="#zap-cdk.SessionManagementParametersParameters">SessionManagementParametersParameters</a>, <a href="#zap-cdk.ISessionManagementParametersParameters">ISessionManagementParametersParameters</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -6811,7 +13249,7 @@ public readonly scriptEngine: string;
 
 ### ISoap <a name="ISoap" id="zap-cdk.ISoap"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ISoap">ISoap</a>
+- *Implemented By:* <a href="#zap-cdk.Soap">Soap</a>, <a href="#zap-cdk.ISoap">ISoap</a>
 
 Interface representing the configuration for a SOAP service.
 
@@ -6872,7 +13310,7 @@ public readonly soap: ISoap;
 
 ### ISpider <a name="ISpider" id="zap-cdk.ISpider"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ISpider">ISpider</a>
+- *Implemented By:* <a href="#zap-cdk.Spider">Spider</a>, <a href="#zap-cdk.ISpider">ISpider</a>
 
 Interface representing a spider configuration.
 
@@ -6941,7 +13379,7 @@ public readonly tests: ISpiderTest[];
 
 ### ISpiderAjax <a name="ISpiderAjax" id="zap-cdk.ISpiderAjax"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a>
+- *Implemented By:* <a href="#zap-cdk.SpiderAjax">SpiderAjax</a>, <a href="#zap-cdk.ISpiderAjax">ISpiderAjax</a>
 
 Interface representing the parameters for an AJAX spider configuration.
 
@@ -7189,7 +13627,7 @@ public readonly spiderAjax: ISpiderAjax;
 
 ### ISpiderParameters <a name="ISpiderParameters" id="zap-cdk.ISpiderParameters"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a>
+- *Implemented By:* <a href="#zap-cdk.SpiderParameters">SpiderParameters</a>, <a href="#zap-cdk.ISpiderParameters">ISpiderParameters</a>
 
 Interface representing the parameters for a spider configuration.
 
@@ -7445,7 +13883,7 @@ public readonly userAgent: string;
 
 ### ISpiderTest <a name="ISpiderTest" id="zap-cdk.ISpiderTest"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ISpiderTest">ISpiderTest</a>
+- *Implemented By:* <a href="#zap-cdk.SpiderTest">SpiderTest</a>, <a href="#zap-cdk.ISpiderTest">ISpiderTest</a>
 
 Interface representing a test configuration for the spider.
 
@@ -7525,7 +13963,7 @@ public readonly name: string;
 
 ### IStatisticsTest <a name="IStatisticsTest" id="zap-cdk.IStatisticsTest"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IStatisticsTest">IStatisticsTest</a>
+- *Implemented By:* <a href="#zap-cdk.StatisticsTest">StatisticsTest</a>, <a href="#zap-cdk.IStatisticsTest">IStatisticsTest</a>
 
 Interface for statistics tests.
 
@@ -7627,7 +14065,7 @@ public readonly site: string;
 
 ### ITechnology <a name="ITechnology" id="zap-cdk.ITechnology"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ITechnology">ITechnology</a>
+- *Implemented By:* <a href="#zap-cdk.Technology">Technology</a>, <a href="#zap-cdk.ITechnology">ITechnology</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -7661,7 +14099,7 @@ public readonly include: string[];
 
 ### ITotpConfig <a name="ITotpConfig" id="zap-cdk.ITotpConfig"></a>
 
-- *Implemented By:* <a href="#zap-cdk.ITotpConfig">ITotpConfig</a>
+- *Implemented By:* <a href="#zap-cdk.TotpConfig">TotpConfig</a>, <a href="#zap-cdk.ITotpConfig">ITotpConfig</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -7717,7 +14155,7 @@ public readonly period: number;
 
 ### IUrlQueryStringAndDataDrivenNodes <a name="IUrlQueryStringAndDataDrivenNodes" id="zap-cdk.IUrlQueryStringAndDataDrivenNodes"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IUrlQueryStringAndDataDrivenNodes">IUrlQueryStringAndDataDrivenNodes</a>
+- *Implemented By:* <a href="#zap-cdk.UrlQueryStringAndDataDrivenNodes">UrlQueryStringAndDataDrivenNodes</a>, <a href="#zap-cdk.IUrlQueryStringAndDataDrivenNodes">IUrlQueryStringAndDataDrivenNodes</a>
 
 Configuration options for scanning URL query strings and Data Driven Nodes (DDNs).
 
@@ -7776,7 +14214,7 @@ Default: true
 
 ### IUrlTest <a name="IUrlTest" id="zap-cdk.IUrlTest"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IUrlTest">IUrlTest</a>
+- *Implemented By:* <a href="#zap-cdk.UrlTest">UrlTest</a>, <a href="#zap-cdk.IUrlTest">IUrlTest</a>
 
 Interface for URL tests.
 
@@ -7902,7 +14340,7 @@ public readonly responseHeaderRegex: string;
 
 ### IUserCredentials <a name="IUserCredentials" id="zap-cdk.IUserCredentials"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IUserCredentials">IUserCredentials</a>
+- *Implemented By:* <a href="#zap-cdk.UserCredentials">UserCredentials</a>, <a href="#zap-cdk.IUserCredentials">IUserCredentials</a>
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -7947,7 +14385,7 @@ public readonly totp: ITotpConfig;
 
 ### IZap <a name="IZap" id="zap-cdk.IZap"></a>
 
-- *Implemented By:* <a href="#zap-cdk.IZap">IZap</a>
+- *Implemented By:* <a href="#zap-cdk.Zap">Zap</a>, <a href="#zap-cdk.IZap">IZap</a>
 
 Interface representing the ZAP (Zed Attack Proxy) configuration.
 

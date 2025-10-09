@@ -14,10 +14,10 @@ export interface IActiveScanConfigProps {
 /**
  * Class representing the active scan configuration.
  *
- * @class ActiveScanConfig
+ * @class ActiveScanConfigConstruct
  * @extends {Construct}
  */
-export class ActiveScanConfig extends Construct {
+export class ActiveScanConfigConstruct extends Construct {
 
   /** The active scan configuration properties. */
   config: IActiveScanConfig;

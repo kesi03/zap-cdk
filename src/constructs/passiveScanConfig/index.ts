@@ -13,13 +13,13 @@ export interface IPassiveScanConfigProps {
 /**
  * Class representing the passive scan configuration.
  *
- * @class PassiveScanConfig
+ * @class PassiveScanConfigConstruct
  * @extends {Construct}
  */
-export class PassiveScanConfig extends Construct {
+export class PassiveScanConfigConstruct extends Construct {
   config: IPassiveScanConfig;
 
-  /** Creates an instance of PassiveScanConfig.
+  /** Creates an instance of PassiveScanConfigConstruct.
    *
    * @param {Construct} scope - The scope in which this construct is defined.
    * @param {string} id - The ID of the construct.

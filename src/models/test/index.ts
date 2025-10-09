@@ -81,6 +81,69 @@ export interface IAlertTest {
   onFail: OnFailType; // Action to take on failure, mandatory
 }
 
+export class AlertTest implements IAlertTest {
+  name?: string; // Name of the test, optional
+  type: 'alert'; // Specifies that the test is of type 'alert'
+  action?: AlertAction; // Condition (presence/absence) of the alert, default: passIfAbsent
+  scanRuleId: number; // The id of the scanRule which generates the alert, mandatory
+  alertName?: string; // The name of the alert generated, optional
+  url?: string; // The url of the request corresponding to the alert generated, optional
+  method?: string; // The method of the request corresponding to the alert generated, optional
+  attack?: string; // The actual attack which generated the alert, optional
+  param?: string; // The parameter which was modified to generate the alert, optional
+  evidence?: string; // The evidence corresponding to the alert generated, optional
+  confidence?: AlertConfidence; // The confidence of the alert, optional
+  risk?: AlertRisk; // The risk of the alert, optional
+  onFail: OnFailType; // Action to take on failure, mandatory
+
+  /**
+   * Creates an instance of AlertTest.
+   * @param {IAlertTest} options - The configuration options for the alert test.
+   * @property {string} [options.name] - Name of the test, optional.
+   * @property {AlertAction} [options.action] - Condition (presence/absence) of the alert, default: passIfAbsent.
+   * @property {number} options.scanRuleId - The id of the scanRule which generates the alert, mandatory.
+   * @property {string} [options.alertName] - The name of the alert generated, optional.
+   * @property {string} [options.url] - The URL of the request corresponding to the alert generated, optional.
+   * @property {string} [options.method] - The method of the request corresponding to the alert generated, optional.
+   * @property {string} [options.attack] - The actual attack which generated the alert, optional.
+   * @property {string} [options.param] - The parameter which was modified to generate the alert, optional.
+   * @property {string} [options.evidence] - The evidence corresponding to the alert generated, optional.
+   * @property {AlertConfidence} [options.confidence] - The confidence of the alert, optional.
+   * @property {AlertRisk} [options.risk] - The risk of the alert, optional.
+   * @property {OnFailType} options.onFail - Action to take on failure, mandatory.
+   * @example
+   * const alertTest = new AlertTest({
+   *   name: 'test one',
+   *   action: 'passIfPresent',
+   *   scanRuleId: 123,
+   *   alertName: 'SQL Injection',
+   *   url: 'http://www.example.com/path',
+   *   method: 'GET',
+   *   attack: 'SQL Injection Attack',
+   *   param: 'username',
+   *   evidence: 'Evidence of SQL injection',
+   *   confidence: 'High',
+   *   risk: 'High',
+   *   onFail: 'info'
+   * });
+   */
+  constructor(options: IAlertTest) {
+    this.name = options.name;
+    this.type = options.type ?? 'alert';
+    this.action = options.action ?? 'passIfAbsent';
+    this.scanRuleId = options.scanRuleId;
+    this.alertName = options.alertName;
+    this.url = options.url;
+    this.method = options.method;
+    this.attack = options.attack;
+    this.param = options.param;
+    this.evidence = options.evidence;
+    this.confidence = options.confidence;
+    this.risk = options.risk;
+    this.onFail = options.onFail;
+  }
+}
+
 /**
  * Interface for monitor tests.
  *
@@ -108,6 +171,47 @@ export interface IMonitorTest {
   statistic: string; // Name of an integer / long statistic
   site?: string; // Name of the site for site specific tests, supports vars
   onFail: OnFailType; // String: One of 'warn', 'error', 'info', mandatory
+}
+
+/**
+ * Class representing a monitor test.
+ * @implements {IMonitorTest}
+ * @class MonitorTest
+ * @property {string} [name] - Name of the test, optional.
+ * @property {'monitor'} type - Specifies that the test is of type 'monitor'.
+ * @property {string} statistic - Name of an integer / long statistic.
+ * @property {string} [site] - Name of the site for site specific tests, supports vars.
+ * @property {OnFailType} onFail - Action to take on failure, mandatory.
+ * @example
+ * const monitorTest = new MonitorTest({
+ *   name: 'test one',
+ *   statistic: 'stats.addon.something',
+ *   site: 'MySite',
+ *   onFail: 'info'
+ * });
+ */
+export class MonitorTest implements IMonitorTest {
+  name?: string; // Name of the test, optional
+  type: 'monitor'; // Specifies that the test is of type 'monitor'
+  statistic: string; // Name of an integer / long statistic
+  site?: string; // Name of the site for site specific tests, supports vars
+  onFail: OnFailType; // String: One of 'warn', 'error', 'info', mandatory
+
+  /**
+   * Creates an instance of MonitorTest.
+   * @param {IMonitorTest} options - The configuration options for the monitor test.
+   * @property {string} [options.name] - Name of the test, optional.
+   * @property {string} options.statistic - Name of an integer / long statistic.
+   * @property {string} [options.site] - Name of the site for site specific tests, supports vars.
+   * @property {OnFailType} options.onFail - Action to take on failure, mandatory.
+   */
+  constructor(options: IMonitorTest) {
+    this.name = options.name;
+    this.type = 'monitor';
+    this.statistic = options.statistic;
+    this.site = options.site;
+    this.onFail = options.onFail;
+  }
 }
 
 /**
@@ -141,6 +245,36 @@ export interface IStatisticsTest {
   operator: '==' | '!=' | '>=' | '>' | '<' | '<='; // One of '==', '!=', '>=', '>', '<', '<='
   value: number; // Value to compare statistic against
   onFail: OnFailType; // String: One of 'warn', 'error', 'info', mandatory
+}
+
+export class StatisticsTest implements IStatisticsTest {
+  name?: string; // Name of the test, optional
+  type: 'stats'; // Specifies that the test is of type 'stats'
+  statistic: string; // Name of an integer / long statistic
+  site?: string; // Name of the site for site specific tests, supports vars
+  operator: '==' | '!=' | '>=' | '>' | '<' | '<='; // One of '==', '!=', '>=', '>', '<', '<='
+  value: number; // Value to compare statistic against
+  onFail: OnFailType; // String: One of 'warn', 'error', 'info', mandatory
+
+  /**
+   * Creates an instance of StatisticsTest.
+   * @param {IStatisticsTest} options - The configuration options for the statistics test.
+   * @property {string} [options.name] - Name of the test, optional.
+   * @property {string} options.statistic - Name of an integer / long statistic.
+   * @property {string} [options.site] - Name of the site for site specific tests, supports vars.
+   * @property {'==' | '!=' | '>=' | '>' | '<' | '<='} options.operator - Comparison operator.
+   * @property {number} options.value - Value to compare statistic against.
+   * @property {OnFailType} options.onFail - Action to take on failure, mandatory.
+   */
+  constructor(options: IStatisticsTest) {
+    this.name = options.name;
+    this.type = 'stats';
+    this.statistic = options.statistic;
+    this.site = options.site;
+    this.operator = options.operator;
+    this.value = options.value;
+    this.onFail = options.onFail;
+  }
 }
 
 /**
@@ -180,6 +314,78 @@ export interface IUrlTest {
   responseHeaderRegex?: string; // The regular expression to be matched in the response header, optional
   responseBodyRegex?: string; // The regular expression to be matched in the response body, optional
   onFail: OnFailType; // String: One of 'warn', 'error', 'info', mandatory
+}
+
+/**
+ * Class representing a URL test.
+ * @implements {IUrlTest}
+ * @class UrlTest
+ * @property {string} [name] - Name of the test, optional.
+ * @property {'url'} type - Specifies that the test is of type 'url'.
+ * @property {string} url - The URL to be tested.
+ * @property {'and' | 'or'} operator - One of 'and', 'or', default is 'or'.
+ * @property {string} [requestHeaderRegex] - The regular expression to be matched in the request header, optional.
+ * @property {string} [requestBodyRegex] - The regular expression to be matched in the request body, optional.
+ * @property {string} [responseHeaderRegex] - The regular expression to be matched in the response header, optional.
+ * @property {string} [responseBodyRegex] - The regular expression to be matched in the response body, optional.
+ * @property {OnFailType} onFail - Action to take on failure, mandatory.
+ * @example
+ * const urlTest = new UrlTest({
+ *   name: 'test one',
+ *   url: 'http://www.example.com/path',
+ *   operator: 'and',
+ *   requestHeaderRegex: 'some-regex',
+ *   requestBodyRegex: 'some-regex',
+ *   responseHeaderRegex: 'some-regex',
+ *   responseBodyRegex: 'some-regex',
+ *   onFail: 'error',
+ * });
+ */
+export class UrlTest implements IUrlTest {
+  name?: string; // Name of the test, optional
+  type: 'url'; // Specifies that the test is of type 'url'
+  url: string; // The URL to be tested
+  operator: 'and' | 'or'; // One of 'and', 'or', default is 'or'
+  requestHeaderRegex?: string; // The regular expression to be matched in the request header, optional
+  requestBodyRegex?: string; // The regular expression to be matched in the request body, optional
+  responseHeaderRegex?: string; // The regular expression to be matched in the response header, optional
+  responseBodyRegex?: string; // The regular expression to be matched in the response body, optional
+  onFail: OnFailType; // String: One of 'warn', 'error', 'info', mandatory
+
+  /**
+   * Creates an instance of UrlTest.
+   * @param {IUrlTest} options - The configuration options  for the URL test.
+   * @property {string} [options.name] - Name of the test, optional.
+   * @property {string} options.url - The URL to be tested.
+   * @property {'and' | 'or'} [options.operator] - One of 'and', 'or', default is 'or'.
+   * @property {string} [options.requestHeaderRegex] - The regular expression to be matched in the request header, optional.
+   * @property {string} [options.requestBodyRegex] - The regular expression to be matched in the request body, optional.
+   * @property {string} [options.responseHeaderRegex] - The regular expression to be matched in the response header, optional.
+   * @property {string} [options.responseBodyRegex] - The regular expression to be matched in the response body, optional.
+   * @property {OnFailType} options.onFail - Action to take on failure, mandatory.
+   * @example
+   * const urlTest = new UrlTest({
+   *   name: 'test one',
+   *   url: 'http://www.example.com/path',
+   *   operator: 'and',
+   *   requestHeaderRegex: 'some-regex',
+   *   requestBodyRegex: 'some-regex',
+   *   responseHeaderRegex: 'some-regex',
+   *   responseBodyRegex: 'some-regex',
+   *   onFail: 'error',
+   * });
+   */
+  constructor(options: IUrlTest) {
+    this.name = options.name;
+    this.type = 'url';
+    this.url = options.url;
+    this.operator = options.operator ?? 'or';
+    this.requestHeaderRegex = options.requestHeaderRegex;
+    this.requestBodyRegex = options.requestBodyRegex;
+    this.responseHeaderRegex = options.responseHeaderRegex;
+    this.responseBodyRegex = options.responseBodyRegex;
+    this.onFail = options.onFail;
+  }
 }
 
 /**
